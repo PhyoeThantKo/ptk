@@ -9,9 +9,9 @@
      <link rel="stylesheet" href="app/carousel/style.css">
 </head>
 <body>
-<main>
+  
   <!-- carousel -->
-  <section class="has-dflex-center absolute top-0">
+  <section class="has-dflex-center">
     <div class="lx-container-80">
       <div class="lx-row">
         <div class="lx-card carousel-container">
@@ -33,7 +33,6 @@
       </div>
     </div>
   </section>
-</main>
 
 <script src='https://use.fontawesome.com/releases/v5.14.0/js/all.js'></script><script  src="app/carousel/script.js"></script>
 

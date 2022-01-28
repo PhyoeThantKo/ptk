@@ -10,18 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
       plusItem(carousel);
     });
 
-    insertDots(carousel);
 
-    carousel.querySelectorAll(".dot").forEach(dot => {
-      dot.addEventListener("click", e => {
-        let item = Array.prototype.indexOf.call(
-        e.target.parentNode.children,
-        e.target);
-
-
-        showItems(carousel, item);
-      });
-    });
 
     showItems(carousel, 0);
   });
@@ -36,20 +25,6 @@ function insertNumbers(carousel) {
 
     carousel.querySelectorAll(".item")[i].append(nmbr);
   }
-}
-
-function insertDots(carousel) {
-  const dots = document.createElement("div");
-  dots.classList.add("dots");
-
-  carousel.append(dots);
-
-  carousel.querySelectorAll(".item").forEach(elem => {
-    const dot = document.createElement("div");
-    dot.classList.add("dot");
-
-    carousel.querySelector(".dots").append(dot);
-  });
 }
 
 function plusItem(carousel) {
@@ -81,8 +56,4 @@ function showItems(carousel, item) {
   carousel.querySelectorAll(".item")[currentItem(carousel)].style.display =
   "none";
   carousel.querySelectorAll(".item")[item].style.display = "block";
-
-  if (carousel.querySelector(".dot.active") != null)
-  carousel.querySelector(".dot.active").classList.remove("active");
-  carousel.querySelectorAll(".dot")[item].classList.add("active");
 }
