@@ -5,6 +5,9 @@ module.exports = {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
         encodesans: ["Encode Sans", "sans-serif"]
+      },
+      colors: {
+        'earth': '#F9E8DA',
       }
     },
   },

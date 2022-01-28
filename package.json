@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "prod": "NODE_ENV=production postcss app/tailwind.css -o style/style.css"
+    "preview": "vite preview",
+    "prod": "NODE_ENV=production postcss app/tailwind.css -o public/style/style.css"
   },
   "keywords": [],
   "author": "Phyoe Thant Ko",
