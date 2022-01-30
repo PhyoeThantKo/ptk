@@ -12,12 +12,13 @@ section .carousel-container .item {
 }
 section .carousel-container .item .numbertext {
   padding: 0.4rem 0.75rem;
+  text-align: center;
   width: 4.3rem;
   margin-top: -2.4rem;
   margin-left: auto;
   margin-right: auto;
   border-radius: 0.9375rem;
-  font-size: 0.875rem;
+  font-size: 0.898rem;
   color: #f2f2f2;
   background-color: rgba(0, 0, 0, 0.9);
 }
