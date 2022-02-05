@@ -7,12 +7,13 @@
      <title>PTK</title>
      <link rel="stylesheet" href="public/style/style.css">
      <link rel="stylesheet" href="app/carousel/style.css">
+     <link rel="stylesheet" href="public/style/navbar.css">
 </head>
 <body>
 
     <!-- nav bar -->
-    <div id="nav_container" class="absolute w-full mt-3 z-50">
-      <nav class="flex w-11/12 h-11 rounded-l-full rounded-r-full bg-earth mx-auto">
+    <div id="nav_container" class="fixed w-full mt-3 z-50">
+      <nav id="nav_bar" class="flex w-11/12 h-11 rounded-l-full rounded-r-full bg-earth mx-auto">
         <div id="logo" class="w-1/2 my-auto ml-6">
           <a href="index.html" class="text-2xl font-extrabold hover:text-light_theme">
             PTK
@@ -116,6 +117,27 @@
       </div>
     </div>
   </section>
+
+<!--Hero-->
+
+<div class="container py-15 mx-auto">
+  <div class="lg:flex">
+    <div class="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2">
+        <img class="w-full h-full lg:max-w-3xl lg:pr-7" src="public/images/Website Creator-pana.svg" alt="Website Creator-pana.svg">
+    </div>
+    <div class="w-11/12 mx-auto lg:w-1/2 lg:my-auto">
+        <div class="lg:max-w-3xl lg:pl-7  text-center lg:text-left">
+            <h1 class="text-xl font-semibold text-gray-800 uppercase dark:text-white lg:text-5xl lg:mb-5 ">Website creation in new Era with PTK</h1>
+            <p class="mt-2 text-gray-600 dark:text-gray-400 lg:text-2xl mb-3 lg:mb-6">Young creator evolving with mush interest in clean modern UI, amazin UX & consumer electronics</p>
+            <a href=""> 
+              <button type="button" class="px-4 w-full lg:w-auto bg-light_theme mx-auto hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 text-white py-2 lg:py-3 transition ease-in duration-200 text-center text-xl font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-full">
+                  See what you can expect from me
+              </button>
+            </a>
+        </div>
+    </div>
+  </div>
+</div>
 
 <script src='https://use.fontawesome.com/releases/v5.14.0/js/all.js'></script>
 <script  src="app/carousel/script.js"></script>
