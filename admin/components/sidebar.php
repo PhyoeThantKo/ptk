@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Dashboard</title>
-     <link rel="stylesheet" href="/public/style/style.css">
-</head>
-<body>
-     <!--side bar-->
-          <div class="flex flex-col w-64 px-4 py-8 bg-white border-r dark:bg-gray-800 dark:border-gray-600">
+<link rel="stylesheet" href="../public/style/style.css">
+<div id="container" class="flex">
+          <!--side bar-->
+          <div class="flex flex-col min-h-screen w-64 px-4 py-8 bg-white border-r dark:bg-gray-800 dark:border-gray-600">
                <h2 class="text-3xl font-semibold text-gray-800 dark:text-white">PTK</h2>
           
                <div class="flex flex-col justify-between flex-1 mt-6">
@@ -47,5 +39,3 @@
                     </div>
                </div>
           </div>
-</body>
-</html>
