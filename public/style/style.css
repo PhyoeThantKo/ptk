@@ -22571,10 +22571,6 @@ video {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-.font-inter{
-  font-family: Inter, sans-serif;
-}
-
 .font-roboto{
   font-family: Roboto, sans-serif;
 }
@@ -54519,10 +54515,6 @@ video {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
-  .sm\:font-inter{
-    font-family: Inter, sans-serif;
-  }
-
   .sm\:font-roboto{
     font-family: Roboto, sans-serif;
   }
@@ -86105,10 +86097,6 @@ video {
 
   .md\:font-mono{
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  }
-
-  .md\:font-inter{
-    font-family: Inter, sans-serif;
   }
 
   .md\:font-roboto{
@@ -117695,10 +117683,6 @@ video {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
-  .lg\:font-inter{
-    font-family: Inter, sans-serif;
-  }
-
   .lg\:font-roboto{
     font-family: Roboto, sans-serif;
   }
@@ -149283,10 +149267,6 @@ video {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
-  .xl\:font-inter{
-    font-family: Inter, sans-serif;
-  }
-
   .xl\:font-roboto{
     font-family: Roboto, sans-serif;
   }
@@ -180869,10 +180849,6 @@ video {
 
   .\32xl\:font-mono{
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  }
-
-  .\32xl\:font-inter{
-    font-family: Inter, sans-serif;
   }
 
   .\32xl\:font-roboto{
