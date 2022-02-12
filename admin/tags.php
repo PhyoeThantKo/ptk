@@ -76,34 +76,39 @@
                             </tr>
                         </thead>
                         <tbody>
+                            <?php
+                                include("config/config.php");
+                                $result = mysqli_query($conn, "SELECT * FROM tags");
+                            ?>
+                            <?php while ($row = mysqli_fetch_assoc($result)): ?>
                             <tr>
                                 <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                                         <p class="text-gray-900 whitespace-no-wrap">
-                                            Jean marc
+                                            <?php echo $row['tag_name'] ?>
                                         </p>
                                 </td>
                                 <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                                     <p class="text-gray-900 whitespace-no-wrap">
-                                        Admin
+                                    <?php echo $row['about_tag'] ?>
                                     </p>
                                 </td>
                                 <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                                     <p class="text-gray-900 whitespace-no-wrap">
-                                        12/09/2020
+                                    <?php echo $row['created_date'] ?>
                                     </p>
                                 </td>
                                 <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                   <a href="#" class="text-indigo-600 hover:text-indigo-900">
+                                   <a href="tag-edit.php" class="text-indigo-600 hover:text-indigo-900">
                                         Edit
                                    </a>
                                 </td>
                                 <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                    <a href="#" class="text-red-600 hover:text-red-900">
+                                    <a href="tag-del.php" class="text-red-600 hover:text-red-900">
                                         Delete
                                     </a>
                                 </td>
                             </tr>
-
+                            <?php endwhile; ?>
                         </tbody>
                     </table>
 
