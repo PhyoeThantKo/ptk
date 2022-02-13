@@ -42,7 +42,7 @@
                          </a>
                     </nav>
      
-                    <div class="flex items-center px-4 -mx-2">
+                    <div class="flex absolute bottom-10 items-center px-4 -mx-2">
                          <img class="object-cover mx-2 rounded-full h-9 w-9" src="images/ptk.png" alt="avatar"/>
                          <h4 class="mx-2 font-medium text-gray-800 dark:text-gray-200 hover:underline">Phyoe Thant Ko</h4>
                     </div>
@@ -70,6 +70,11 @@
                                     Created at
                                 </th>
                                 <th scope="col" class="px-5 py-3 bg-white  border-b border-gray-200 text-gray-800  text-left text-sm uppercase font-normal">
+                                    <a href="tag-new.php">
+                                        <button class="w-36  py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-pink-600 rounded-md hover:bg-pink-500 focus:outline-none focus:ring focus:ring-pink-300 focus:ring-opacity-80">
+                                            Create New Tag
+                                        </button>
+                                    </a>
                                 </th>
                                 <th scope="col" class="px-5 py-3 bg-white  border-b border-gray-200 text-gray-800  text-left text-sm uppercase font-normal">
                                 </th>
@@ -98,12 +103,12 @@
                                     </p>
                                 </td>
                                 <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                   <a href="tag-edit.php" class="text-indigo-600 hover:text-indigo-900">
+                                   <a href="tag-edit.php?tag_id=<?php echo $row['tag_id'] ?>" class="text-indigo-600 hover:text-indigo-900">
                                         Edit
                                    </a>
                                 </td>
                                 <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                    <a href="tag-del.php" class="text-red-600 hover:text-red-900">
+                                    <a href="tag-del.php?tag_id= <?php echo $row['tag_id'] ?>" class="text-red-600 hover:text-red-900">
                                         Delete
                                     </a>
                                 </td>
