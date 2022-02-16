@@ -49,7 +49,46 @@
                </div>
           </div>
 
-    <!--right content-->
+          <!--right content-->
+
+          <div class="m-7">
+               <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
+
+                    <?php include("config/config.php");
+
+                    $result = mysqli_query($conn, "SELECT posts.*, tags.tag_name FROM posts LEFT JOIN tags ON  posts.tag_id = tags.tag_id ORDER BY  posts.created_date DESC ");
+
+                    ?>
+
+                    <?php while ($row = mysqli_fetch_assoc($result)): ?>
+
+                    <div class="overflow-hidden shadow-lg rounded-lg h-90 w-60 md:w-80 cursor-pointer m-auto">
+                         <a href="#" class="w-full block h-full">
+                              <img alt="blog photo" src="covers/<?php echo $row['cover'] ?>" class="max-h-40 w-full object-cover"/>
+                              <div class="bg-white dark:bg-gray-800 w-full p-4">
+                                   <p class="text-indigo-500 text-md font-medium">
+                                        <?php echo $row['tag_name'] ?>
+                                   </p>
+                                   <p class="text-gray-800 dark:text-white text-xl h-20 max-h-20 font-medium mb-2">
+                                        <?php echo $row['header']; ?>
+                                   </p>
+
+                                   <div class="flex flex-wrap justify-starts items-center mt-4">
+                                        <a class="text-xs mr-2 py-1.5 px-4 text-gray-600 bg-pink-100 hover:bg-pink-200 rounded-2xl">
+                                             Edit
+                                        </a>
+                                        <a class="text-xs mr-2 py-1.5 px-4 text-gray-600 bg-pink-100 hover:bg-pink-200 rounded-2xl">
+                                             Delete
+                                        </a>
+                                   </div>
+                              </div>
+                         </a>
+                    </div>
+
+                    <?php endwhile; ?>
+ 
+               </div>
+          </div>
 
      </div>
 </body>
