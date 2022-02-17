@@ -77,7 +77,7 @@
                                         <a href="post-edit.php?post_id=<?php echo $row['post_id'] ?>" class="text-xs mr-2 py-1.5 px-4 text-gray-600 bg-pink-100 hover:bg-pink-200 rounded-2xl">
                                              Edit
                                         </a>
-                                        <a href="post-delete.php" class="text-xs mr-2 py-1.5 px-4 text-gray-600 bg-pink-100 hover:bg-pink-200 rounded-2xl">
+                                        <a href="post-del.php?post_id=<?php echo $row['post_id'] ?>" class="text-xs mr-2 py-1.5 px-4 text-gray-600 bg-pink-100 hover:bg-pink-200 rounded-2xl">
                                              Delete
                                         </a>
                                    </div>

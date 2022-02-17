@@ -13,6 +13,8 @@
           $row = mysqli_fetch_assoc($result);
      ?>
      <form action="post-update.php" method="POST" enctype="multipart/form-data" class="m-4">
+          <input type="hidden" name="post_id" id="post_id" value="<?php echo $row['post_id'] ?>">
+
           <label for="header" class="text-gray-700 mr-3">
                Header
           </label>
