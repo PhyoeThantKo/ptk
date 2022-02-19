@@ -17,6 +17,6 @@
      }
 
      mysqli_query($conn, $sql);
-     echo "update complete";
+     header("location: index.php");
 
 ?>

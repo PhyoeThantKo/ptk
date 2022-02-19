@@ -72,7 +72,6 @@
                                    <p class="text-gray-800 dark:text-white text-xl h-20 max-h-20 font-medium mb-2">
                                         <?php echo $row['header']; ?>
                                    </p>
-
                                    <div class="flex flex-wrap justify-starts items-center mt-4">
                                         <a href="post-edit.php?post_id=<?php echo $row['post_id'] ?>" class="text-xs mr-2 py-1.5 px-4 text-gray-600 bg-pink-100 hover:bg-pink-200 rounded-2xl">
                                              Edit
