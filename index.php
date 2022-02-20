@@ -23,7 +23,7 @@
           </a>
         </div>
         <div id="nav_items" class="w-1/2 my-auto">
-          <ul class="flex lg:ml-48">
+          <ul class="flex lg:ml-40">
             <li class="w-1/5 hover:text-light_theme text-center text-base lg:text-xl text-gray-700">
               <a href="">
                 Home
@@ -120,14 +120,14 @@
 
 <!--Hero-->
 
-<div class="container py-15 mx-auto">
+<div class="container p-8 mx-auto">
   <div class="lg:flex">
     <div class="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2">
         <img class="w-full h-full lg:max-w-3xl lg:pr-7" src="public/images/Website Creator-pana.svg" alt="Website Creator-pana.svg">
     </div>
     <div class="w-11/12 mx-auto lg:w-1/2 lg:my-auto">
         <div class="lg:max-w-3xl lg:pl-7  text-center lg:text-left">
-            <h1 class="text-xl font-semibold text-gray-800 uppercase dark:text-white lg:text-5xl lg:mb-5 ">Website creation in new Era with PTK</h1>
+            <h1 class="text-xl font-semibold text-gray-800  dark:text-white lg:text-5xl lg:mb-5 ">Website Creation in New Era with PTK</h1>
             <p class="mt-2 text-gray-600 dark:text-gray-400 lg:text-2xl mb-3 lg:mb-6">Young creator evolving with mush interest in clean modern UI, amazin UX & consumer electronics</p>
             <a href=""> 
               <button type="button" class="px-4 w-full lg:w-auto bg-light_theme mx-auto hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 text-white py-2 lg:py-3 transition ease-in duration-200 text-center text-xl font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-full">
