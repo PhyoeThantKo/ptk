@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="font-roboto">
+<html lang="en" class="font-roboto bg-notsowhite">
 <head>
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,35 +10,34 @@
      <link rel="stylesheet" href="public/style/navbar.css">
 </head>
 <body>
-
     <!-- nav bar -->
     <div id="nav_container" class="fixed w-full mt-3 z-50">
       <nav id="nav_bar" class="flex w-11/12 h-11 rounded-l-full rounded-r-full bg-earth mx-auto">
         <div id="logo" class="w-1/2 my-auto ml-6">
-          <a href="index.html" class="text-2xl font-extrabold hover:text-light_theme">
+          <a href="index.html" class="text-xl font-extrabold hover:text-light_theme">
             PTK
             <span class="font-light text-sm">
               PRODUCT DESIGN + WEB DEV
             </span>
           </a>
         </div>
-        <div id="nav_items" class="w-1/2 my-auto">
+        <div id="nav_items" class="w-1/2 my-auto mr-6">
           <ul class="flex lg:ml-40">
-            <li class="w-1/5 hover:text-light_theme text-center text-base lg:text-xl text-gray-700">
+            <li class="w-1/5 hover:text-light_theme text-center text-base lg:text-lg text-gray-700">
               <a href="">
                 Home
               </a>
             </li>
-            <li class="w-1/5 hover:text-light_theme text-center text-base lg:text-xl text-gray-700">
+            <li class="w-1/5 hover:text-light_theme text-center text-base lg:text-lg text-gray-700">
               <a href="" >Portfolio</a>
             </li>
-            <li class="w-1/5 hover:text-light_theme text-center text-base lg:text-xl text-gray-700">
+            <li class="w-1/5 hover:text-light_theme text-center text-base lg:text-lg text-gray-700">
               <a href="" >Contact</a>
             </li>
-            <li class="w-1/5 hover:text-light_theme text-center text-base lg:text-xl text-gray-700">
+            <li class="w-1/5 hover:text-light_theme text-center text-base lg:text-lg text-gray-700">
               <a href="" >About</a>
             </li>
-            <li class="w-1/5 hover:text-yellow-500 text-center text-base lg:text-xl text-light_theme">
+            <li class="w-1/5 hover:text-yellow-500 text-center text-base lg:text-lg text-light_theme">
               <a href="">Articles</a>
             </li>
           </ul>
@@ -53,7 +52,7 @@
         <div class="lx-card carousel-container">
           <div class="item fade">
             <div class="image image1">
-              <div id="articles" class="h-52 mt-72 w-4/6 text-7xl ml-16">
+              <div id="articles" class="h-52 mt-72 w-4/6 text-6xl ml-16">
                 <p class="text-white font-serif font-medium">
                   Web Dev articles & </br> <span class="tracking-wide">consumer electronics contents</span>
                 </p>
@@ -67,7 +66,7 @@
           </div>
           <div class="item fade">
             <div class="image image2">
-              <div id="services" class="h-60 w-4/6 text-7xl mx-auto my-auto">
+              <div id="services" class="h-60 w-4/6 text-6xl mx-auto my-auto">
                 <p class="text-white text-center font-serif font-medium tracking-wide">
                   Digital Solutions for </br> <span class="tracking-wide">Business Transformations</span>
                 </p>
@@ -83,7 +82,7 @@
           </div>
           <div class="item fade">
             <div class="image image3">
-              <div id="portfolio" class="h-52 absolute bottom-20 w-4/6 text-7xl ml-16">
+              <div id="portfolio" class="h-50 absolute bottom-10 w-4/6 text-6xl ml-16">
                 <p class="text-white font-serif font-medium">
                   Portfolio </br>A look at some of my projects
                 </p>
@@ -97,7 +96,7 @@
           </div>
           <div class="item fade">
             <div class="image image4">
-              <div id="contact" class="h-60 w-4/6 text-7xl mx-auto grid place-self-end pb-72">
+              <div id="contact" class="h-60 w-4/6 text-6xl mx-auto grid place-self-end pb-72">
                 <p class="text-white text-center font-serif font-medium tracking-wide">
                   Let's Talk </br> Anyting big or small
                 </p>
@@ -120,7 +119,7 @@
 
 <!--Hero-->
 
-<div class="container p-8 mx-auto">
+<div class="hero p-8 mx-auto">
   <div class="lg:flex">
     <div class="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2">
         <img class="w-full h-full lg:max-w-3xl lg:pr-7" src="public/images/Website Creator-pana.svg" alt="Website Creator-pana.svg">
@@ -137,6 +136,38 @@
         </div>
     </div>
   </div>
+</div>
+
+<!-- articles -->
+<div class="articles mx-16 mt-6">
+  <div>
+    <h2 class="text-3xl font-bold py-1">Latest Articles</h2>
+    <p class="text-2xl text-gray-700">Read blogs about web dev, consumer electronics and more</p>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mt-7">
+      <?php include("admin/config/config.php");
+          $result = mysqli_query($conn, "SELECT posts.*, tags.tag_name FROM posts LEFT JOIN tags ON  posts.tag_id = tags.tag_id ORDER BY  posts.created_date DESC LIMIT 6 ");
+      ?>
+
+      <?php while ($row = mysqli_fetch_assoc($result)): ?>
+
+      <div class="overflow-hidden shadow-lg rounded-lg h-90 w-60 md:w-80 cursor-pointer m-auto mb-10">
+          <a href="#" class="w-full block h-full">
+              <img alt="blog photo" src="admin/covers/<?php echo $row['cover'] ?>" class="max-h-40 w-full object-cover"/>
+              <div class="bg-white dark:bg-gray-800 w-full p-4">
+                  <p class="text-pink-500 text-md font-medium">
+                      <?php echo $row['tag_name'] ?>
+                  </p>
+                  <p class="text-gray-900 dark:text-white text-xl h-20 max-h-20 font-medium mb-2">
+                      <?php echo $row['header']; ?>
+                  </p>
+              </div>
+          </a>
+      </div>
+
+      <?php endwhile; ?>
+
+    </div>
 </div>
 
 <script src='https://use.fontawesome.com/releases/v5.14.0/js/all.js'></script>
