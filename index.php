@@ -274,6 +274,32 @@
     </div>
 </div>
 
+<!--  Newsletter -->
+<div class="container px-8 py-12 mx-auto">
+  <div class="items-center lg:flex">
+    <div class="w-full lg:w-1/2">
+        <div class="lg:max-w-lg">
+          <h1 class="text-3xl font-semibold text-gray-800 dark:text-white lg:text-3xl">Subscribe To The <span class="text-pink-500">Monthly Newsletter</span></h1>
+
+          <p class="mt-4 text-gray-600 text-xl dark:text-gray-400">be my fridend, be the first to know latest tech news, reviews and<span class="font-medium text-pink-500"> magic web services </span></p>
+
+        <div class="flex flex-col mt-8 space-y-3 lg:space-y-0 lg:flex-row">
+          <input id="email" type="text" class="px-4 py-2 text-gray-700 bg-white border rounded-lg dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-pink-400 dark:focus:border-pink-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-pink-300" placeholder="Email Address">
+                            
+          <a href="">
+            <button type="button" class="bg-light_theme hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 text-white w-32 h-10 ml-8 transition ease-in duration-200 text-center text-xl font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-full">
+              Subscribe
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+        
+    <div class="flex items-center justify-center w-80 h-80 mt-6 lg:mt-0 lg:w-1/2">
+      <img class="w-full h-full max-w-md" src="public/images/Email campaign-bro.svg">
+    </div>
+  </div>
+</div>
 
 <script src='https://use.fontawesome.com/releases/v5.14.0/js/all.js'></script>
 <script  src="app/carousel/script.js"></script>
