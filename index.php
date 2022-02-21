@@ -140,8 +140,8 @@
 
 <!-- articles -->
 <div class="articles mx-16 mt-6">
-  <div>
-    <h2 class="text-3xl font-bold py-1">Latest Articles</h2>
+  <div class="mb-16">
+    <h2 class="text-3xl font-bold py-1">Latest Blogs</h2>
     <p class="text-2xl text-gray-700">Read blogs about web dev, consumer electronics and more</p>
   </div>
   <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mt-7">
@@ -155,10 +155,10 @@
           <a href="#" class="w-full block h-full">
               <img alt="blog photo" src="admin/covers/<?php echo $row['cover'] ?>" class="max-h-40 w-full object-cover"/>
               <div class="bg-white dark:bg-gray-800 w-full p-4">
-                  <p class="text-pink-500 text-md font-medium">
+                  <p class="text-pink-400 text-md font-medium">
                       <?php echo $row['tag_name'] ?>
                   </p>
-                  <p class="text-gray-900 dark:text-white text-xl h-20 max-h-20 font-medium mb-2">
+                  <p class="text-gray-700 dark:text-white text-xl h-20 max-h-20 font-semibold mb-2">
                       <?php echo $row['header']; ?>
                   </p>
               </div>
@@ -169,6 +169,78 @@
 
     </div>
 </div>
+
+<!-- services -->
+<div class="mx-16 mt-6" id="services">
+  <div>
+    <h2 class="text-3xl font-bold py-1">Services</h2>
+    <p class="text-2xl text-gray-700">I can solve your problems in these ways. So call me if you need someone for...</p>
+  </div>
+  <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3">
+                    <div class="p-8 space-y-3 border-2 border-pink-400 dark:border-pink-300 rounded-3xl">
+                        <img src="public/images/pinkux.png" class="w-7 h-7">
+
+                        <h1 class="text-2xl font-semibold text-gray-700 capitalize dark:text-white">UI/UX research & design</h1>
+
+                        <p class="text-gray-500 dark:text-gray-300 text-lg font-medium">
+                        relevant digital experiences & high fidelity people-first ui designs for your website
+                        </p>
+
+                        <a href="#" class="inline-flex p-2 text-pink-500 capitalize transition-colors duration-200 transform bg-pink-100 rounded-full dark:bg-pink-500 dark:text-white hover:underline hover:text-pink-600 dark:hover:text-pink-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="p-8 space-y-3 border-2 border-pink-400 dark:border-pink-300 rounded-3xl">
+                        <img src="public/images/responsive.png" class="w-7 h-7">
+
+                        <h1 class="text-2xl font-semibold text-gray-700 capitalize dark:text-white">Magic Responsive website</h1>
+
+                        <p class="text-gray-500 dark:text-gray-300 text-lg font-medium">
+                        reach all corners of the world with information focused websites eg. portfolios & landing pages ...
+                        </p>
+
+                        <a href="#" class="inline-flex p-2 text-pink-500 capitalize transition-colors duration-200 transform bg-pink-100 rounded-full dark:bg-pink-500 dark:text-white hover:underline hover:text-pink-600 dark:hover:text-pink-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="p-8 space-y-3 border-2 border-pink-400 dark:border-pink-300 rounded-3xl">
+                    <img src="public/images/data.png" class="w-7 h-7">
+
+                        <h1 class="text-2xl font-semibold text-gray-700 capitalize dark:text-white">Magnetic Dynamic website</h1>
+
+                        <p class="text-gray-500 dark:text-gray-300 text-lg font-medium">
+                        kind of websites that users can interact with & we can collect, update data easily eg. content managements & blogs,
+                        </p>
+
+                        <a href="#" class="inline-flex p-2 text-pink-500 capitalize transition-colors duration-200 transform bg-pink-100 rounded-full dark:bg-pink-500 dark:text-white hover:underline hover:text-pink-600 dark:hover:text-pink-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="p-8 space-y-3 border-2 border-pink-400 dark:border-pink-300 rounded-3xl">
+                        <img src="public/images/coming-soon.png" class="w-7 h-7">
+
+                        <h1 class="text-2xl font-semibold text-gray-700 capitalize dark:text-white">Other services are coming soon for Burmese</h1>
+
+                        <p class="text-gray-500 dark:text-gray-300 text-lg font-medium">
+                        subscribe to the newsletter to know when the services are live
+                        </p>
+
+                        <a href="#" class="inline-flex p-2 text-pink-500 capitalize transition-colors duration-200 transform bg-pink-100 rounded-full dark:bg-pink-500 dark:text-white hover:underline hover:text-pink-600 dark:hover:text-pink-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
 
 <script src='https://use.fontawesome.com/releases/v5.14.0/js/all.js'></script>
 <script  src="app/carousel/script.js"></script>
