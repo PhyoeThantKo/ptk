@@ -2,9 +2,6 @@ module.exports = {
   content: [],
   theme: {
     extend: {
-      fontFamily: {
-        roboto: ["Roboto", "sans-serif"]
-      },
       varients : {
         extend : {
           backgroundColor : ['active']
