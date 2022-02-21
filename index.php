@@ -57,7 +57,7 @@
                   Web Dev articles & </br> <span class="tracking-wide">consumer electronics contents</span>
                 </p>
                 <a href="" class="">
-                  <button type="button" class="bg-light_theme hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 text-white w-40 h-12 transition ease-in duration-200 text-center text-xl font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-full">
+                  <button type="button" class="bg-light_theme hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 text-white w-36 h-12 transition ease-in duration-200 text-center text-xl font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-full">
                     Read
                   </button>
                 </a>
@@ -72,7 +72,7 @@
                 </p>
                 <div class="w-full grid place-items-center">
                   <a href="" class="">
-                    <button type="button" class="bg-light_theme mx-auto hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 text-white w-40 h-12 transition ease-in duration-200 text-center text-xl font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-full">
+                    <button type="button" class="bg-light_theme mx-auto hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 text-white w-36 h-12 transition ease-in duration-200 text-center text-xl font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-full">
                       Services
                     </button>
                   </a>
@@ -87,7 +87,7 @@
                   Portfolio </br>A look at some of my projects
                 </p>
                 <a href="" class="">
-                  <button type="button" class="bg-light_theme hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 text-white w-40 h-12 transition ease-in duration-200 text-center text-xl font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-full">
+                  <button type="button" class="bg-light_theme hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 text-white w-36 h-12 transition ease-in duration-200 text-center text-xl font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-full">
                     Portfolio
                   </button>
                 </a>
@@ -102,7 +102,7 @@
                 </p>
                 <div class="w-full grid place-items-center">
                   <a href="" class=""> 
-                    <button type="button" class="bg-light_theme mx-auto hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 text-white w-40 h-12 transition ease-in duration-200 text-center text-xl font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-full">
+                    <button type="button" class="bg-light_theme mx-auto hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 text-white w-36 h-12 transition ease-in duration-200 text-center text-xl font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-full">
                       Contact
                     </button>
                   </a>
@@ -240,7 +240,40 @@
                             </svg>
                         </a>
                     </div>
-                </div>
+  </div>
+</div>
+
+<!-- contact and portfolio -->
+
+<div class="bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400 dark:bg-gray-800 mt-16">
+    <div class="lg:flex lg:items-center lg:justify-between w-full mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
+        <h2 class="text-3xl font-extrabold text-black dark:text-white sm:text-4xl mx-8">
+            <span class="block">
+                Got a project ?
+            </span>
+            <span class="block font-medium">
+            or see some of my capabilities </br> through my portfolio ?
+            </span>
+        </h2>
+        <div class="lg:mt-0 lg:flex-shrink-0 mx-8">
+            <div class=" inline-flex rounded-md">
+            <a href="" class="">
+                  <button type="button" class="bg-light_theme hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 text-white w-36 h-14 transition ease-in duration-200 text-center text-xl font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-full">
+                    Contact
+                  </button>
+              </a>
+            </div>
+            <div class="ml-3 inline-flex rounded-md">
+            <a href="" class="">
+                  <button type="button" class="border-2 border-pink-600 hover:border-pink-800 hover:text-black focus:ring-pink-500 focus:ring-offset-pink-200 text-white w-36 h-14 transition ease-in duration-200 text-center text-xl font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-full">
+                    Portfolio
+                  </button>
+            </a>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <script src='https://use.fontawesome.com/releases/v5.14.0/js/all.js'></script>
 <script  src="app/carousel/script.js"></script>
