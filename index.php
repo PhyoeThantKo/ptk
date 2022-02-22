@@ -22,22 +22,22 @@
           </a>
         </div>
         <div id="nav_items" class="w-1/2 my-auto mr-6">
-          <ul class="flex lg:ml-40">
-            <li class="w-1/5 hover:text-light_theme text-center text-base lg:text-xl text-gray-700">
-              <a href="">
+          <ul class="flex lg:ml-36">
+            <li class="w-1/5 bg-pink-200 text-pink-500 rounded-full py-1 text-center text-base lg:text-xl ">
+              <a href="index.php">
                 Home
               </a>
             </li>
-            <li class="w-1/5 hover:text-light_theme text-center text-base lg:text-xl text-gray-700">
+            <li class="w-1/5 hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl text-gray-700">
               <a href="" >Portfolio</a>
             </li>
-            <li class="w-1/5 hover:text-light_theme text-center text-base lg:text-xl text-gray-700">
-              <a href="" >Contact</a>
+            <li class="w-1/5  hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl text-gray-700">
+              <a href="contact.php" >Contact</a>
             </li>
-            <li class="w-1/5 hover:text-light_theme text-center text-base lg:text-xl text-gray-700">
+            <li class="w-1/5 hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl text-gray-700">
               <a href="" >About</a>
             </li>
-            <li class="w-1/5 hover:text-yellow-500 text-center text-base lg:text-xl text-light_theme">
+            <li class="w-1/5 hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl text-yellow-500">
               <a href="">Articles</a>
             </li>
           </ul>
