@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="font-roboto bg-notsowhite">
+<html lang="en" class="bg-notsowhite">
 <head>
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
