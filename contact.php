@@ -13,7 +13,7 @@
     <div id="nav_container" class="fixed w-full mt-3 z-50">
       <nav id="nav_bar" class="flex w-11/12 h-11 rounded-l-full rounded-r-full bg-earth mx-auto">
         <div id="logo" class="w-1/2 my-auto ml-6">
-          <a href="index.html" class="text-2xl font-extrabold hover:text-light_theme">
+          <a href="" class="text-2xl font-extrabold hover:text-light_theme">
             PTK
             <span class="font-light text-sm">
               PRODUCT DESIGN + WEB DEV
@@ -28,7 +28,7 @@
               </a>
             </li>
             <li class="w-1/5 hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl text-gray-700">
-              <a href="" >Portfolio</a>
+              <a href="portfolio.php" >Portfolio</a>
             </li>
             <li class="w-1/5 bg-pink-200 text-pink-500 rounded-full py-1 text-center text-base lg:text-xl ">
               <a href="" >Contact</a>
