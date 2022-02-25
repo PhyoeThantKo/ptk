@@ -44,7 +44,7 @@
           </nav>
     </div>
 
-     <!--hero-->
+    <!--hero-->
     <section class="h-screen text-white flex flex-col items-center justify-center text-center" style="background-image: url('public/images/scattered-forcefields.svg');">
       <div class="w-3/4 text-2xl text-gray-300">
         <div>Product design + web development Myanmar</div>
@@ -57,5 +57,16 @@
         </div>
       </div>
     </section>
+    
+    <!--showcase this website-->
+    <div class="w-full my-8">
+      <div class="text-3xl grid place-items-center my-6">
+        <p class="tracking-widest text-gray-600">Are you looking for my projects?</p>
+        <h2 class="text-6xl text-gray-700 font-medium tracking-wide">This website itself is my project</h2>
+      </div>
+      <div class="mx-auto rounded-3xl w-11/12" style="background: url('public/images/mckup22.png') no-repeat center/cover ; height: 75vh;">
+      </div>
+    </div>
+
 </body>
 </html>
