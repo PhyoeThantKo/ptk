@@ -177,71 +177,29 @@
     <p class="text-2xl text-gray-700">I can solve your problems in these ways. So call me if you need someone for...</p>
   </div>
   <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3">
-                    <div class="p-8 space-y-3 border-2 border-pink-400 dark:border-pink-300 rounded-3xl">
-                        <img src="public/images/pinkux.png" class="w-7 h-7">
+    <?php
+      include("config/config.php");
+      $result = mysqli_query($conn, "SELECT * FROM project_and_services WHERE tag = 'service' ");
+    ?>
+      <?php while($service = mysqli_fetch_assoc($result)): ?>
 
-                        <h1 class="text-2xl text-gray-800 capitalize dark:text-white">UI/UX research & design</h1>
+      <div class="p-8 space-y-3 border-2 border-pink-400 dark:border-pink-300 rounded-3xl">
+        <img src="admin/covers/<?php echo $service['cover'] ?>" class="w-7 h-7">
 
-                        <p class="text-gray-500 dark:text-gray-500 text-lg font-medium">
-                        relevant digital experiences & high fidelity people-first ui designs for your website
-                        </p>
+        <h1 class="text-2xl text-gray-800 capitalize dark:text-white"><?php echo $service['header'] ?></h1>
 
-                        <a href="mailto:phyoethantko7858@gmail.com?subject=Can%20you%20help%20me%20make%20UI%2FUX%20Research%20%26%20Design%3F" class="inline-flex p-2 text-pink-500 capitalize transition-colors duration-200 transform bg-pink-100 rounded-full dark:bg-pink-500 dark:text-white hover:underline hover:text-pink-600 dark:hover:text-pink-500">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                        </a>
-                    </div>
+        <p class="text-gray-500 dark:text-gray-500 text-lg font-medium">
+        <?php echo $service['description']?>
+        </p>
 
-                    <div class="p-8 space-y-3 border-2 border-pink-400 dark:border-pink-300 rounded-3xl">
-                        <img src="public/images/responsive.png" class="w-7 h-7">
-
-                        <h1 class="text-2xl text-gray-800 capitalize dark:text-white">Magic Responsive website</h1>
-
-                        <p class="text-gray-500 dark:text-gray-500 text-lg font-medium">
-                        reach all corners of the world with information focused websites eg. portfolios & landing pages ...
-                        </p>
-
-                        <a href="mailto:phyoethantko7858@gmail.com?subject=Can%20you%20help%20me%20create%20or%20redesign%20Magic%20Responsive%20Website%3F" class="inline-flex p-2 text-pink-500 capitalize transition-colors duration-200 transform bg-pink-100 rounded-full dark:bg-pink-500 dark:text-white hover:underline hover:text-pink-600 dark:hover:text-pink-500">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                        </a>
-                    </div>
-
-                    <div class="p-8 space-y-3 border-2 border-pink-400 dark:border-pink-300 rounded-3xl">
-                    <img src="public/images/data.png" class="w-7 h-7">
-
-                        <h1 class="text-2xl text-gray-800 capitalize dark:text-white">Magnetic Dynamic website</h1>
-
-                        <p class="text-gray-500 dark:text-gray-500 text-lg font-medium">
-                        kind of websites that users can interact with & we can collect, update data easily eg. content managements & blogs,
-                        </p>
-
-                        <a href="mailto:phyoethantko7858@gmail.com?subject=Can%20you%20help%20me%20create%20or%20redesign%20A%20Dynamic%20Website%3F" class="inline-flex p-2 text-pink-500 capitalize transition-colors duration-200 transform bg-pink-100 rounded-full dark:bg-pink-500 dark:text-white hover:underline hover:text-pink-600 dark:hover:text-pink-500">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                        </a>
-                    </div>
-
-                    <div class="p-8 space-y-3 border-2 border-pink-400 dark:border-pink-300 rounded-3xl">
-                        <img src="public/images/coming-soon.png" class="w-7 h-7">
-
-                        <h1 class="text-2xl text-gray-800 capitalize dark:text-white">Other services are coming soon for Burmese</h1>
-
-                        <p class="text-gray-500 dark:text-gray-500 text-lg font-medium">
-                        subscribe to the newsletter to know when the services are live
-                        </p>
-
-                        <a href="#newsletter" class="inline-flex p-2 text-pink-500 capitalize transition-colors duration-200 transform bg-pink-100 rounded-full dark:bg-pink-500 dark:text-white hover:underline hover:text-pink-600 dark:hover:text-pink-500">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                        </a>
-                    </div>
+        <a href="mailto:phyoethantko7858@gmail.com?subject=Help%20me%20create%20modern%20responsive%20website%20with%20smooth%20user%20experience" class="inline-flex p-2 text-pink-500 capitalize transition-colors duration-200 transform bg-pink-100 rounded-full dark:bg-pink-500 dark:text-white hover:underline hover:text-pink-600 dark:hover:text-pink-500">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </a>
+      </div>
+    <?php endwhile; ?>
   </div>
-</div>
 
 <!-- contact and portfolio -->
 
