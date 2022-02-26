@@ -35,10 +35,10 @@
                 <div>
                     <label for="tag">Choose Tag</label>
                     <select id="tag" name="tag" class="py-1 px-4 h-full pl-2 pr-7 bg-transparent text-gray-500 sm:text-sm">
-                    <option>
+                    <option value="project">
                         project
                     </option>
-                    <option>
+                    <option value="service">
                         service
                     </option>
                     </select>
@@ -46,7 +46,7 @@
             </div>
 
             <div class="flex justify-end mt-6">
-                <button class="px-6 py-2 leading-5 text-white transition-colors duration-200 transform bg-gray-700 rounded-md hover:bg-gray-600 focus:outline-none focus:bg-gray-600">Save</button>
+                <input type="submit" value="add" class="px-6 py-2 leading-5 text-white transition-colors duration-200 transform bg-gray-700 rounded-md hover:bg-gray-600 focus:outline-none focus:bg-gray-600"></input>
             </div>
         </form>
     </section>
