@@ -17,6 +17,6 @@
   $sql = "INSERT INTO project_and_services (header, description, tag, cover, created_date, modified_date ) VALUES ('$header', '$description', '$tag', '$cover', now(), now() )";
 
   mysqli_query($conn, $sql);
-  header("location:index.php");
+  header("location:projects.php");
 
 ?>
