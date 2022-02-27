@@ -215,14 +215,14 @@
         </h2>
         <div class="lg:mt-0 lg:flex-shrink-0 mx-8">
             <div class=" inline-flex rounded-md">
-            <a href="" class="">
+            <a href="contact.php" class="">
                   <button type="button" class="bg-light_theme hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 text-white w-36 h-14 transition ease-in duration-200 text-center text-2xl shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-full">
                     Contact
                   </button>
               </a>
             </div>
             <div class="ml-3 inline-flex rounded-md">
-            <a href="" class="">
+            <a href="portfolio.php" class="">
                   <button type="button" class="border-2 border-pink-600 hover:border-pink-800 hover:text-black focus:ring-pink-500 focus:ring-offset-pink-200 text-white w-36 h-14 transition ease-in duration-200 text-center text-2xl shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-full">
                     Portfolio
                   </button>

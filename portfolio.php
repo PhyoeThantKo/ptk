@@ -96,5 +96,28 @@
         <?php endwhile; ?>
       </div>
     </section>
+
+    <!-- contact -->
+    <div class="bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400 dark:bg-gray-800 mt-16">
+    <div class="lg:flex lg:items-center lg:justify-between w-full mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
+        <h2 class="lg:text-5xl text-gray-800 dark:text-white sm:text-xl mx-8">
+            <span class="block  lg:mb-2">
+                Got a project ?
+            </span>
+            <span class="block text-3xl text-gray-700">
+            Ready to team up or have a question to ask? Let’s connect.
+            </span>
+        </h2>
+        <div class="lg:mt-0 lg:flex-shrink-0 mx-16">
+            <div class=" inline-flex rounded-md">
+            <a href="contact.php" class="">
+                  <button type="button" class="bg-light_theme hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 text-white w-36 h-14 transition ease-in duration-200 text-center text-2xl shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-full">
+                    Contact
+                  </button>
+              </a>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
