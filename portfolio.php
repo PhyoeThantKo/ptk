@@ -68,5 +68,33 @@
       </div>
     </div>
 
+    <!-- showcase some works -->
+    <section class="px-16 lg:my-20" id="cases">
+      <div class="lg:mb-12">
+          <h2 class="text-4xl py-1 text-gray-800">Cases</h2>
+          <p class="text-2xl text-gray-700">A look at some of my projects</p>
+      </div>
+      <div class="grid grid-cols-2 gap-10">
+      <?php
+        include("admin/config/config.php");
+        $projectresult = mysqli_query($conn, "SELECT * FROM project_and_services WHERE tag = 'project' ");
+      ?>
+        <?php while($project = mysqli_fetch_assoc($projectresult)): ?>
+
+          <div class="flex w-full lg:h-64 mx-auto overflow-hidden bg-white rounded-xl shadow-lg dark:bg-gray-800">
+            <div class="w-1/2 " style="background: url('admin/covers/<?php echo $project['cover'] ?>') no-repeat center/cover"></div>
+
+            <div class="w-1/2  my-auto p-4 md:p-4">
+                <h1 class="text-3xl text-gray-800 dark:text-white"><?php echo $project['header'] ?></h1>
+
+                <p class="mt-2 mb-12 text-gray-600 dark:text-gray-400"><?php echo $project['description'] ?></p>
+
+                <a href="" class="transform hover:translate-x-1 inline-flex hover:text-gray-500 text-gray-700 text-xl">View Project <span class="mr-4 ml-2"><svg class="h-8 w-8" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <line x1="5" y1="12" x2="19" y2="12" />  <line x1="15" y1="16" x2="19" y2="12" />  <line x1="15" y1="8" x2="19" y2="12" /></svg></span>
+                </a>
+            </div>
+          </div>
+        <?php endwhile; ?>
+      </div>
+    </section>
 </body>
 </html>

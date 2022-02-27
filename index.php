@@ -192,15 +192,15 @@
         <?php echo $service['description']?>
         </p>
 
-        <a href="mailto:phyoethantko7858@gmail.com?subject=Help%20me%20create%20modern%20responsive%20website%20with%20smooth%20user%20experience" class="inline-flex p-2 text-pink-500 capitalize transition-colors duration-200 transform bg-pink-100 rounded-full dark:bg-pink-500 dark:text-white hover:underline hover:text-pink-600 dark:hover:text-pink-500">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
-        </a>
-      </div>
+          <a href="mailto:phyoethantko7858@gmail.com?subject=Help%20me%20create%20modern%20responsive%20website%20with%20smooth%20user%20experience" class="inline-flex p-2 text-pink-500 capitalize transition-colors duration-200 transform bg-pink-100 rounded-full dark:bg-pink-500 dark:text-white hover:underline hover:text-pink-600 dark:hover:text-pink-500">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </a>
+        </div>
     <?php endwhile; ?>
   </div>
-
+</div>
 <!-- contact and portfolio -->
 
 <div class="bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400 dark:bg-gray-800 mt-16">
