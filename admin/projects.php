@@ -58,6 +58,16 @@
           <!--right content-->
 
           <div class="m-7">
+               <div class="p-1.5 w-full sm:w-auto overflow-hidden bg-white border rounded-lg dark:bg-gray-800 dark:border-gray-700 mb-6">
+                    <div class="space-y-2 sm:space-y-0 sm:flex sm:-mx-1">
+                         <a href="newproject.php">
+                         <button class="w-full px-4 py-1 text-white transition-colors duration-200 transform bg-pink-600 rounded-md focus:outline-none sm:w-auto sm:mx-1 hover:bg-pink-500 focus:bg-pink-500 focus:ring focus:ring-pink-300 focus:ring-opacity-40">
+                              Upload New Project
+                         </button>
+                         </a>
+                    </div>
+               </div>
+
                <div class="text-3xl text-gray-800">Services</div>
 
                <section class="bg-white dark:bg-gray-900">
