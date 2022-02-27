@@ -99,7 +99,7 @@
 
     <!-- contact -->
     <div class="bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400 dark:bg-gray-800 mt-16">
-    <div class="lg:flex lg:items-center lg:justify-between w-full mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
+      <div class="lg:flex lg:items-center lg:justify-between w-full mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
         <h2 class="lg:text-5xl text-gray-800 dark:text-white sm:text-xl mx-8">
             <span class="block  lg:mb-2">
                 Got a project ?
@@ -117,7 +117,11 @@
               </a>
             </div>
         </div>
+      </div>
     </div>
+
+    <!-- Footer -->
+    <?php include('components/footer.php') ?>
 </div>
 </body>
 </html>
