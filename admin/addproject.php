@@ -3,6 +3,7 @@
 
     $header = $_POST['header'];
     $description = $_POST['description'];
+    $link = $_POST['link'];
     $tag = $_POST['tag'];
     $cover = $_FILES['cover']['name'];
     $tmp = $_FILES['cover']['tmp_name'];
@@ -14,7 +15,7 @@
       
   }
 
-  $sql = "INSERT INTO project_and_services (header, description, tag, cover, created_date, modified_date ) VALUES ('$header', '$description', '$tag', '$cover', now(), now() )";
+  $sql = "INSERT INTO project_and_services (header, description, link, tag, cover, created_date, modified_date ) VALUES ('$header', '$description', '$link', '$tag', '$cover', now(), now() )";
 
   mysqli_query($conn, $sql);
   header("location:projects.php");
