@@ -37,7 +37,7 @@
               <a href="" >About</a>
             </li>
             <li class="w-1/5 hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl text-yellow-500">
-              <a href="">Articles</a>
+              <a href="articles.php">Articles</a>
             </li>
           </ul>
         </div>
