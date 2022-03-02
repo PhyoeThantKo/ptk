@@ -6,42 +6,44 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>PTK portfolio</title>
      <link rel="stylesheet" href="public/style/style.css">
+     <script defer src="components/navlinkactive.js"></script>
+     <link rel="stylesheet" href="components/navlinkactive.css">
      <link rel="stylesheet" href="public/style/fonts/googlesans.css">
 </head>
 <body style="font-family:'Product Sans Regular'">
-    <!--nav bar-->
+    <!-- nav bar -->
     <div id="nav_container" class="fixed w-full mt-3 z-50">
-          <nav id="nav_bar" class="flex w-11/12 h-11 rounded-l-full rounded-r-full bg-earth mx-auto">
-            <div id="logo" class="w-1/2 my-auto ml-6">
-              <a href="" class="text-2xl font-extrabold hover:text-light_theme">
-                PTK
-                <span class="font-light text-sm">
-                  PRODUCT DESIGN + WEB DEV
-                </span>
+      <nav id="nav_bar" class="flex w-11/12 h-11 rounded-l-full rounded-r-full bg-earth mx-auto">
+        <div id="logo" class="w-1/2 my-auto ml-6">
+          <a href="" class="text-2xl font-extrabold hover:text-light_theme">
+            PTK
+            <span class="font-light text-sm">
+              PRODUCT DESIGN + WEB DEV
+            </span>
+          </a>
+        </div>
+        <div id="nav_items" class="w-1/2 my-auto mr-6">
+          <ul class="flex lg:ml-36">
+            <li class="w-1/5 hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl ">
+              <a href="index.php">
+                Home
               </a>
-            </div>
-            <div id="nav_items" class="w-1/2 my-auto mr-6">
-              <ul class="flex lg:ml-36">
-                <li class="w-1/5 hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl text-gray-700">
-                  <a href="index.php">
-                    Home
-                  </a>
-                </li>
-                <li class="w-1/5 bg-pink-200 text-pink-500 hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl">
-                  <a href="portfolio.php" >Portfolio</a>
-                </li>
-                <li class="w-1/5 hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl text-gray-700">
-                  <a href="contact.php" >Contact</a>
-                </li>
-                <li class="w-1/5 hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl text-gray-700">
-                  <a href="" >About</a>
-                </li>
-                <li class="w-1/5 hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl text-yellow-500">
-                  <a href="">Articles</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
+            </li>
+            <li class="w-1/5 bg-pink-200 text-pink-500 rounded-full py-1 text-center text-base lg:text-xl">
+              <a href="portfolio.php" >Portfolio</a>
+            </li>
+            <li class="w-1/5  hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl text-gray-700">
+              <a href="contact.php" >Contact</a>
+            </li>
+            <li class="w-1/5 hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl text-gray-700">
+              <a href="" >About</a>
+            </li>
+            <li class="w-1/5 hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl text-yellow-500">
+              <a href="articles.php">Articles</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
 
     <!--hero-->
