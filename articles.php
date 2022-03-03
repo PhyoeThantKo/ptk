@@ -27,7 +27,7 @@
                       PTK
                     </a>
                   </div>
-                  <div id="nav_items" class="relative my-auto mx-5">
+                  <div id="nav_items" class="relative my-auto mx-6">
                     <ul class="flex lg:ml-36">
                       <li class="px-3 mx-0 hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl text-gray-700">
                         <a href="index.php">
@@ -52,22 +52,26 @@
               </div>
               <div class="flex mt-4">
 
-                <aside class="flex-shrink-0 w-1/6 flex flex-col border-r transition-all duration-300" :class="{ '-ml-60': !sidebarOpen }">
+                <aside class="flex-shrink-0 w-1/6 flex flex-col transition-all duration-300" :class="{ '-ml-64': !sidebarOpen }">
                   <nav class="flex-1 flex flex-col ">
-                  <a href="articles.php" class="p-2 my-1 text-gray-700">For You</a>
+                  <a href="articles.php" class="py-2 px-5 my-1 text-gray-700 rounded-r-full hover:bg-gray-200 focus:bg-gray-400">For You</a>
                   <?php
                     include('admin/config/config.php');
                     $tagresult = mysqli_query($conn, "SELECT * FROM tags");
                     while($tags = mysqli_fetch_assoc($tagresult)):
                   ?>
-                  <a href="articles.php?tag_id=<?php echo $tags['tag_id'] ?>" class="p-2 my-1 text-gray-700">
+                  <a href="articles.php?tag_id=<?php echo $tags['tag_id'] ?>" class="py-2 px-5 my-1 text-gray-700 hover:bg-gray-200 focus:bg-gray-400 rounded-r-full">
                   <?php echo $tags['tag_name'] ?>
                   </a>
                   <?php endwhile; ?>
                   </nav>
                 </aside>
                 
-                <div class="w-4/6 mr-2">
+                <div class="w-4/6 mr-2 border-l-2">
+
+                <div class="ml-20">
+                  <p class="text-2xl text-gray-800">Latest Blogs on Tech</p>
+                </div>
                   <!--query posts-->
                   <?php
                     if(isset($_GET['tag_id'])){
@@ -79,7 +83,7 @@
                     while($articles = mysqli_fetch_assoc($articlesresult)):
                   ?>
 
-                  <div class="flex bg-notsowhite ml-20 h-44 mr-3 my-4 border border-gray-400 rounded-lg overflow-hidden">
+                  <div class="flex bg-notsowhite ml-20 h-44 mr-3 my-8 border border-gray-400 rounded-lg overflow-hidden">
                       <div class="w-2/3 py-4 px-5">
                         <h1 class="text-gray-800 text-2xl">
                             <?php echo $articles['header'] ?>
@@ -97,13 +101,13 @@
                         </p>
 
                       </div>
-                      <div class="w-1/3 m-3 rounded-xl bg-landscape " style="background: url('admin/uploads/<?php echo $articles['cover'] ?>') no-repeat center/cover;">
+                      <div class="w-1/3 my-3 mx-4 rounded-xl bg-landscape " style="background: url('admin/uploads/<?php echo $articles['cover'] ?>') no-repeat center/cover;">
                       </div>
                     </div>
                     <?php endwhile; ?>
 
                 </div>
-                <div class="w-1/6 mx-auto mt-4">
+                <div class="w-1/6 mx-auto mt-16">
                     <div class="border border-gray-400 w-full p-1 h-40">
                       Ads
                     </div>
