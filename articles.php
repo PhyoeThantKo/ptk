@@ -84,7 +84,7 @@
                   ?>
 
                   <div class="flex bg-notsowhite ml-20 h-44 mr-3 my-8 border border-gray-400 rounded-lg overflow-hidden">
-                      <div class="w-2/3 py-4 px-5">
+                      <a href="readarticles.php?post_id=<?php echo $articles['post_id']?>" class="w-2/3 py-4 px-5">
                         <h1 class="text-gray-800 text-2xl">
                             <?php echo $articles['header'] ?>
                         </h1>
@@ -100,8 +100,8 @@
                           </span>
                         </p>
 
-                      </div>
-                      <div class="w-1/3 my-3 mx-4 rounded-xl bg-landscape " style="background: url('admin/uploads/<?php echo $articles['cover'] ?>') no-repeat center/cover;">
+                    </a>
+                      <div class="w-1/3 my-3 mx-4 rounded-xl bg-landscape " style="background: url('uploads/<?php echo $articles['cover'] ?>') no-repeat center/cover;">
                       </div>
                     </div>
                     <?php endwhile; ?>
