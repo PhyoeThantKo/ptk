@@ -43,7 +43,7 @@
             <li class="w-1/5 hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl text-gray-700">
               <a href="" >About</a>
             </li>
-            <li class="w-1/5 hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl text-yellow-500">
+            <li class="w-1/5 hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl text-light_theme">
               <a href="articles.php">Articles</a>
             </li>
           </ul>
@@ -51,8 +51,41 @@
      </nav>
 </div>
 
-<div class="w-11/12 pt-24 mx-auto">
-     <h1 class="text-4xl text-gray-800"><?php echo $articles['header']; ?></h1>
+<div class="w-11/12 pt-24 px-4 mx-auto">
+     <p class="text-gray-700">
+          <a href="index.php" class="text-light_theme">PTK</a><img src="public/images/navi_next.svg" class="inline-block"><a href="articles.php">Articles</a><img src="public/images/navi_next.svg" class="inline-block"><?php echo $articles['tag_name'] ?>
+     </p>
+     <h1 class="text-5xl text-gray-800 my-2"><?php echo $articles['header']; ?></h1>
+     <p class="text-gray-700">
+          <?php
+               $timestamp = $articles['created_date'];
+               $MySQLDataBaseDateTime = "$timestamp";
+               echo DateTime::createFromFormat("Y-m-d H:i:s",$MySQLDataBaseDateTime)->format("d/m/Y");
+          ?>
+          <span class="text-gray-500">By <a href="index.php" class="underline underline-offset-auto hover:text-gray-600 hover:border-gray-600">Phyoe Thant Ko</a></span>
+     </p>
+
+     <div class="py-8">
+          <?php echo $articles['code'] ?>
+     </div>
+
 </div>
+<div class="text-2xl w-11/12 mx-auto px-4 my-8">
+     <h2>Our Services That You Might Interest</h2>
+     <hr class="ml-36 mb-1 border-b-2 border-gray-600">
+     <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 my-8">
+          <?php 
+               $result = mysqli_query($conn, "SELECT * FROM project_and_services WHERE tag = 'service' LIMIT 3 ");
+               while($service = mysqli_fetch_assoc($result)): ?>
+                    <div>
+                         <img src="admin/covers/<?php echo $service['cover'] ?>" class="w-28 h-28">
+                         <h1 class="mt-4 text-lg font-semibold text-gray-600 dark:text-white"><?php echo $service['header'] ?></h1>
+                    
+                         <p class="mt-2 text-base text-gray-500 dark:text-gray-400"><?php echo $service['description'] ?></p>
+                    </div>
+               <?php endwhile; ?>
+     </div>
+</div>
+<?php include('components/footer.php') ?>
 </body>
 </html>
