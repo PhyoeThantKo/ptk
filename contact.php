@@ -23,21 +23,21 @@
         <div id="nav_items" class="w-1/2 my-auto mr-6">
           <ul class="flex lg:ml-36">
             <li class="w-1/5 hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl text-gray-700">
-              <a href="index.php">
+              <a href="/ptk">
                 Home
               </a>
             </li>
             <li class="w-1/5 hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl text-gray-700">
-              <a href="portfolio.php" >Portfolio</a>
+              <a href="/ptk/portfolio" >Portfolio</a>
             </li>
             <li class="w-1/5 bg-pink-200 text-pink-500 rounded-full py-1 text-center text-base lg:text-xl ">
-              <a href="" >Contact</a>
+              <a href="/ptk/contact" >Contact</a>
             </li>
             <li class="w-1/5 hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl text-gray-700">
-              <a href="" >About</a>
+              <a href="/ptk/about" >About</a>
             </li>
             <li class="w-1/5 hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl text-yellow-500">
-              <a href="articles.php">Articles</a>
+              <a href="/ptk/articles">Articles</a>
             </li>
           </ul>
         </div>

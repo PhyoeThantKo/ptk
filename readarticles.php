@@ -13,8 +13,8 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title><?php echo $articles['header']; ?></title>
-     <link rel="stylesheet" href="public/style/fonts/googlesans.css">
-     <link rel="stylesheet" href="public/style/style.css">
+     <link rel="stylesheet" href="../public/style/fonts/googlesans.css">
+     <link rel="stylesheet" href="../public/style/style.css">
 
 <body  class="bg-notsowhite" style="font-family:'Product Sans Regular'">
 <div id="nav_container" class="fixed w-full mt-3 z-50">
@@ -53,7 +53,7 @@
 
 <div class="w-11/12 pt-24 px-4 mx-auto">
      <p class="text-gray-700">
-          <a href="index.php" class="text-light_theme">PTK</a><img src="public/images/navi_next.svg" class="inline-block"><a href="articles.php">Articles</a><img src="public/images/navi_next.svg" class="inline-block"><?php echo $articles['tag_name'] ?>
+          <a href="/ptk" class="text-light_theme">PTK</a><img src="../public/images/navi_next.svg" class="inline-block"><a href="/ptk/articles">Articles</a><img src="../public/images/navi_next.svg" class="inline-block"><?php echo $articles['tag_name'] ?>
      </p>
      <h1 class="text-5xl text-gray-800 my-2"><?php echo $articles['header']; ?></h1>
      <p class="text-gray-700">
@@ -78,7 +78,7 @@
                $result = mysqli_query($conn, "SELECT * FROM project_and_services WHERE tag = 'service' LIMIT 3 ");
                while($service = mysqli_fetch_assoc($result)): ?>
                     <div>
-                         <img src="admin/covers/<?php echo $service['cover'] ?>" class="w-28 h-28">
+                         <img src="../admin/covers/<?php echo $service['cover'] ?>" class="w-28 h-28">
                          <h1 class="mt-4 text-lg font-semibold text-gray-600 dark:text-white"><?php echo $service['header'] ?></h1>
                     
                          <p class="mt-2 text-base text-gray-500 dark:text-gray-400"><?php echo $service['description'] ?></p>

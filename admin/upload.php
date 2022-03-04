@@ -3,7 +3,7 @@
 $accepted_origins = array("http://localhost", "http://107.161.82.130", "http://codexworld.com");
 
 // Images upload path
-$imageFolder = "uploads/";
+$imageFolder = "../uploads/";
 
 reset($_FILES);
 $temp = current($_FILES);

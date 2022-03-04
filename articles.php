@@ -4,7 +4,7 @@
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Document</title>
+     <title>Articles</title>
      <link rel="stylesheet" href="public/style/style.css">
      <script src="//unpkg.com/alpinejs" defer></script>
      <link rel="stylesheet" href="public/style/fonts/googlesans.css">
@@ -30,21 +30,21 @@
                   <div id="nav_items" class="relative my-auto mx-6">
                     <ul class="flex lg:ml-36">
                       <li class="px-3 mx-0 hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl text-gray-700">
-                        <a href="index.php">
+                        <a href="/ptk">
                           Home
                         </a>
                       </li>
                       <li class="px-3 mx-0 hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl text-gray-700">
-                        <a href="portfolio.php" >Portfolio</a>
+                        <a href="/ptk/portfolio" >Portfolio</a>
                       </li>
                       <li class="px-3 mx-0  hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl text-gray-700">
-                        <a href="contact.php" >Contact</a>
+                        <a href="/ptk/contact" >Contact</a>
                       </li>
                       <li class="px-3 mx-0 hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl text-gray-700">
-                        <a href="" >About</a>
+                        <a href="/ptk/about" >About</a>
                       </li>
                       <li class="px-3 mx-0 bg-pink-200 text-pink-500 rounded-full py-1 text-center text-base lg:text-xl">
-                        <a href="">Articles</a>
+                        <a href="/ptk/articles">Articles</a>
                       </li>
                     </ul>
                   </div>
@@ -54,7 +54,7 @@
 
                 <aside class="flex-shrink-0 w-1/6 flex flex-col transition-all duration-300" :class="{ '-ml-64': !sidebarOpen }">
                   <nav class="flex-1 flex flex-col ">
-                  <a href="articles.php" class="py-2 px-5 my-1 text-gray-700 rounded-r-full hover:bg-gray-200 focus:bg-gray-400">For You</a>
+                  <a href="/ptk/articles" class="py-2 px-5 my-1 text-gray-700 rounded-r-full hover:bg-gray-200 focus:bg-gray-400">For You</a>
                   <?php
                     include('admin/config/config.php');
                     $tagresult = mysqli_query($conn, "SELECT * FROM tags");
@@ -84,7 +84,7 @@
                   ?>
 
                   <div class="flex bg-notsowhite ml-20 h-44 mr-3 my-8 border border-gray-400 rounded-lg overflow-hidden">
-                      <a href="readarticles.php?post_id=<?php echo $articles['post_id']?>" class="w-2/3 py-4 px-5">
+                      <a href="articles/<?php echo $articles['post_id']?>" class="w-2/3 py-4 px-5">
                         <h1 class="text-gray-800 text-2xl">
                             <?php echo $articles['header'] ?>
                         </h1>

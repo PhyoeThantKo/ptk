@@ -25,21 +25,21 @@
         <div id="nav_items" class="w-1/2 my-auto mr-6">
           <ul class="flex lg:ml-36">
             <li class="w-1/5 hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl ">
-              <a href="index.php">
+              <a href="/ptk">
                 Home
               </a>
             </li>
             <li class="w-1/5 bg-pink-200 text-pink-500 rounded-full py-1 text-center text-base lg:text-xl">
-              <a href="portfolio.php" >Portfolio</a>
+              <a href="/ptk/portfolio" >Portfolio</a>
             </li>
             <li class="w-1/5  hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl text-gray-700">
-              <a href="contact.php" >Contact</a>
+              <a href="/ptk/contact" >Contact</a>
             </li>
             <li class="w-1/5 hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl text-gray-700">
-              <a href="" >About</a>
+              <a href="/ptk/about" >About</a>
             </li>
             <li class="w-1/5 hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl text-yellow-500">
-              <a href="articles.php">Articles</a>
+              <a href="/ptk/articles">Articles</a>
             </li>
           </ul>
         </div>
@@ -52,7 +52,7 @@
         <div>Product design + web development Myanmar</div>
         <div class="text-6xl my-3 text-gray-200 leading-tight">I help people get personal spaces on the internet with technology</div>
         <div>
-          <a href="" class="transform hover:translate-x-1 inline-flex hover:text-gray-500 text-gray-300">About Me <span class="mr-4 ml-2"><svg class="h-8 w-8" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <line x1="5" y1="12" x2="19" y2="12" />  <line x1="15" y1="16" x2="19" y2="12" />  <line x1="15" y1="8" x2="19" y2="12" /></svg></span>
+          <a href="/ptk/about" class="transform hover:translate-x-1 inline-flex hover:text-gray-500 text-gray-300">About Me <span class="mr-4 ml-2"><svg class="h-8 w-8" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <line x1="5" y1="12" x2="19" y2="12" />  <line x1="15" y1="16" x2="19" y2="12" />  <line x1="15" y1="8" x2="19" y2="12" /></svg></span>
           </a>
           <a href="#cases" class="transform hover:translate-x-1 inline-flex hover:text-gray-500 text-gray-300">My projects<span class="mr-4 ml-2"><svg class="h-8 w-8" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <line x1="5" y1="12" x2="19" y2="12" />  <line x1="15" y1="16" x2="19" y2="12" />  <line x1="15" y1="8" x2="19" y2="12" /></svg></span>
           </a>
@@ -112,7 +112,7 @@
         </h2>
         <div class="lg:mt-0 lg:flex-shrink-0 mx-16">
             <div class=" inline-flex rounded-md">
-            <a href="contact.php" class="">
+            <a href="/ptk/contact" class="">
                   <button type="button" class="bg-light_theme hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 text-white w-36 h-14 transition ease-in duration-200 text-center text-2xl shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-full">
                     Contact
                   </button>

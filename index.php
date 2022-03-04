@@ -24,21 +24,21 @@
         <div id="nav_items" class="w-1/2 my-auto mr-6">
           <ul class="flex lg:ml-36">
             <li class="w-1/5 bg-pink-200 text-pink-500 rounded-full py-1 text-center text-base lg:text-xl ">
-              <a href="index.php">
+              <a href="/ptk">
                 Home
               </a>
             </li>
             <li class="w-1/5 hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl text-gray-700">
-              <a href="portfolio.php" >Portfolio</a>
+              <a href="/ptk/portfolio" >Portfolio</a>
             </li>
             <li class="w-1/5  hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl text-gray-700">
-              <a href="contact.php" >Contact</a>
+              <a href="/ptk/contact" >Contact</a>
             </li>
             <li class="w-1/5 hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl text-gray-700">
-              <a href="" >About</a>
+              <a href="/ptk/about" >About</a>
             </li>
             <li class="w-1/5 hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl text-yellow-500">
-              <a href="articles.php">Articles</a>
+              <a href="/ptk/articles">Articles</a>
             </li>
           </ul>
         </div>
@@ -56,7 +56,7 @@
                 <p class="text-white font-serif font-medium">
                   Web Dev articles & </br> <span class="tracking-wide">consumer electronics contents</span>
                 </p>
-                <a href="" class="">
+                <a href="#blogs" class="">
                   <button type="button" class="bg-light_theme hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 w-36 h-12 transition ease-in duration-200 text-center text-2xl text-gray-300 font-medium shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-full">
                     Read
                   </button>
@@ -66,12 +66,12 @@
           </div>
           <div class="item fade">
             <div class="image image2">
-              <div id="services" class="h-60 w-4/6 text-6xl mx-auto my-auto">
+              <div class="h-60 w-4/6 text-6xl mx-auto my-auto">
                 <p class="text-white text-center font-serif font-medium tracking-wide">
                   Digital Solutions for </br> <span class="tracking-wide">Business Transformations</span>
                 </p>
                 <div class="w-full grid place-items-center">
-                  <a href="" class="">
+                  <a href="#services" class="">
                     <button type="button" class="bg-light_theme mx-auto hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 w-36 h-12 transition ease-in duration-200 text-center text-2xl text-gray-300 font-medium shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-full">
                       Services
                     </button>
@@ -86,7 +86,7 @@
                 <p class="text-white font-serif font-medium">
                   Portfolio </br>A look at some of my projects
                 </p>
-                <a href="" class="">
+                <a href="/ptk/portfolio" class="">
                   <button type="button" class="bg-light_theme hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 w-36 h-12 transition ease-in duration-200 text-center text-2xl text-gray-300 font-medium shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-full">
                     Portfolio
                   </button>
@@ -96,12 +96,12 @@
           </div>
           <div class="item fade">
             <div class="image image4">
-              <div id="contact" class="h-60 w-4/6 text-6xl mx-auto grid place-self-end pb-72">
+              <div class="h-60 w-4/6 text-6xl mx-auto grid place-self-end pb-72">
                 <p class="text-white text-center font-serif font-medium tracking-wide">
                   Let's Talk </br> Anyting big or small
                 </p>
                 <div class="w-full grid place-items-center">
-                  <a href="" class=""> 
+                  <a href="/ptk/contact" class=""> 
                     <button type="button" class="bg-light_theme mx-auto hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 w-36 h-12 transition ease-in duration-200 text-center text-2xl text-gray-300 font-medium shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-full">
                       Contact
                     </button>
@@ -128,9 +128,9 @@
         <div class="lg:max-w-3xl lg:pl-7  text-center lg:text-left">
             <h1 class="text-xl text-gray-800  dark:text-white lg:text-5xl lg:mb-5 ">Website Creation in New Era with PTK</h1>
             <p class="mt-2 text-gray-600 dark:text-gray-400 lg:text-2xl mb-3 lg:mb-6">Young creator evolving with mush interest in clean modern UI, amazin UX & consumer electronics</p>
-            <a href=""> 
+            <a href="#services"> 
               <button type="button" class="px-4 w-full lg:w-auto bg-light_theme mx-auto hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 text-white py-2 lg:py-3 transition ease-in duration-200 text-center text-xl shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-full">
-                  See what you can expect from me
+                  What you can expect
               </button>
             </a>
         </div>
@@ -139,7 +139,7 @@
 </div>
 
 <!-- articles -->
-<div class="articles mx-16 mt-6">
+<div class="articles mx-16 mt-6" id="blogs">
   <div class="mb-16">
     <h2 class="text-4xl text-gray-900 py-1">Latest Blogs</h2>
     <p class="text-2xl text-gray-700">Read blogs about web dev, consumer electronics and more</p>
@@ -152,7 +152,7 @@
       <?php while ($row = mysqli_fetch_assoc($result)): ?>
 
       <div class="overflow-hidden shadow-lg rounded-lg h-90 w-60 md:w-80 cursor-pointer m-auto mb-10">
-          <a href="#" class="w-full block h-full">
+          <a href="/ptk/articles/<?php echo $row['post_id']?>" class="w-full block h-full">
               <img alt="blog photo" src="admin/covers/<?php echo $row['cover'] ?>" class="max-h-40 w-full object-cover"/>
               <div class="bg-white dark:bg-gray-800 w-full p-4">
                   <p class="text-pink-400 text-md font-light">
@@ -168,10 +168,12 @@
       <?php endwhile; ?>
 
     </div>
+
+    <a href="/ptk/articles" class="inline-flex justify-center items-center hover:text-gray-300 text-xl absolute right-24 bg-light_theme hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 text-white w-32 h-10 transition ease-in duration-200 text-center shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-full">Read More  </a>
 </div>
 
 <!-- services -->
-<div class="mx-16 mt-6" id="services">
+<div class="mx-16 mt-20 pt-4 border-t-2" id="services">
   <div>
     <h2 class="text-4xl py-1 text-gray-800">Services</h2>
     <p class="text-2xl text-gray-700">I can solve your problems in these ways. So call me if you need someone for...</p>
@@ -215,14 +217,14 @@
         </h2>
         <div class="lg:mt-0 lg:flex-shrink-0 mx-8">
             <div class=" inline-flex rounded-md">
-            <a href="contact.php" class="">
+            <a href="/ptk/contact" class="">
                   <button type="button" class="bg-light_theme hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 text-white w-36 h-14 transition ease-in duration-200 text-center text-2xl shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-full">
                     Contact
                   </button>
               </a>
             </div>
             <div class="ml-3 inline-flex rounded-md">
-            <a href="portfolio.php" class="">
+            <a href="/ptk/portfolio" class="">
                   <button type="button" class="border-2 border-pink-600 hover:border-pink-800 hover:text-black focus:ring-pink-500 focus:ring-offset-pink-200 text-white w-36 h-14 transition ease-in duration-200 text-center text-2xl shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-full">
                     Portfolio
                   </button>
@@ -261,11 +263,7 @@
 
 <!-- Footer -->
 <?php include('components/footer.php') ?>
-
-
-<script src='https://use.fontawesome.com/releases/v5.14.0/js/all.js'></script>
 <script  src="app/carousel/script.js"></script>
-<script src="index.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,12 @@
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /ptk/
+RewriteRule ^home/?$ index.php [NC,L]
+RewriteRule ^portfolio/?$ portfolio.php [NC,L]
+RewriteRule ^contact/?$ contact.php [NC,L]
+RewriteRule ^about/?$ about.php [NC,L]
+RewriteRule ^articles/?$ articles.php [NC,L]
+RewriteRule ^articles/([0-9]+)/?$ readarticles.php?post_id=$1 [NC,L]
+
+</IfModule>
