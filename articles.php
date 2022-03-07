@@ -13,8 +13,8 @@
 <body class="bg-notsowhite" style="font-family:'Product Sans Regular'"> 
     <div x-data="{ sidebarOpen: true }" class="  h-screen">
           <div class="flex-1">
-              <div id="nav_container" class="relative mt-3 z-50">
-                <nav id="nav_bar" class="flex w-11/12 h-11 rounded-l-full rounded-r-full bg-earth mx-auto">
+              <div id="nav_container" class="relative lg:mt-3 z-50">
+                <nav id="nav_bar" class="flex lg:w-11/12 lg:h-11 lg:rounded-l-full lg:rounded-r-full p-2 lg:p-0 bg-transparent lg:bg-earth bg-notsowhite mx-auto">
                   <div class="ml-3 my-auto grid place-items-end">
                     <button class="p-1 " @click="sidebarOpen = !sidebarOpen">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
@@ -22,32 +22,68 @@
                       </svg>
                     </button>
                   </div>
-                  <div id="logo" class="w-1/2 my-auto ">
+                  <div id="logo" class="lg:w-1/2 md:w-11/12 w-10/12 my-auto lg:ml-6 ml-2">
                     <a href="" class="text-2xl font-medium text-gray-900 hover:text-light_theme">
                       PTK
                     </a>
                   </div>
-                  <div id="nav_items" class="relative my-auto mx-6">
+                  <div id="nav_items" class="relative my-auto mx-6 hidden lg:block">
                     <ul class="flex lg:ml-36">
                       <li class="px-3 mx-0 hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl text-gray-700">
-                        <a href="/ptk">
+                        <a href="home">
                           Home
                         </a>
                       </li>
                       <li class="px-3 mx-0 hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl text-gray-700">
-                        <a href="/ptk/portfolio" >Portfolio</a>
+                        <a href="portfolio" >Portfolio</a>
                       </li>
                       <li class="px-3 mx-0  hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl text-gray-700">
-                        <a href="/ptk/contact" >Contact</a>
+                        <a href="contact" >Contact</a>
                       </li>
                       <li class="px-3 mx-0 hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl text-gray-700">
-                        <a href="/ptk/about" >About</a>
+                        <a href="about" >About</a>
                       </li>
                       <li class="px-3 mx-0 bg-pink-200 text-pink-500 rounded-full py-1 text-center text-base lg:text-xl">
-                        <a href="/ptk/articles">Articles</a>
+                        <a href="articles">Articles</a>
                       </li>
                     </ul>
                   </div>
+
+                  <div id="mobile_nav" class="lg:hidden w-1/12 ml-4">
+          
+          <div class="relative inline-block ">
+              <!-- Dropdown toggle button -->
+              <button id="menu_button" class="relative z-10 block p-1">
+                  <img src="public/images/menu.png">
+              </button>
+
+              <!-- Dropdown menu -->
+              <div id="menu" class="absolute hidden right-0 z-20 w-48 py-2 mt-2 bg-gray-100 rounded-md shadow-xl dark:bg-gray-800">
+                  <a href="home" class="block px-4 py-3 text-sm text-gray-600 capitalize transition-colors duration-200 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+                      Home
+                  </a>
+
+                  <a href="articles" class="block px-4 py-3 text-sm text-gray-600 capitalize transition-colors duration-200 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+                      Articles
+                  </a>
+                  
+                  <a href="portfolio" class="block px-4 py-3 text-sm text-gray-600 capitalize transition-colors duration-200 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+                      Portfolio
+                  </a>
+                  
+                  <hr class="border-gray-200 dark:border-gray-700 ">
+
+                  <a href="contact" class="block px-4 py-3 text-sm text-gray-600 capitalize transition-colors duration-200 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+                      Contact
+                  </a>
+
+                  <a href="about" class="block px-4 py-3 text-sm text-gray-600 capitalize transition-colors duration-200 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+                      About
+                  </a>
+
+              </div>
+          </div>
+        </div>
                 </nav>
               </div>
               <div class="flex mt-4">
@@ -115,6 +151,8 @@
               </div>
           </div>
     </div>
+
+    <script type="text/javascript" src="nav.js"></script>
 
 </body>
 </html>
