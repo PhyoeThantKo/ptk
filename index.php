@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="bg-notsowhite w-full h-full m-0 p-0 overflow-x-hidden">
+<html lang="en" class="bg-notsowhite m-0 p-0 overflow-x-hidden">
 <head>
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
 </head>
 <body style="font-family:'Product Sans Regular'" class="w-full h-full m-0 p-0 overflow-x-hidden">
     <!-- nav bar -->
-    <div id="nav_container" class="fixed lg:mt-3 z-50">
+    <div id="nav_container" class="fixed w-full lg:mt-3 z-50">
       <nav id="nav_bar" class="flex lg:w-11/12 lg:h-11 lg:rounded-l-full lg:rounded-r-full p-2 lg:p-0 bg-transparent lg:bg-earth bg-notsowhite mx-auto">
         <div id="logo" class="lg:w-1/2 md:w-11/12 w-10/12 my-auto lg:ml-6 ml-2">
           <a href="" class="text-2xl font-extrabold hover:text-light_theme">
