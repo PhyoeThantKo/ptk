@@ -81,33 +81,33 @@
     </div>
 
     <!-- contact info-->
-    <div class="mx-16 pt-24" id="contact">
+    <div class="lg:mx-16 mx-4 pt-24" id="contact">
           <div>
-            <h2 class="text-5xl text-gray-800 py-1">Contact</h2>
-            <p class="text-2xl text-gray-600">Ready to team up or have a question to ask? Let’s connect.  Here are the easiest
+            <h2 class="lg:text-5xl text-3xl text-gray-800 py-1">Contact</h2>
+            <p class="lg:text-2xl text-lg text-gray-600">Ready to team up or have a question to ask? Let’s connect.  Here are the easiest
                ways to reach me.</p>
           </div>
 
 
           <div class="container py-16 mx-auto">
                 <div class="flex flex-col items-center justify-center space-y-8 lg:-mx-4 lg:flex-row lg:items-stretch lg:space-y-0">
-                    <div class=" w-full space-y-4 lg:mx-4">
-                      <h2 class="text-gray-700 text-3xl">Call</h2>
-                      <p class="text-gray-600 text-2xl">+959785854399</p>
+                    <div class=" w-full lg:space-y-4 lg:mx-4">
+                      <h2 class="text-gray-700 lg:text-3xl text-2xl">Call</h2>
+                      <p class="text-gray-600 lg:text-2xl text-lg">+959785854399</p>
                       <br><br>
-                      <h2 class="text-gray-700 text-3xl">Email</h2>
-                      <p class="text-gray-600 text-2xl">phyoethantko7858@gmail.com</p>
+                      <h2 class="text-gray-700 lg:text-3xl text-2xl">Email</h2>
+                      <p class="text-gray-600 lg:text-2xl text-lg">phyoethantko7858@gmail.com</p>
                     </div>
 
-                    <div class=" w-full space-y-4 lg:mx-4">
-                      <h2 class="text-gray-700 text-3xl">Visiting Address</h2>
-                      <p class="text-gray-600 text-2xl"><span>4/20</span><br>Paleik,Sintgaing <br><span>Mandalay,Myanmar</span></p>
+                    <div class=" w-full lg:space-y-4 lg:mx-4">
+                      <h2 class="text-gray-700 lg:text-3xl text-2xl">Visiting Address</h2>
+                      <p class="text-gray-600 lg:text-2xl text-lg"><span>4/20</span><br>Paleik,Sintgaing <br><span>Mandalay,Myanmar</span></p>
                     </div>
 
-                    <div class=" w-full space-y-4 lg:mx-4 text-left">
-                        <h2 class="text-gray-700 text-3xl">Social Media</h2>
+                    <div class=" w-full lg:space-y-4 space-y-7 lg:mx-4 text-left">
+                        <h2 class="text-gray-700 lg:text-3xl text-2xl">Social Media</h2>
 
-                        <div class="grid grid-cols-4 gap-y-4 max-w-xs">
+                        <div class="grid grid-cols-4 gap-y-4 lg:max-w-xs">
                           <a href="https://t.me/ptk7858">
                             <svg class="h-7 w-7 hover:text-gray-900 text-gray-600 dark:hover:text-white transition-colors duration-200"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4" /></svg>
                           </a>
@@ -129,9 +129,9 @@
           </div>
     </div>
     <!--Footer-->
-    <div class="text-center mt-7 pt-3 border-t-2 w-2/6 font-light text-gray-800 mx-auto">
-      ©2022 Designed & developed with ♥ by <a href="" class="underline underline-offset-auto hover:text-gray-500 hover:border-gray-500">PTK</a>
-      </div>
+    <div class="text-center mt-7 mb-3 pt-3 border-t-2 lg:w-2/6 font-light text-gray-800 mx-auto">
+      ©2022 Designed & developed with ♥ by <a href="home" class="underline underline-offset-auto hover:text-gray-500 hover:border-gray-500">PTK</a>
+    </div>
 
       <script type="text/javascript" src="nav.js"></script>
 
