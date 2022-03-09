@@ -78,7 +78,24 @@ section .carousel-container .next {
   }
 }
 
+@media only screen and (min-width:768px) and (max-width:1024px) {
+  section .carousel-container {
+    height: 80vh;
+  }
+
+  section .carousel-container .prev,
+  section .carousel-container .next {
+    top: calc(50% - 7rem);
+  }
+
+}
+
 @media only screen and (max-width:600px) {
+  section .carousel-container .item .numbertext {
+    width: 3.4rem;
+    padding: 0.1rem 0;
+    border-radius: 0.6375rem;
+  }
   section .carousel-container {
     height: 55vh;
   }

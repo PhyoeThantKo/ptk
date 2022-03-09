@@ -87,12 +87,12 @@
         <div class="lx-card carousel-container">
           <div class="item fade">
             <div class="image image1">
-              <div id="articles" class="h-52 mt-48 lg:mt-72 lg:w-4/6 lg:text-6xl text-3xl lg:ml-16 ml-12">
+              <div id="articles" class="h-52 mt-48 md:mt-96 lg:mt-72 lg:w-4/6 md:mr-6 md:text-6xl text-3xl lg:ml-16 ml-12">
                 <p class="text-white font-serif font-medium">
-                  Web Dev articles & </br> <span class="tracking-wide">consumer electronics contents</span>
+                  Web Dev articles &  <span class="tracking-wide lg:block">consumer electronics contents</span>
                 </p>
                 <a href="#blogs" class="">
-                  <button type="button" class="bg-light_theme hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 lg:px-8 px-5 py-1 lg:py-2 transition ease-in duration-200 text-center lg:text-2xl text-xl text-gray-300 font-medium shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-full">
+                  <button type="button" class="bg-light_theme hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 lg:px-8 px-5 py-1 lg:py-2 transition ease-in duration-200 text-center md:text-2xl text-xl text-gray-300 font-medium shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-full">
                     Read
                   </button>
                 </a>
@@ -101,13 +101,13 @@
           </div>
           <div class="item fade">
             <div class="image image2">
-              <div class="h-60 lg:w-4/6 w-11/12 lg:text-6xl text-3xl mx-auto lg:my-auto mt-44">
+              <div class="h-60 lg:w-4/6 w-11/12 md:text-6xl text-3xl mx-auto md:my-auto mt-44">
                 <p class="text-white text-center font-serif font-medium tracking-wide">
                   Digital Solutions for </br> <span class="tracking-wide">Business Transformations</span>
                 </p>
                 <div class="w-full grid place-items-center">
                   <a href="#services" class="">
-                    <button type="button" class="bg-light_theme mx-auto hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 lg:px-8 px-5 py-1 lg:py-2 transition ease-in duration-200 text-center text-xl lg:text-2xl text-gray-300 font-medium shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-full">
+                    <button type="button" class="bg-light_theme mx-auto hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 lg:px-8 px-5 py-1 lg:py-2 transition ease-in duration-200 text-center text-xl md:text-2xl text-gray-300 font-medium shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-full">
                       Services
                     </button>
                   </a>
@@ -117,12 +117,12 @@
           </div>
           <div class="item fade">
             <div class="image image3">
-              <div id="portfolio" class="h-50 static lg:absolute lg:bottom-10 mt-64 lg:w-4/6 w-9/12 lg:text-6xl text-3xl lg:ml-16 ml-12">
+              <div id="portfolio" class="h-50 static md:absolute md:bottom-72 md:mt-0 lg:bottom-10 mt-60 lg:w-4/6 w-9/12 md:text-6xl text-3xl lg:ml-16 ml-12">
                 <p class="text-white font-serif font-medium">
                   <span class="lg:block">Portfolio</span> A look at some of my projects
                 </p>
                 <a href="/ptk/portfolio" class="">
-                  <button type="button" class="bg-light_theme hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 lg:px-8 px-5 py-1 lg:py-2 transition ease-in duration-200 text-center text-xl lg:text-2xl text-gray-300 font-medium shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-full">
+                  <button type="button" class="bg-light_theme hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 lg:px-8 px-5 py-1 lg:py-2 transition ease-in duration-200 text-center text-xl md:text-2xl text-gray-300 font-medium shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-full">
                     Portfolio
                   </button>
                 </a>
@@ -131,13 +131,13 @@
           </div>
           <div class="item fade">
             <div class="image image4">
-              <div class="h-60 w-10/12 lg:w-4/6 lg:text-6xl text-3xl mx-auto lg:grid place-self-end mt-64 lg:mt-0 lg:pb-72">
-                <p class="text-white text-center font-serif font-medium tracking-wide mt-20 lg:mt-0">
+              <div class="h-60 w-10/12 lg:w-4/6 md:text-6xl text-3xl mx-auto lg:grid place-self-end mt-64 lg:mt-0 lg:pb-72">
+                <p class="text-white text-center font-serif font-medium tracking-wide mt-20 md:mt-0">
                   <span class="lg:block">Let's Talk</span> Anyting big or small
                 </p>
                 <div class="w-full flex justify-center items-center">
                   <a href="/ptk/contact" class=""> 
-                    <button type="button" class="bg-light_theme mx-auto hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 lg:px-8 px-5 py-1 lg:py-2 transition ease-in duration-200 text-center text-xl lg:text-2xl text-gray-300 font-medium shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-full">
+                    <button type="button" class="bg-light_theme mx-auto hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 lg:px-8 px-5 py-1 lg:py-2 transition ease-in duration-200 text-center text-xl md:text-2xl text-gray-300 font-medium shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-full">
                       Contact
                     </button>
                   </a>
