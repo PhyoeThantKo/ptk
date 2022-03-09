@@ -32,8 +32,8 @@ section .carousel-container .prev,
 section .carousel-container .next {
   width: 2rem;
   height: 2rem;
-  padding-left: 0.75rem;
-  padding-top: 0.3rem;
+  padding-left: 0.25rem;
+  padding-top: 0.25rem;
   position: absolute;
   top: calc(50% - 1rem);
   user-select: none;
@@ -48,9 +48,11 @@ section .carousel-container .next:hover {
   background-color: #DB1084;
 }
 section .carousel-container .prev {
+  background-color: #f2f2f2;
   left: 0.8rem;
 }
 section .carousel-container .next {
+  background-color: #f2f2f2;
   right: 0.8rem;
 }
 
@@ -73,5 +75,20 @@ section .carousel-container .next {
   }
   to {
     opacity: 1;
+  }
+}
+
+@media only screen and (max-width:600px) {
+  section .carousel-container {
+    height: 55vh;
+  }
+
+  section .carousel-container .prev,
+  section .carousel-container .next {
+    width: 1.3rem;
+    height: 1.3rem;
+    padding-left: 0.15rem;
+    padding-top: 0.15rem;
+    top: calc(50% - 10rem);
   }
 }
