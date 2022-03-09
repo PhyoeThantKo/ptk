@@ -161,10 +161,10 @@
     </div>
     <div class="w-11/12 mx-auto lg:w-1/2 lg:my-auto">
         <div class="lg:max-w-3xl lg:pl-7  text-center lg:text-left">
-            <h1 class="text-xl text-gray-800  dark:text-white lg:text-5xl lg:mb-5 ">Website Creation in New Era with PTK</h1>
-            <p class="mt-2 text-gray-600 dark:text-gray-400 lg:text-2xl mb-3 lg:mb-6">Young creator evolving with mush interest in clean modern UI, amazin UX & consumer electronics</p>
+            <h1 class="text-2xl text-gray-800  dark:text-white md:text-5xl lg:mb-5 ">Website Creation in New Era with PTK</h1>
+            <p class="mt-2 text-gray-600 dark:text-gray-400 text-lg md:text-2xl mb-3 lg:mb-6">Young creator evolving with mush interest in clean modern UI, amazin UX & consumer electronics</p>
             <a href="#services"> 
-              <button type="button" class="px-4 w-full lg:w-auto bg-light_theme mx-auto hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 text-white py-2 lg:py-3 transition ease-in duration-200 text-center text-xl shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-full">
+              <button type="button" class="px-4 w-full text-lg md:text-2xl lg:w-auto bg-light_theme mx-auto hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 text-white py-2 lg:py-3 transition ease-in duration-200 text-center shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-full">
                   What you can expect
               </button>
             </a>
