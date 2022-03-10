@@ -176,7 +176,7 @@
 <!-- articles -->
 <div class="articles mx-10 lg:mx-16 md:mt-6" id="blogs">
   <div class="mb-10 md:mb-16">
-    <h2 class="text-2xl md:text-5xl text-gray-800 py-1">Latest Blogs</h2>
+    <h2 class="text-2xl md:text-4xl lg:text-5xl text-gray-800 py-1">Latest Blogs</h2>
     <p class="text-lg md:text-2xl text-gray-700">Read blogs about web dev, consumer electronics and more</p>
   </div>
   <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 xl:gap-x-16 mt-7">
@@ -210,7 +210,7 @@
 <!-- services -->
 <div class="mx-10 md:mx-16 mt-20 pt-4 border-t-2" id="services">
   <div class="mb-10 md:mb-16">
-    <h2 class="text-2xl md:text-5xl text-gray-800 py-1">Services</h2>
+    <h2 class="text-2xl md:text-4xl lg:text-5xl text-gray-800 py-1">Services</h2>
     <p class="text-lg md:text-2xl text-gray-700">I can solve your problems in these ways. So call me if you need someone for...</p>
   </div>
   <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3">
@@ -241,28 +241,28 @@
 <!-- contact and portfolio -->
 
 <div class="bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400 dark:bg-gray-800 mt-16">
-    <div class="lg:flex lg:items-center lg:justify-between w-full mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
-        <h2 class="lg:text-5xl text-gray-800 dark:text-white sm:text-xl mx-8">
-            <span class="block  lg:mb-2">
+    <div class="md:flex md:items-center md:justify-between py-8 md:px-4 mx-10 md:mx-auto md:py-14 lg:px-8 z-20">
+        <h2 class="text-2xl md:text-4xl lg:text-5xl text-gray-800 dark:text-white md:mx-12 lg:mx-8">
+            <span class="block lg:mb-2">
                 Got a project ?
             </span>
-            <span class="block text-3xl text-gray-700">
+            <span class="block text-lg md:text-2xl text-gray-700">
             or see some of my capabilities </br> through my portfolio ?
             </span>
         </h2>
-        <div class="lg:mt-0 lg:flex-shrink-0 mx-8">
-            <div class=" inline-flex rounded-md">
-            <a href="/ptk/contact" class="">
-                  <button type="button" class="bg-light_theme hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 text-white w-36 h-14 transition ease-in duration-200 text-center text-2xl shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-full">
-                    Contact
-                  </button>
+        <div class="flex mt-4 md:mt-0 md:flex-shrink-0 w-full md:w-auto md:mx-8">
+            <div class=" inline-flex rounded-md w-1/2  ">
+            <a href="/ptk/contact" class="w-full">
+              <button type="button" class="w-full md:px-6 text-lg md:text-2xl md:w-auto bg-light_theme mx-auto hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 text-white py-1 md:py-2 lg:py-3 transition ease-in duration-200 text-center shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-full">
+                  Contact
+              </button>
               </a>
             </div>
-            <div class="ml-3 inline-flex rounded-md">
-            <a href="/ptk/portfolio" class="">
-                  <button type="button" class="border-2 border-pink-600 hover:border-pink-800 hover:text-black focus:ring-pink-500 focus:ring-offset-pink-200 text-white w-36 h-14 transition ease-in duration-200 text-center text-2xl shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-full">
-                    Portfolio
-                  </button>
+            <div class="ml-3 inline-flex rounded-md w-1/2  ">
+            <a href="/ptk/portfolio" class="w-full">
+                <button type="button" class="w-full md:px-6 text-lg md:text-2xl md:w-auto border mx-auto border-pink-600 hover:border-pink-800 hover:text-black focus:ring-pink-500 focus:ring-offset-pink-200 text-white py-1 md:py-2 lg:py-3 transition ease-in duration-200 text-center shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-full">
+                  Portfolio
+              </button>
             </a>
             </div>
         </div>
