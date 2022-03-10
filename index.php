@@ -174,26 +174,26 @@
 </div>
 
 <!-- articles -->
-<div class="articles mx-16 mt-6" id="blogs">
-  <div class="mb-16">
-    <h2 class="text-4xl text-gray-900 py-1">Latest Blogs</h2>
-    <p class="text-2xl text-gray-700">Read blogs about web dev, consumer electronics and more</p>
+<div class="articles mx-10 lg:mx-16 md:mt-6" id="blogs">
+  <div class="mb-10 md:mb-16">
+    <h2 class="text-2xl md:text-5xl text-gray-800 py-1">Latest Blogs</h2>
+    <p class="text-lg md:text-2xl text-gray-700">Read blogs about web dev, consumer electronics and more</p>
   </div>
-  <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mt-7">
+  <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 xl:gap-x-16 mt-7">
       <?php include("admin/config/config.php");
           $result = mysqli_query($conn, "SELECT posts.*, tags.tag_name FROM posts LEFT JOIN tags ON  posts.tag_id = tags.tag_id ORDER BY  posts.created_date DESC LIMIT 6 ");
       ?>
 
       <?php while ($row = mysqli_fetch_assoc($result)): ?>
 
-      <div class="overflow-hidden shadow-lg rounded-lg h-90 w-60 md:w-80 cursor-pointer m-auto mb-10">
-          <a href="/ptk/articles/<?php echo $row['post_id']?>" class="w-full block h-full">
+      <div class="overflow-hidden shadow-lg bg-white rounded-lg w-full md:w-80 lg:w-96 mx-auto lg:mx-0 cursor-pointer mb-10">
+          <a href="/ptk/articles/<?php echo $row['post_id']?>" class="w-full block lg:h-80">
               <img alt="blog photo" src="admin/covers/<?php echo $row['cover'] ?>" class="max-h-40 w-full object-cover"/>
-              <div class="bg-white dark:bg-gray-800 w-full p-4">
+              <div class="dark:bg-gray-800 w-full p-4">
                   <p class="text-pink-400 text-md font-light">
                       <?php echo $row['tag_name'] ?>
                   </p>
-                  <p class="text-gray-700 dark:text-white text-xl h-20 max-h-20 mb-2">
+                  <p class="text-gray-700 dark:text-white text-lg md:text-2xl h-20 max-h-20 md:mb-2">
                       <?php echo $row['header']; ?>
                   </p>
               </div>
@@ -204,7 +204,7 @@
 
     </div>
 
-    <a href="/ptk/articles" class="inline-flex justify-center items-center hover:text-gray-300 text-xl absolute right-24 bg-light_theme hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 text-white w-32 h-10 transition ease-in duration-200 text-center shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-full">Read More  </a>
+    <a href="/ptk/articles" class="inline-flex justify-center items-center hover:text-gray-300 text-xl absolute lg:right-24 md:right-16 right-10 bg-light_theme hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 text-white w-32 h-10 transition ease-in duration-200 text-center shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-full">Read More  </a>
 </div>
 
 <!-- services -->
