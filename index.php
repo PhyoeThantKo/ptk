@@ -208,10 +208,10 @@
 </div>
 
 <!-- services -->
-<div class="mx-16 mt-20 pt-4 border-t-2" id="services">
-  <div>
-    <h2 class="text-4xl py-1 text-gray-800">Services</h2>
-    <p class="text-2xl text-gray-700">I can solve your problems in these ways. So call me if you need someone for...</p>
+<div class="mx-10 md:mx-16 mt-20 pt-4 border-t-2" id="services">
+  <div class="mb-10 md:mb-16">
+    <h2 class="text-2xl md:text-5xl text-gray-800 py-1">Services</h2>
+    <p class="text-lg md:text-2xl text-gray-700">I can solve your problems in these ways. So call me if you need someone for...</p>
   </div>
   <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3">
     <?php
