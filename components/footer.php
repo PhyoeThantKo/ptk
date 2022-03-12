@@ -1,7 +1,7 @@
-<footer class="bg-gray-800 pt-4 pb-8 xl:pt-8">
-    <div class="px-16 mx-auto text-gray-100 dark:text-gray-100">
-        <ul class="text-lg font-light pb-4 flex flex-wrap justify-center">
-            <li class="w-1/2 md:w-1/3 lg:w-1/3">
+<footer class="bg-gray-800 px-7 md:px-0 pt-4 pb-8 xl:pt-8">
+    <div class="px-0 md:px-16 mx-auto text-gray-100 dark:text-gray-100">
+        <ul class="text-lg font-light pb-4 md:flex flex-wrap justify-center">
+            <li class="md:w-1/3 lg:w-1/3">
                 <div>
                     <h2 class="text-gray-300 dark:text-gray-100 text-3xl mb-1">
                         PTK
@@ -11,8 +11,8 @@
                     </p>
                 </div>
             </li>
-            <li class="w-1/2 md:w-1/3 lg:w-1/3">
-                <div class="text-center">
+            <li class="mt-4 md:mt-0 md:w-1/3 lg:w-1/3">
+                <div class="md:text-center">
                     <h2 class="text-gray-300 text-md uppercase mb-3">
                         Site Map
                     </h2>
@@ -45,12 +45,12 @@
                     </ul>
                 </div>
             </li>
-            <li class="w-1/2 md:w-1/3 lg:w-1/3">
-                <div class="text-center">
+            <li class="mt-4 md:mt-0 md:w-1/3 lg:w-1/3">
+                <div class="md:text-center">
                     <h2 class="text-gray-300 text-md uppercase mb-3">
                         Social Media
                     </h2>
-                    <div class="grid grid-cols-4 gap-y-4 place-items-center max-w-xs mx-auto">
+                    <div class="grid md:grid-cols-4 grid-cols-5 gap-y-4 md:place-items-center max-w-xs md:mx-auto">
                       <a href="https://t.me/ptk7858">
                         <svg class="h-7 w-7 hover:text-gray-600 text-gray-400 dark:hover:text-white transition-colors duration-200"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4" /></svg>
                       </a>
@@ -71,7 +71,7 @@
             </li>
         </ul>
 
-        <div class="text-center pt-3 border-t-2 w-2/6 font-light text-gray-300 mx-auto">
+        <div class="md:text-center pt-3 border-t-2 w-full md:w-2/6 font-light text-gray-300 md:mx-auto">
         ©2022 Designed & developed with ♥ by <a href="" class="underline underline-offset-auto hover:text-gray-500 hover:border-gray-500">PTK</a>
         </div>
     </div>
