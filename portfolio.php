@@ -83,10 +83,11 @@
     </div>
 
     <!--hero-->
-    <section class="h-screen text-white flex flex-col items-center justify-center text-center" style="background: url('public/images/scattered-forcefields.svg');">
-      <div class="w-3/4 text-2xl text-gray-300">
+    <section class="lg:h-screen py-28 md:py-60 lg:py-0 text-white flex flex-col items-center justify-center text-center" style="
+    background: url('public/images/scattered-forcefields.svg');">
+      <div class="w-11/12 lg:w-3/4 text-lg md:text-2xl text-gray-300">
         <div>Product design + web development Myanmar</div>
-        <div class="text-6xl my-3 text-gray-200 leading-tight">I help people get personal spaces on the internet with technology</div>
+        <div class="text-3xl md:text-4xl lg:text-6xl my-3 text-gray-200 leading-tight">I help people get personal spaces on the internet with technology</div>
         <div>
           <a href="/ptk/about" class="transform hover:translate-x-1 inline-flex hover:text-gray-500 text-gray-300">About Me <span class="mr-4 ml-2"><svg class="h-8 w-8" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <line x1="5" y1="12" x2="19" y2="12" />  <line x1="15" y1="16" x2="19" y2="12" />  <line x1="15" y1="8" x2="19" y2="12" /></svg></span>
           </a>
