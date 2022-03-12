@@ -9,6 +9,24 @@
      <script defer src="components/navlinkactive.js"></script>
      <link rel="stylesheet" href="components/navlinkactive.css">
      <link rel="stylesheet" href="public/style/fonts/googlesans.css">
+
+     <style>
+       .this{
+        background: url('public/images/mckup22.png') no-repeat center/cover ;
+        height: 75vh;
+      }
+
+      @media only screen and (max-width:600px) {
+        .this{
+          height: 29vh;
+        }
+      }
+      @media only screen and (min-width:768px) and (max-width:1024px) {
+        .this{
+          height: 33vh;
+        }
+      }
+     </style>
 </head>
 <body style="font-family:'Product Sans Regular'">
     <!-- nav bar -->
@@ -99,11 +117,11 @@
     
     <!--showcase this website-->
     <div class="w-full my-8">
-      <div class="text-3xl grid place-items-center my-6">
+      <div class="text-xl md:text-3xl grid place-items-center my-6">
         <p class="tracking-widest text-gray-600">Are you looking for my projects?</p>
-        <h2 class="text-6xl text-gray-700 font-medium tracking-wide">This website itself is my project</h2>
+        <h2 class="text-3xl md:text-4xl lg:text-6xl text-center text-gray-700 font-medium tracking-wide">This website itself is my project</h2>
       </div>
-      <div class="mx-auto rounded-3xl w-11/12" style="background: url('public/images/mckup22.png') no-repeat center/cover ; height: 75vh;">
+      <div class="this mx-auto rounded-3xl w-11/12">
       </div>
     </div>
 
