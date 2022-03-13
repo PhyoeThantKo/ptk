@@ -18,12 +18,12 @@
 
       @media only screen and (max-width:600px) {
         .this{
-          height: 29vh;
+          height: 26vh;
         }
       }
       @media only screen and (min-width:768px) and (max-width:1024px) {
         .this{
-          height: 33vh;
+          height: 27vh;
         }
       }
      </style>
@@ -103,7 +103,7 @@
     <!--hero-->
     <section class="lg:h-screen py-28 md:py-60 lg:py-0 text-white flex flex-col items-center justify-center text-center" style="
     background: url('public/images/scattered-forcefields.svg');">
-      <div class="w-11/12 lg:w-3/4 text-lg md:text-2xl text-gray-300">
+      <div class="w-10/12 lg:w-3/4 text-lg md:text-2xl text-gray-300">
         <div>Product design + web development Myanmar</div>
         <div class="text-3xl md:text-4xl lg:text-6xl my-3 text-gray-200 leading-tight">I help people get personal spaces on the internet with technology</div>
         <div>
@@ -121,32 +121,32 @@
         <p class="tracking-widest text-gray-600">Are you looking for my projects?</p>
         <h2 class="text-3xl md:text-4xl lg:text-6xl text-center text-gray-700 font-medium tracking-wide">This website itself is my project</h2>
       </div>
-      <div class="this mx-auto rounded-3xl w-11/12">
+      <div class="this mx-auto rounded-3xl w-10/12">
       </div>
     </div>
 
     <!-- showcase some works -->
-    <section class="px-16 lg:my-20" id="cases">
-      <div class="lg:mb-12">
-          <h2 class="text-4xl py-1 text-gray-800">Cases</h2>
-          <p class="text-2xl text-gray-700">A look at some of my projects</p>
+    <section class="lg:px-16 w-10/12 mx-auto lg:w-auto lg:my-20" id="cases">
+      <div class="lg:mb-12 mb-6">
+          <h2 class="text-2xl md:text-4xl lg:text-5xl py-1 text-gray-800">Cases</h2>
+          <p class="text-lg md:text-2xl text-gray-700">A look at some of my projects</p>
       </div>
-      <div class="grid grid-cols-2 gap-10">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
       <?php
         include("admin/config/config.php");
         $projectresult = mysqli_query($conn, "SELECT * FROM project_and_services WHERE tag = 'project' ");
       ?>
         <?php while($project = mysqli_fetch_assoc($projectresult)): ?>
 
-          <div class="flex w-full lg:h-64 mx-auto overflow-hidden bg-white rounded-xl shadow-lg dark:bg-gray-800">
-            <div class="w-1/2 " style="background: url('admin/covers/<?php echo $project['cover'] ?>') no-repeat center/cover"></div>
+          <div class="md:flex w-full h-96 text-center md:text-left md:h-72 lg:h-64 mx-auto overflow-hidden bg-white rounded-xl shadow-lg dark:bg-gray-800">
+            <div class="md:w-1/2 h-1/2 md:h-auto" style="background: url('admin/covers/<?php echo $project['cover'] ?>') no-repeat center/cover"></div>
 
-            <div class="w-1/2  my-auto p-4 md:p-4">
-                <h1 class="text-3xl text-gray-800 dark:text-white"><?php echo $project['header'] ?></h1>
+            <div class="md:w-1/2 h-1/2 md:h-auto my-auto p-4 md:p-4">
+                <h1 class="text-2xl md:text-2xl lg:text-3xl text-gray-800 dark:text-white"><?php echo $project['header'] ?></h1>
 
-                <p class="mt-2 mb-12 text-gray-600 dark:text-gray-400"><?php echo $project['description'] ?></p>
+                <p class="text-sm lg:text-base mt-2 mb-12 text-gray-600 dark:text-gray-400"><?php echo $project['description'] ?></p>
 
-                <a href="" class="transform hover:translate-x-1 inline-flex hover:text-gray-500 text-gray-700 text-xl">View Project <span class="mr-4 ml-2"><svg class="h-8 w-8" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <line x1="5" y1="12" x2="19" y2="12" />  <line x1="15" y1="16" x2="19" y2="12" />  <line x1="15" y1="8" x2="19" y2="12" /></svg></span>
+                <a href="" class="transform hover:translate-x-1 inline-flex justify-center items-center hover:text-gray-500 text-gray-700 text-base md:text-lg lg:text-xl">View Project <span class="mr-4 ml-2"><svg class="h-8 w-8" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <line x1="5" y1="12" x2="19" y2="12" />  <line x1="15" y1="16" x2="19" y2="12" />  <line x1="15" y1="8" x2="19" y2="12" /></svg></span>
                 </a>
             </div>
           </div>
