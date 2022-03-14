@@ -11,10 +11,12 @@
 
 </head>
 <body class="bg-notsowhite" style="font-family:'Product Sans Regular'"> 
-    <div x-data="{ sidebarOpen: true }" class="  h-screen">
-          <div class="flex-1">
-              <div id="nav_container" class="relative lg:mt-3 z-50">
+    <div x-data="{ sidebarOpen: false }" class="  h-full">
+          <div class="flex-1 h-full">
+              <!--nav bar-->
+              <div id="nav_container" class="fixed w-full lg:mt-3 z-40">
                 <nav id="nav_bar" class="flex lg:w-11/12 lg:h-11 lg:rounded-l-full lg:rounded-r-full p-2 lg:p-0 bg-transparent lg:bg-earth bg-notsowhite mx-auto">
+                  <!--Desktop Navigation-->
                   <div class="ml-3 my-auto grid place-items-end">
                     <button class="p-1 " @click="sidebarOpen = !sidebarOpen">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
@@ -49,47 +51,44 @@
                     </ul>
                   </div>
 
-                  <div id="mobile_nav" class="lg:hidden w-1/12 ml-4">
-          
-          <div class="relative inline-block ">
-              <!-- Dropdown toggle button -->
-              <button id="menu_button" class="relative z-10 block py-1">
-                  <img src="public/images/menu.png" class="w-7">
-              </button>
-
-              <!-- Dropdown menu -->
-              <div id="menu" class="absolute hidden right-0 z-20 w-48 py-2 mt-2 bg-gray-100 rounded-md shadow-xl dark:bg-gray-800">
-                  <a href="home" class="block px-4 py-3 text-sm md:text-lg text-gray-600 capitalize transition-colors duration-200 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+                </nav>
+              </div>
+              <!--Contents-->
+              <div class="flex md:pt-20 h-full">
+                <!--Side bar nav-->
+                <aside class="overflow-y-auto flex-shrink-0 w-3/5 h-full fixed top-0 md:static z-50 md:z-0 md:w-1/6 flex flex-col transition-all duration-300 bg-gray-100 md:bg-transparent" :class="{'-ml-64 md:-ml-52 lg:-ml-72': !sidebarOpen }">
+                  <nav class="flex-1 flex flex-col ">
+                  <div id="logo" class="md:hidden py-2 px-5 my-1 flex">
+                    <button class="p-1 " @click="sidebarOpen = !sidebarOpen">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                    <a href="" class="text-2xl ml-2 font-medium text-gray-900 hover:text-light_theme">
+                      PTK
+                    </a>
+                  </div>
+                  <a href="home" class="py-2 px-5 my-1 text-gray-700 rounded-r-full hover:bg-gray-200 focus:bg-gray-400">
                       Home
                   </a>
-
-                  <a href="articles" class="block px-4 py-3 text-sm md:text-lg text-gray-600 capitalize transition-colors duration-200 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+                  <a href="articles" class="py-2 px-5 my-1 text-gray-700 rounded-r-full bg-gray-200">
                       Articles
                   </a>
-                  
-                  <a href="portfolio" class="block px-4 py-3 text-sm md:text-lg text-gray-600 capitalize transition-colors duration-200 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+                            
+                  <a href="portfolio" class="py-2 px-5 my-1 text-gray-700 rounded-r-full hover:bg-gray-200 focus:bg-gray-400">
                       Portfolio
                   </a>
-                  
-                  <hr class="border-gray-200 dark:border-gray-700 ">
-
-                  <a href="contact" class="block px-4 py-3 text-sm md:text-lg text-gray-600 capitalize transition-colors duration-200 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
-                      Contact
+                            
+                  <a href="contact" class="py-2 px-5 my-1 text-gray-700 rounded-r-full hover:bg-gray-200 focus:bg-gray-400">
+                       Contact
                   </a>
 
-                  <a href="about" class="block px-4 py-3 text-sm md:text-lg text-gray-600 capitalize transition-colors duration-200 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+                  <a href="about" class="py-2 px-5 my-1 text-gray-700 rounded-r-full hover:bg-gray-200 focus:bg-gray-400">
                       About
                   </a>
 
-              </div>
-          </div>
-        </div>
-                </nav>
-              </div>
-              <div class="flex mt-4">
+                  <hr class="border border-gray-300">
 
-                <aside class="flex-shrink-0 w-1/6 flex flex-col transition-all duration-300" :class="{ '-ml-64': !sidebarOpen }">
-                  <nav class="flex-1 flex flex-col ">
                   <a href="/ptk/articles" class="py-2 px-5 my-1 text-gray-700 rounded-r-full hover:bg-gray-200 focus:bg-gray-400">For You</a>
                   <?php
                     include('admin/config/config.php');
@@ -103,9 +102,9 @@
                   </nav>
                 </aside>
                 
-                <div class="w-4/6 mr-2 border-l-2">
+                <div class="lg:w-4/6 w-full mr-2 md:pl-6 lg:pl-8 border-l-2 absolute mt-16 md:mt-0 right-5 z-0 md:static">
 
-                <div class="ml-20">
+                <div class="ml-20 hidden md:block">
                   <p class="text-2xl text-gray-800">Latest Blogs on Tech</p>
                 </div>
                   <!--query posts-->
@@ -119,15 +118,15 @@
                     while($articles = mysqli_fetch_assoc($articlesresult)):
                   ?>
 
-                  <div class="flex bg-notsowhite ml-20 h-44 mr-3 my-8 border border-gray-400 rounded-lg overflow-hidden">
-                      <a href="articles/<?php echo $articles['post_id']?>" class="w-2/3 py-4 px-5">
-                        <h1 class="text-gray-800 text-2xl">
+                  <div class="flex flex-col-reverse md:flex-row bg-notsowhite ml-16 md:ml-20 h-64 md:h-44 mr-3 md:my-8 md:border border-gray-200 md:border-gray-400 rounded-t-lg md:rounded-lg overflow-hidden mb-3 border-b-2 md:mb-0">
+                      <a href="articles/<?php echo $articles['post_id']?>" class="md:w-2/3 py-4 md:px-5">
+                        <h1 class="text-gray-800 text-xl md:text-2xl">
                             <?php echo $articles['header'] ?>
                         </h1>
 
-                        <p class="text-gray-600 py-1">
+                        <p class="text-gray-600 text-xs md:text-base py-1">
                           <?php echo $articles['tag_name'];
-                          $timestamp = $articles['created_date']; ?>   .
+                          $timestamp = $articles['created_date']; ?>
                           <span class="p-4">
                             <?php
                               $MySQLDataBaseDateTime = "$timestamp";
@@ -137,13 +136,13 @@
                         </p>
 
                     </a>
-                      <div class="w-1/3 my-3 mx-4 rounded-xl bg-landscape " style="background: url('uploads/<?php echo $articles['cover'] ?>') no-repeat center/cover;">
-                      </div>
+                    <div class="md:w-1/3 h-full md:h-auto md:my-3 md:mx-4 rounded-xl bg-landscape " style="background: url('uploads/<?php echo $articles['cover'] ?>') no-repeat center/cover;">
                     </div>
+                  </div>
                     <?php endwhile; ?>
 
                 </div>
-                <div class="w-1/6 mx-auto mt-16">
+                <div class="w-1/6 mx-auto mt-16 hidden lg:block">
                     <div class="border border-gray-400 w-full p-1 h-40">
                       Ads
                     </div>
@@ -151,8 +150,6 @@
               </div>
           </div>
     </div>
-
-    <script type="text/javascript" src="nav.js"></script>
 
 </body>
 </html>
