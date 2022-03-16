@@ -121,7 +121,7 @@
                 <p class="text-white font-serif font-medium">
                   <span class="lg:block">Portfolio</span> A look at some of my projects
                 </p>
-                <a href="/ptk/portfolio" class="">
+                <a href="portfolio" class="">
                   <button type="button" class="bg-light_theme hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 lg:px-8 px-5 py-1 lg:py-2 transition ease-in duration-200 text-center text-xl md:text-2xl text-gray-300 font-medium shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-full">
                     Portfolio
                   </button>
@@ -136,7 +136,7 @@
                   <span class="lg:block">Let's Talk</span> Anyting big or small
                 </p>
                 <div class="w-full flex justify-center items-center">
-                  <a href="/ptk/contact" class=""> 
+                  <a href="contact" class=""> 
                     <button type="button" class="bg-light_theme mx-auto hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 lg:px-8 px-5 py-1 lg:py-2 transition ease-in duration-200 text-center text-xl md:text-2xl text-gray-300 font-medium shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-full">
                       Contact
                     </button>
@@ -187,7 +187,7 @@
       <?php while ($row = mysqli_fetch_assoc($result)): ?>
 
       <div class="overflow-hidden shadow-lg bg-white rounded-lg w-full md:w-80 lg:w-96 mx-auto lg:mx-0 cursor-pointer mb-10">
-          <a href="/ptk/articles/<?php echo $row['post_id']?>" class="w-full block lg:h-80">
+          <a href="articles/<?php echo $row['post_id']?>" class="w-full block lg:h-80">
               <img alt="blog photo" src="admin/covers/<?php echo $row['cover'] ?>" class="max-h-40 w-full object-cover"/>
               <div class="dark:bg-gray-800 w-full p-4">
                   <p class="text-pink-400 text-md font-light">
@@ -204,7 +204,7 @@
 
     </div>
 
-    <a href="/ptk/articles" class="inline-flex justify-center items-center hover:text-gray-300 text-xl absolute xl:right-12 lg:right-24 md:right-16 right-10 bg-light_theme hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 text-white w-32 h-10 transition ease-in duration-200 text-center shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-full">Read More  </a>
+    <a href="articles" class="inline-flex justify-center items-center hover:text-gray-300 text-xl absolute xl:right-12 lg:right-24 md:right-16 right-10 bg-light_theme hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 text-white w-32 h-10 transition ease-in duration-200 text-center shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-full">Read More  </a>
 </div>
 
 <!-- services -->
@@ -252,14 +252,14 @@
         </h2>
         <div class="flex mt-4 md:mt-0 md:flex-shrink-0 w-full md:w-auto md:mx-8">
             <div class=" inline-flex rounded-md w-1/2  ">
-            <a href="/ptk/contact" class="w-full">
+            <a href="contact" class="w-full">
               <button type="button" class="w-full md:px-6 text-lg md:text-2xl md:w-auto bg-light_theme mx-auto hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 text-white py-1 md:py-2 lg:py-3 transition ease-in duration-200 text-center shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-full">
                   Contact
               </button>
               </a>
             </div>
             <div class="ml-3 inline-flex rounded-md w-1/2  ">
-            <a href="/ptk/portfolio" class="w-full">
+            <a href="portfolio" class="w-full">
                 <button type="button" class="w-full md:px-6 text-lg md:text-2xl md:w-auto border mx-auto border-pink-600 hover:border-pink-800 hover:text-black focus:ring-pink-500 focus:ring-offset-pink-200 text-white py-1 md:py-2 lg:py-3 transition ease-in duration-200 text-center shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-full">
                   Portfolio
               </button>
