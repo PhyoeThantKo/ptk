@@ -42,8 +42,7 @@ section .carousel-container .next {
   border-radius: 50%;
   transition: 0.6s ease;
 }
-section .carousel-container .prev:focus, section .carousel-container .prev:hover,
-section .carousel-container .next:focus,
+section .carousel-container .prev:hover,
 section .carousel-container .next:hover {
   background-color: #DB1084;
 }

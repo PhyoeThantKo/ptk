@@ -154,12 +154,12 @@
 
 <!--Hero-->
 
-<div class="hero p-8 mx-auto">
+<div class="hero w-11/12 mx-auto">
   <div class="lg:flex">
     <div class="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2">
         <img class="w-full h-full lg:max-w-3xl lg:pr-7" src="public/images/Website Creator-pana.svg" alt="Website Creator-pana.svg">
     </div>
-    <div class="w-11/12 mx-auto lg:w-1/2 lg:my-auto">
+    <div class="mx-auto lg:w-1/2 lg:my-auto">
         <div class="lg:max-w-3xl lg:pl-7  text-center lg:text-left">
             <h1 class="text-2xl text-gray-800  dark:text-white md:text-5xl lg:mb-5 ">Website Creation in New Era with PTK</h1>
             <p class="mt-2 text-gray-600 dark:text-gray-400 text-lg md:text-2xl mb-3 lg:mb-6">Young creator evolving with mush interest in clean modern UI, amazin UX & consumer electronics</p>
@@ -174,19 +174,19 @@
 </div>
 
 <!-- articles -->
-<div class="articles mx-10 lg:mx-16 md:mt-6" id="blogs">
+<div class="articles w-11/12 mx-auto md:mt-6" id="blogs">
   <div class="mb-10 md:mb-16">
     <h2 class="text-2xl md:text-4xl lg:text-5xl text-gray-800 py-1">Latest Blogs</h2>
     <p class="text-lg md:text-2xl text-gray-700">Read blogs about web dev, consumer electronics and more</p>
   </div>
-  <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 xl:gap-x-16 mt-7">
+  <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3">
       <?php include("admin/config/config.php");
           $result = mysqli_query($conn, "SELECT posts.*, tags.tag_name FROM posts LEFT JOIN tags ON  posts.tag_id = tags.tag_id ORDER BY  posts.created_date DESC LIMIT 6 ");
       ?>
 
       <?php while ($row = mysqli_fetch_assoc($result)): ?>
 
-      <div class="overflow-hidden shadow-lg bg-white rounded-lg w-full md:w-80 lg:w-96 mx-auto lg:mx-0 cursor-pointer mb-10">
+      <div class="overflow-hidden shadow-lg bg-white rounded-xl cursor-pointer space-y-3">
           <a href="articles/<?php echo $row['post_id']?>" class="w-full block lg:h-80">
               <img alt="blog photo" src="admin/covers/<?php echo $row['cover'] ?>" class="max-h-40 w-full object-cover"/>
               <div class="dark:bg-gray-800 w-full p-4">
@@ -204,11 +204,11 @@
 
     </div>
 
-    <a href="articles" class="inline-flex justify-center items-center hover:text-gray-300 text-xl absolute xl:right-12 lg:right-24 md:right-16 right-10 bg-light_theme hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 text-white w-32 h-10 transition ease-in duration-200 text-center shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-full">Read More  </a>
+    <a href="articles" class="inline-flex justify-center items-center mt-6 hover:text-gray-300 text-xl absolute xl:right-14 lg:right-24 md:right-16 right-10 bg-light_theme hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 text-white w-32 h-10 transition ease-in duration-200 text-center shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-full">Read More  </a>
 </div>
 
 <!-- services -->
-<div class="mx-10 md:mx-16 mt-20 pt-4 border-t-2" id="services">
+<div class="w-11/12 mx-auto mt-20 pt-4 border-t-2" id="services">
   <div class="mb-10 md:mb-16">
     <h2 class="text-2xl md:text-4xl lg:text-5xl text-gray-800 py-1">Services</h2>
     <p class="text-lg md:text-2xl text-gray-700">I can solve your problems in these ways. So call me if you need someone for...</p>
@@ -241,7 +241,7 @@
 <!-- contact and portfolio -->
 
 <div class="bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400 dark:bg-gray-800 mt-16">
-    <div class="md:flex md:items-center md:justify-between py-8 md:px-4 mx-10 md:mx-auto md:py-14 lg:px-8 z-20 text-center md:text-left">
+    <div class="md:flex md:items-center md:justify-between py-8 md:py-14 w-11/12 mx-auto z-20 text-center md:text-left">
         <h2 class="text-2xl md:text-4xl lg:text-5xl text-gray-800 dark:text-white md:mx-12 lg:mx-8">
             <span class="block lg:mb-2">
                 Got a project ?
@@ -270,7 +270,7 @@
 </div>
 
 <!--  Newsletter -->
-<div class="container px-8 md:px-0 md:mx-10 lg:mx-16 py-9 md:py-12" id="newsletter">
+<div class="container w-11/12 mx-auto py-9 md:py-12" id="newsletter">
   <div class="items-center flex flex-col-reverse lg:flex-row md:px-5 lg:px-0">
     <div class="w-full lg:w-1/2 text-center lg:text-left">
         <div class="lg:max-w-xl mx-auto lg:mx-0">

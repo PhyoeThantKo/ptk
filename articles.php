@@ -102,7 +102,7 @@
                   </nav>
                 </aside>
                 
-                <div class="lg:w-4/6 w-full mr-2 md:pl-6 lg:pl-8 border-l-2 absolute mt-16 md:mt-0 right-5 z-0 md:static">
+                <div class="lg:w-4/6 w-11/12 mx-auto md:pl-6 lg:pl-8 md:border-l-2 mt-16 md:mt-0 z-0 md:static">
 
                 <div class="ml-20 hidden md:block">
                   <p class="text-2xl text-gray-800">Latest Blogs on Tech</p>
@@ -118,7 +118,7 @@
                     while($articles = mysqli_fetch_assoc($articlesresult)):
                   ?>
 
-                  <div class="flex flex-col-reverse md:flex-row bg-notsowhite ml-16 md:ml-20 h-64 md:h-44 mr-3 md:my-8 md:border border-gray-200 md:border-gray-400 rounded-t-lg md:rounded-lg overflow-hidden mb-3 border-b-2 md:mb-0">
+                  <div class="flex flex-col-reverse md:flex-row bg-notsowhite md:ml-20 md:h-44 md:mr-3 md:my-8 md:border border-gray-200 md:border-gray-400 rounded-t-lg md:rounded-lg overflow-hidden mb-3 border-b-2 md:mb-0">
                       <a href="articles/<?php echo $articles['post_id']?>" class="md:w-2/3 py-4 md:px-5">
                         <h1 class="text-gray-800 text-xl md:text-2xl">
                             <?php echo $articles['header'] ?>
@@ -134,10 +134,9 @@
                             ?>
                           </span>
                         </p>
-
-                    </a>
-                    <div class="md:w-1/3 h-full md:h-auto md:my-3 md:mx-4 rounded-xl bg-landscape " style="background: url('uploads/<?php echo $articles['cover'] ?>') no-repeat center/cover;">
-                    </div>
+                      </a>
+                      <a href="articles/<?php echo $articles['post_id']?>" class="md:w-1/3 h-40 md:h-auto md:my-3 md:mx-4 rounded-xl bg-landscape " style="background: url('uploads/<?php echo $articles['cover'] ?>') no-repeat center/cover;">
+                      </a>
                   </div>
                     <?php endwhile; ?>
 

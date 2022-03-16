@@ -1,4 +1,4 @@
-<footer class="bg-gray-800 px-7 md:px-0 pt-4 pb-8 xl:pt-8">
+<footer class="bg-gray-800 px-3 md:px-0 pt-4 pb-8 xl:pt-8">
     <div class="px-0 md:px-16 mx-auto text-gray-100 dark:text-gray-100">
         <ul class="text-lg font-light pb-4 md:flex flex-wrap justify-center">
             <li class="md:w-1/3 lg:w-1/3">
