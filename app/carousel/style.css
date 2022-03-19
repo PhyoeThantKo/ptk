@@ -42,10 +42,7 @@ section .carousel-container .next {
   border-radius: 50%;
   transition: 0.6s ease;
 }
-section .carousel-container .prev:hover,
-section .carousel-container .next:hover {
-  background-color: #DB1084;
-}
+
 section .carousel-container .prev {
   background-color: #f2f2f2;
   left: 0.8rem;
@@ -56,16 +53,16 @@ section .carousel-container .next {
 }
 
 .image1{
-  background: url(images/articlehero.jpg) no-repeat center/cover;
+  background: url(images/articlehero.webp) no-repeat center/cover;
 }
 .image2{
-  background: url(images/service.jpg) no-repeat center/cover;
+  background: url(images/service.webp) no-repeat center/cover;
 }
 .image3{
-  background: url(images/portfoliohero.jpg) no-repeat center/cover;
+  background: url(images/portfoliohero.webp) no-repeat center/cover;
 }
 .image4{
-  background: url(images/contacthero.jpg) no-repeat center/cover;
+  background: url(images/contacthero.webp) no-repeat center/cover;
 }
 
 @keyframes fade {
@@ -75,6 +72,13 @@ section .carousel-container .next {
   to {
     opacity: 1;
   }
+}
+
+@media only screen and (min-width:1024px) {
+  section .carousel-container .prev:hover,
+section .carousel-container .next:hover {
+  background-color: #DB1084;
+}
 }
 
 @media only screen and (min-width:768px) and (max-width:1024px) {

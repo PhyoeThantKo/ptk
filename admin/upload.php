@@ -25,7 +25,7 @@ if(is_uploaded_file($temp['tmp_name'])){
     }
   
     // Verify extension
-    if(!in_array(strtolower(pathinfo($temp['name'], PATHINFO_EXTENSION)), array("gif", "jpg", "png"))){
+    if(!in_array(strtolower(pathinfo($temp['name'], PATHINFO_EXTENSION)), array("gif", "webp", "jpg", "png"))){
         header("HTTP/1.1 400 Invalid extension.");
         return;
     }

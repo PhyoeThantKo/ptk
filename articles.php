@@ -8,6 +8,7 @@
      <link rel="stylesheet" href="public/style/style.css">
      <script src="//unpkg.com/alpinejs" defer></script>
      <link rel="stylesheet" href="public/style/fonts/googlesans.css">
+     <link rel="icon" type="image/x-icon" href="public/images/fav.webp">
 
 </head>
 <body class="bg-notsowhite" style="font-family:'Product Sans Regular'"> 
@@ -135,7 +136,7 @@
                           </span>
                         </p>
                       </a>
-                      <a href="articles/<?php echo $articles['post_id']?>" class="md:w-1/3 h-40 md:h-auto md:my-3 md:mx-4 rounded-xl bg-landscape " style="background: url('uploads/<?php echo $articles['cover'] ?>') no-repeat center/cover;">
+                      <a href="articles/<?php echo $articles['post_id']?>" class="md:w-1/3 h-48 md:h-auto md:my-3 md:mx-4 rounded-xl bg-landscape " style="background: url('admin/covers/<?php echo $articles['cover'] ?>') no-repeat center/cover;">
                       </a>
                   </div>
                     <?php endwhile; ?>

@@ -45,7 +45,7 @@
      <script>
      tinymce.init({
           selector: 'textarea',
-          plugins: 'a11ychecker advcode casechange export formatpainter linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tinymcespellchecker image code',
+          plugins: 'autolink lists media table image code',
           toolbar: 'a11ycheck addcomment showcomments casechange checklist code export formatpainter pageembed permanentpen table undo redo | image code',
           toolbar_mode: 'floating',
           tinycomments_mode: 'embedded',

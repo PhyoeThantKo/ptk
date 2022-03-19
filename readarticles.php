@@ -15,6 +15,7 @@
      <title><?php echo $articles['header']; ?></title>
      <link rel="stylesheet" href="../public/style/fonts/googlesans.css">
      <link rel="stylesheet" href="../public/style/style.css">
+     <link rel="icon" type="image/x-icon" href="../public/images/fav.webp">
 
 <body  class="bg-notsowhite" style="font-family:'Product Sans Regular'">
 <div id="nav_container" class="fixed w-full lg:mt-3 z-50">
@@ -53,7 +54,7 @@
           <div class="relative inline-block ">
               <!-- Dropdown toggle button -->
               <button id="menu_button" class="relative z-10 block py-1">
-                  <img src="../public/images/menu.png" class="w-7">
+                  <img src="../public/images/menu.webp" class="w-7">
               </button>
 
               <!-- Dropdown menu -->
@@ -84,9 +85,9 @@
           </div>
         </div>
       </nav>
-</div>
+    </div>
 
-<div class="w-11/12 pt-24 px-4 mx-auto">
+<div class="w-11/12 pt-24 lg:px-4 mx-auto">
      <p class="text-gray-700">
           <a href="/ptk" class="text-light_theme">PTK</a><img src="../public/images/navi_next.svg" class="inline-block"><a href="/ptk/articles">Articles</a><img src="../public/images/navi_next.svg" class="inline-block"><?php echo $articles['tag_name'] ?>
      </p>

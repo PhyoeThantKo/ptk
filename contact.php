@@ -7,6 +7,8 @@
      <title>Contact PTK</title>
      <link rel="stylesheet" href="public/style/style.css">
      <link rel="stylesheet" href="public/style/fonts/googlesans.css">
+     <link rel="icon" type="image/x-icon" href="public/images/fav.webp">
+
 </head>
 <body style="font-family:'Product Sans Regular'">
     <!--nav bar-->
@@ -47,7 +49,7 @@
           <div class="relative inline-block ">
               <!-- Dropdown toggle button -->
               <button id="menu_button" class="relative z-10 block py-1">
-                  <img src="public/images/menu.png" class="w-7">
+                  <img src="public/images/menu.webp" class="w-7">
               </button>
 
               <!-- Dropdown menu -->

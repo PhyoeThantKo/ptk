@@ -9,10 +9,11 @@
      <script defer src="components/navlinkactive.js"></script>
      <link rel="stylesheet" href="components/navlinkactive.css">
      <link rel="stylesheet" href="public/style/fonts/googlesans.css">
+     <link rel="icon" type="image/x-icon" href="public/images/fav.webp">
 
      <style>
        .this{
-        background: url('public/images/mckup22.png') no-repeat center/cover ;
+        background: url('public/images/mckup22.webp') no-repeat center/cover ;
         height: 75vh;
       }
 
@@ -67,7 +68,7 @@
           <div class="relative inline-block ">
               <!-- Dropdown toggle button -->
               <button id="menu_button" class="relative z-10 block py-1">
-                  <img src="public/images/menu.png" class="w-7">
+                  <img src="public/images/menu.webp" class="w-7">
               </button>
 
               <!-- Dropdown menu -->
@@ -116,17 +117,17 @@
     </section>
     
     <!--showcase this website-->
-    <div class="w-full my-8">
+    <div class="w-11/12 mx-auto">
       <div class="text-xl md:text-3xl grid place-items-center my-6">
         <p class="tracking-widest text-gray-600">Are you looking for my projects?</p>
         <h2 class="text-3xl md:text-4xl lg:text-6xl text-center text-gray-700 font-medium tracking-wide">This website itself is my project</h2>
       </div>
-      <div class="this mx-auto rounded-3xl w-10/12">
+      <div class="this rounded-3xl">
       </div>
     </div>
 
     <!-- showcase some works -->
-    <section class="lg:px-16 w-10/12 mx-auto lg:w-auto lg:my-20" id="cases">
+    <section class="lg:px-16 w-11/12 mx-auto lg:w-auto lg:my-20 my-10" id="cases">
       <div class="lg:mb-12 mb-6">
           <h2 class="text-2xl md:text-4xl lg:text-5xl py-1 text-gray-800">Cases</h2>
           <p class="text-lg md:text-2xl text-gray-700">A look at some of my projects</p>
@@ -146,7 +147,7 @@
 
                 <p class="text-sm lg:text-base mt-2 mb-12 text-gray-600 dark:text-gray-400"><?php echo $project['description'] ?></p>
 
-                <a href="" class="transform hover:translate-x-1 inline-flex justify-center items-center hover:text-gray-500 text-gray-700 text-base md:text-lg lg:text-xl">View Project <span class="mr-4 ml-2"><svg class="h-8 w-8" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <line x1="5" y1="12" x2="19" y2="12" />  <line x1="15" y1="16" x2="19" y2="12" />  <line x1="15" y1="8" x2="19" y2="12" /></svg></span>
+                <a href="<?php echo $project['link'] ?>" class="transform hover:translate-x-1 inline-flex justify-center items-center hover:text-gray-500 text-gray-700 text-base md:text-lg lg:text-xl">View Project <span class="mr-4 ml-2"><svg class="h-8 w-8" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <line x1="5" y1="12" x2="19" y2="12" />  <line x1="15" y1="16" x2="19" y2="12" />  <line x1="15" y1="8" x2="19" y2="12" /></svg></span>
                 </a>
             </div>
           </div>

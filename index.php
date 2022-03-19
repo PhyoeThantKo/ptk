@@ -8,6 +8,10 @@
      <link rel="stylesheet" href="public/style/style.css">
      <link rel="stylesheet" href="app/carousel/style.css">
      <link rel="stylesheet" href="public/style/fonts/googlesans.css">
+     <style>
+      @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap');
+     </style>
+      <link rel="icon" type="image/x-icon" href="public/images/fav.webp">
 </head>
 <body style="font-family:'Product Sans Regular'" class="w-full h-full m-0 p-0 overflow-x-hidden">
     <!-- nav bar -->
@@ -47,7 +51,7 @@
           <div class="relative inline-block ">
               <!-- Dropdown toggle button -->
               <button id="menu_button" class="relative z-10 block py-1">
-                  <img src="public/images/menu.png" class="w-7">
+                  <img src="public/images/menu.webp" class="w-7">
               </button>
 
               <!-- Dropdown menu -->
@@ -87,12 +91,13 @@
         <div class="lx-card carousel-container">
           <div class="item fade">
             <div class="image image1">
-              <div id="articles" class="h-52 mt-48 md:mt-96 lg:mt-72 lg:w-4/6 md:mr-6 md:text-6xl text-3xl lg:ml-16 ml-12">
-                <p class="text-white font-serif font-medium">
-                  Web Dev articles &  <span class="tracking-wide lg:block">consumer electronics contents</span>
+              <div id="articles" class="h-52 mt-44 md:mt-96 lg:mt-72 w-5/6 mx-auto md:text-6xl text-3xl lg:ml-16 p-1 md:p-0">
+                <p class="text-gray-100" style="
+                font-family: 'Manrope', sans-serif;">
+                  Web Dev articles &  <span class="md:tracking-wide lg:block">consumer electronics contents</span>
                 </p>
                 <a href="#blogs" class="">
-                  <button type="button" class="bg-light_theme hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 lg:px-8 px-5 py-1 lg:py-2 transition ease-in duration-200 text-center md:text-2xl text-xl text-gray-300 font-medium shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-full">
+                  <button type="button" class="bg-light_theme hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 lg:px-8 px-5 py-1 lg:py-2 transition ease-in duration-200 text-center md:text-2xl text-xl text-gray-200 font-medium shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-full">
                     Read
                   </button>
                 </a>
@@ -101,13 +106,14 @@
           </div>
           <div class="item fade">
             <div class="image image2">
-              <div class="h-60 lg:w-4/6 w-11/12 md:text-6xl text-3xl mx-auto md:my-auto mt-44">
-                <p class="text-white text-center font-serif font-medium tracking-wide">
+              <div class="h-60 w-5/6 md:text-6xl text-3xl mx-auto md:my-auto mt-44 p-1">
+                <p class="text-gray-800 text-center md:tracking-wide" style="
+                font-family: 'Manrope', sans-serif;">
                   Digital Solutions for </br> <span class="tracking-wide">Business Transformations</span>
                 </p>
                 <div class="w-full grid place-items-center">
                   <a href="#services" class="">
-                    <button type="button" class="bg-light_theme mx-auto hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 lg:px-8 px-5 py-1 lg:py-2 transition ease-in duration-200 text-center text-xl md:text-2xl text-gray-300 font-medium shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-full">
+                    <button type="button" class="bg-pink-500 mx-auto hover:text-gray-200 hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 lg:px-8 px-5 py-1 lg:py-2 transition ease-in duration-200 text-center text-xl md:text-2xl text-gray-800 font-medium shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-full">
                       Services
                     </button>
                   </a>
@@ -117,12 +123,12 @@
           </div>
           <div class="item fade">
             <div class="image image3">
-              <div id="portfolio" class="h-50 static md:absolute md:bottom-72 md:mt-0 lg:bottom-10 mt-60 lg:w-4/6 w-9/12 md:text-6xl text-3xl lg:ml-16 ml-12">
+              <div id="portfolio" class="h-50 static md:absolute md:bottom-72 md:mt-0 lg:bottom-12 mt-60 w-5/6 md:text-6xl text-3xl md:ml-12 lg:ml-16 mx-auto p-1">
                 <p class="text-white font-serif font-medium">
                   <span class="lg:block">Portfolio</span> A look at some of my projects
                 </p>
                 <a href="portfolio" class="">
-                  <button type="button" class="bg-light_theme hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 lg:px-8 px-5 py-1 lg:py-2 transition ease-in duration-200 text-center text-xl md:text-2xl text-gray-300 font-medium shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-full">
+                  <button type="button" class="bg-light_theme hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 lg:px-8 px-5 py-1 lg:py-2 transition ease-in duration-200 text-center text-xl md:text-2xl text-gray-200 font-medium shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-full">
                     Portfolio
                   </button>
                 </a>
@@ -132,7 +138,8 @@
           <div class="item fade">
             <div class="image image4">
               <div class="h-60 w-10/12 lg:w-4/6 md:text-6xl text-3xl mx-auto lg:grid place-self-end mt-64 lg:mt-0 lg:pb-72">
-                <p class="text-white text-center font-serif font-medium tracking-wide mt-20 md:mt-0">
+                <p class="text-gray-100 text-center tracking-wide mt-20 md:mt-0" style="
+                font-family: 'Manrope', sans-serif;">
                   <span class="lg:block">Let's Talk</span> Anyting big or small
                 </p>
                 <div class="w-full flex justify-center items-center">
@@ -154,7 +161,7 @@
 
 <!--Hero-->
 
-<div class="hero w-11/12 mx-auto">
+<div class="hero w-11/12 mx-auto mt-8">
   <div class="lg:flex">
     <div class="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2">
         <img class="w-full h-full lg:max-w-3xl lg:pr-7" src="public/images/Website Creator-pana.svg" alt="Website Creator-pana.svg">
@@ -174,7 +181,7 @@
 </div>
 
 <!-- articles -->
-<div class="articles w-11/12 mx-auto md:mt-6" id="blogs">
+<div class="articles w-11/12 mx-auto mt-8" id="blogs">
   <div class="mb-10 md:mb-16">
     <h2 class="text-2xl md:text-4xl lg:text-5xl text-gray-800 py-1">Latest Blogs</h2>
     <p class="text-lg md:text-2xl text-gray-700">Read blogs about web dev, consumer electronics and more</p>
@@ -204,7 +211,7 @@
 
     </div>
 
-    <a href="articles" class="inline-flex justify-center items-center mt-6 hover:text-gray-300 text-xl absolute xl:right-14 lg:right-24 md:right-16 right-10 bg-light_theme hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 text-white w-32 h-10 transition ease-in duration-200 text-center shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-full">Read More  </a>
+    <a href="articles" class="inline-flex justify-center items-center mt-6 hover:text-gray-300 text-xl absolute xl:right-14 lg:right-24 md:right-16 right-4 bg-light_theme hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 text-white w-32 h-10 transition ease-in duration-200 text-center shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-full">Read More</a>
 </div>
 
 <!-- services -->
