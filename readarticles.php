@@ -30,7 +30,7 @@
         </div>
         <div id="nav_items" class="w-1/2 my-auto mr-6 hidden lg:block">
           <ul class="flex lg:ml-36">
-            <li class="w-1/5 bg-pink-200 text-pink-500 rounded-full py-1 text-center text-base lg:text-xl">
+          <li class="w-1/5 hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl text-gray-700">
               <a href="../home">
                 Home
               </a>
