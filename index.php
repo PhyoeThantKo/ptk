@@ -15,74 +15,44 @@
 </head>
 <body style="font-family:'Product Sans Regular'" class="w-full h-full m-0 p-0 overflow-x-hidden">
     <!-- nav bar -->
-    <div id="nav_container" class="fixed w-full px-6 lg:mt-3 z-50 bg-notsowhite lg:bg-transparent drop-shadow-xl lg:drop-shadow-none">
-      <nav id="nav_bar" class="flex max-w-7xl lg:h-11 lg:rounded-l-full lg:rounded-r-full p-2 lg:p-0 lg:bg-earth mx-auto">
-        <div id="logo" class="lg:w-1/2 md:w-11/12 w-10/12 my-auto lg:ml-6 ml-2">
-          <a href="" class="text-3xl lg:text-2xl font-extrabold hover:text-light_theme">
-            PTK
-            <span class="font-light text-sm">
-              PRODUCT DESIGN + WEB DEV
-            </span>
-          </a>
-        </div>
-        <div id="nav_items" class="w-1/2 my-auto mr-6 hidden lg:block">
-          <ul class="flex lg:ml-36">
-            <li class="w-1/5 bg-pink-200 text-pink-500 rounded-full py-1 text-center text-base lg:text-xl">
-              <a href="home">
-                Home
-              </a>
-            </li>
-            <li class="w-1/5 hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl text-gray-700">
-              <a href="portfolio" >Portfolio</a>
-            </li>
-            <li class="w-1/5  hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl text-gray-700">
-              <a href="contact" >Contact</a>
-            </li>
-            <li class="w-1/5 hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl text-gray-700">
-              <a href="about" >About</a>
-            </li>
-            <li class="w-1/5 hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl text-yellow-500">
-              <a href="articles">Articles</a>
-            </li>
-          </ul>
-        </div>
-        <div id="mobile_nav" class="lg:hidden w-1/12 ml-4">
-          
-          <div class="relative inline-block ">
-              <!-- Dropdown toggle button -->
-              <button id="menu_button" class="relative z-10 block py-1">
-                  <img src="public/images/menu.webp" class="w-7">
-              </button>
+    <section class="fixed w-full px-6 py-2 lg:py-0 lg:mt-3 z-50 bg-notsowhite lg:bg-transparent shadow-md lg:shadow-none">
+      <div class="mx-auto max-w-7xl">
 
-              <!-- Dropdown menu -->
-              <div id="menu" class="absolute hidden right-0 z-20 w-48 py-2 mt-2 bg-gray-100 rounded-md shadow-xl dark:bg-gray-800">
-                  <a href="home" class="block px-4 py-3 text-sm md:text-lg text-gray-600 capitalize transition-colors duration-200 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
-                      Home
-                  </a>
-
-                  <a href="articles" class="block px-4 py-3 text-sm md:text-lg text-gray-600 capitalize transition-colors duration-200 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
-                      Articles
-                  </a>
-                  
-                  <a href="portfolio" class="block px-4 py-3 text-sm md:text-lg text-gray-600 capitalize transition-colors duration-200 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
-                      Portfolio
-                  </a>
-                  
-                  <hr class="border-gray-200 dark:border-gray-700 ">
-
-                  <a href="contact" class="block px-4 py-3 text-sm md:text-lg text-gray-600 capitalize transition-colors duration-200 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
-                      Contact
-                  </a>
-
-                  <a href="about" class="block px-4 py-3 text-sm md:text-lg text-gray-600 capitalize transition-colors duration-200 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
-                      About
-                  </a>
-
+          <nav class="relative z-50 select-none" x-data="{ showMenu: false }">
+              <div class="flex items-center lg:h-11 lg:rounded-l-full lg:rounded-r-full lg:bg-earth">
+                  <div class="flex items-center justify-start w-1/4 h-full lg:px-6">
+                    <a href="" class="text-3xl lg:text-2xl font-extrabold hover:text-light_theme">
+                      PTK
+                      <span class="font-light text-sm hidden lg:inline-block">
+                        PRODUCT DESIGN + WEB DEV
+                      </span>
+                    </a>
+                  </div>
+                  <div class="top-0 left-0 items-start hidden w-full h-full p-4 text-sm bg-gray-900 bg-opacity-50 md:items-center md:w-3/4 md:absolute lg:text-base md:bg-transparent md:p-0 md:relative md:flex" :class="{'flex fixed': showMenu, 'hidden': !showMenu }">
+                      <div class="flex-col justify-end w-full h-auto overflow-hidden bg-white rounded-lg md:bg-transparent md:overflow-visible md:rounded-none md:relative md:flex md:flex-row">
+                          <a href="" class="inline-flex items-center block w-auto h-16 px-6 text-xl font-black leading-none text-gray-900 md:hidden">PTK</a>
+                          <div class="flex flex-col items-start justify-end w-full lg:space-x-2 md:w-2/3 md:mt-0 md:flex-row md:items-center px-6 pb-4 lg:pb-0">
+                              <a href="home" class="lg:bg-pink-200 lg:px-4 hover:text-pink-500 rounded-full py-2 lg:py-1 text-base lg:text-xl text-pink-600">Home</a>
+                              <a href="portfolio" class="lg:px-4 hover:text-pink-500 rounded-full py-2 lg:py-1 text-base lg:text-xl text-gray-700">Portfolio</a>
+                              <a href="contact" class="lg:px-4 hover:text-pink-500 rounded-full py-2 lg:py-1 text-base lg:text-xl text-gray-700">Contact</a>
+                              <a href="about" class="lg:px-4 hover:text-pink-500 rounded-full py-2 lg:py-1 text-base lg:text-xl text-gray-700">About</a>
+                              <a href="articles" class="lg:px-4 hover:text-pink-500 text-yellow-600 rounded-full py-2 lg:py-1 text-base lg:text-xl">Articles</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div @click="showMenu = !showMenu" class="absolute right-0 flex flex-col items-center justify-center bg-gray-300 w-10 h-10 rounded-full cursor-pointer md:hidden hover:bg-gray-100">
+                      <svg class="w-6 h-6 text-gray-700" x-show="!showMenu" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" x-cloak="">
+                          <path d="M4 6h16M4 12h16M4 18h16"></path>
+                      </svg>
+                      <svg class="w-6 h-6 text-gray-700" x-show="showMenu" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" x-cloak="">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                      </svg>
+                  </div>
               </div>
-          </div>
-        </div>
-      </nav>
-    </div>
+          </nav>
+
+      </div>
+    </section>
 
   <!-- carousel -->
   <section class="has-dflex-center">
@@ -330,7 +300,7 @@
 
 <!-- Footer -->
 <?php include('components/footer.php') ?>
-<script type="text/javascript" src="nav.js"></script>
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 <script  src="app/carousel/script.js"></script>
 
 </body>
