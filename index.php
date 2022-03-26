@@ -20,7 +20,7 @@
 
           <nav class="relative z-50 select-none" x-data="{ showMenu: false }">
               <div class="flex items-center lg:h-11 lg:rounded-l-full lg:rounded-r-full lg:bg-earth">
-                  <div class="flex items-center justify-start h-full lg:px-6">
+                  <div class="flex items-center justify-start md:w-1/2 h-full lg:px-6">
                     <a href="" class="text-3xl lg:text-2xl font-extrabold hover:text-light_theme">
                       PTK
                       <span class="font-light text-sm">
@@ -29,14 +29,14 @@
                     </a>
                   </div>
                   <div class="top-0 left-0 items-start hidden w-full h-full p-4 text-sm bg-gray-900 bg-opacity-50 md:items-center md:w-3/4 md:absolute lg:text-base md:bg-transparent md:p-0 md:relative md:flex" :class="{'flex fixed': showMenu, 'hidden': !showMenu }">
-                      <div class="flex-col justify-end w-full h-auto overflow-hidden bg-white rounded-lg md:bg-transparent md:overflow-visible md:rounded-none md:relative md:flex md:flex-row">
+                      <div class="flex-col justify-end w-full lg:px-4 h-auto overflow-hidden bg-white rounded-lg md:bg-transparent md:overflow-visible md:rounded-none md:relative md:flex md:flex-row">
                           <a href="" class="inline-flex items-center block w-auto h-16 px-6 text-xl font-black leading-none text-gray-900 md:hidden">PTK</a>
-                          <div class="flex flex-col items-start justify-end w-full lg:space-x-2 md:w-2/3 md:mt-0 md:flex-row px-6 pb-4 md:pb-0">
-                              <a href="home" class="lg:bg-pink-200 md:px-4 hover:text-pink-500 rounded-full py-2 lg:py-1 text-base lg:text-xl text-pink-600">Home</a>
-                              <a href="portfolio" class="md:px-4 hover:text-pink-500 rounded-full py-2 lg:py-1 text-base lg:text-xl text-gray-700">Portfolio</a>
-                              <a href="contact" class="md:px-4 hover:text-pink-500 rounded-full py-2 lg:py-1 text-base lg:text-xl text-gray-700">Contact</a>
-                              <a href="about" class="md:px-4 hover:text-pink-500 rounded-full py-2 lg:py-1 text-base lg:text-xl text-gray-700">About</a>
-                              <a href="articles" class="md:px-4 hover:text-pink-500 text-yellow-600 rounded-full py-2 lg:py-1 text-base lg:text-xl">Articles</a>
+                          <div class="flex flex-col items-start justify-end w-full lg:space-x-2 md:w-2/3 md:mt-0 md:flex-row px-6 md:px-0 pb-4 md:pb-0">
+                              <a href="home" class="md:bg-pink-200 md:px-4 hover:text-pink-500 rounded-full py-2 lg:py-1 text-lg lg:text-xl text-pink-600">Home</a>
+                              <a href="portfolio" class="md:px-4 hover:text-pink-500 rounded-full py-2 lg:py-1 text-lg lg:text-xl text-gray-700">Portfolio</a>
+                              <a href="contact" class="md:px-4 hover:text-pink-500 rounded-full py-2 lg:py-1 text-lg lg:text-xl text-gray-700">Contact</a>
+                              <a href="about" class="md:px-4 hover:text-pink-500 rounded-full py-2 lg:py-1 text-lg lg:text-xl text-gray-700">About</a>
+                              <a href="articles" class="md:px-4 hover:text-pink-500 text-yellow-600 rounded-full py-2 lg:py-1 text-lg lg:text-xl">Articles</a>
                           </div>
                       </div>
                   </div>
