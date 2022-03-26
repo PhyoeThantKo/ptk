@@ -19,10 +19,10 @@
 
           <nav class="relative z-50 select-none" x-data="{ showMenu: false }">
               <div class="flex items-center lg:h-11 lg:rounded-l-full lg:rounded-r-full lg:bg-earth">
-                  <div class="flex items-center justify-start w-1/4 h-full lg:px-6">
+                  <div class="flex items-center justify-start h-full lg:px-6">
                     <a href="" class="text-3xl lg:text-2xl font-extrabold hover:text-light_theme">
                       PTK
-                      <span class="font-light text-sm hidden lg:inline-block">
+                      <span class="font-light text-sm">
                         PRODUCT DESIGN + WEB DEV
                       </span>
                     </a>

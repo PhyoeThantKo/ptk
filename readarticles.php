@@ -18,76 +18,47 @@
      <link rel="icon" type="image/x-icon" href="../public/images/fav.webp">
 
 <body  class="bg-notsowhite" style="font-family:'Product Sans Regular'">
-<div id="nav_container" class="fixed w-full lg:mt-3 z-50">
-      <nav id="nav_bar" class="flex lg:w-11/12 lg:h-11 lg:rounded-l-full lg:rounded-r-full p-2 lg:p-0 bg-transparent lg:bg-earth bg-notsowhite mx-auto">
-        <div id="logo" class="lg:w-1/2 md:w-11/12 w-10/12 my-auto lg:ml-6 ml-2">
-          <a href="" class="text-3xl lg:text-2xl font-extrabold hover:text-light_theme">
-            PTK
-            <span class="font-light text-sm">
-              PRODUCT DESIGN + WEB DEV
-            </span>
-          </a>
-        </div>
-        <div id="nav_items" class="w-1/2 my-auto mr-6 hidden lg:block">
-          <ul class="flex lg:ml-36">
-          <li class="w-1/5 hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl text-gray-700">
-              <a href="../home">
-                Home
-              </a>
-            </li>
-            <li class="w-1/5 hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl text-gray-700">
-              <a href="../portfolio" >Portfolio</a>
-            </li>
-            <li class="w-1/5  hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl text-gray-700">
-              <a href="../contact" >Contact</a>
-            </li>
-            <li class="w-1/5 hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl text-gray-700">
-              <a href="../about" >About</a>
-            </li>
-            <li class="w-1/5 hover:text-pink-500 rounded-full py-1 text-center text-base lg:text-xl text-yellow-500">
-              <a href="../articles">Articles</a>
-            </li>
-          </ul>
-        </div>
-        <div id="mobile_nav" class="lg:hidden w-1/12 ml-4">
-          
-          <div class="relative inline-block ">
-              <!-- Dropdown toggle button -->
-              <button id="menu_button" class="relative z-10 block py-1">
-                  <img src="../public/images/menu.webp" class="w-7">
-              </button>
+<section class="fixed w-full px-6 py-2 lg:py-0 lg:mt-3 z-50 bg-notsowhite lg:bg-transparent shadow-md lg:shadow-none">
+      <div class="mx-auto max-w-7xl">
 
-              <!-- Dropdown menu -->
-              <div id="menu" class="absolute hidden right-0 z-20 w-48 py-2 mt-2 bg-gray-100 rounded-md shadow-xl dark:bg-gray-800">
-                  <a href="../home" class="block px-4 py-3 text-sm md:text-lg text-gray-600 capitalize transition-colors duration-200 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
-                      Home
-                  </a>
-
-                  <a href="../articles" class="block px-4 py-3 text-sm md:text-lg text-gray-600 capitalize transition-colors duration-200 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
-                      Articles
-                  </a>
-                  
-                  <a href="../portfolio" class="block px-4 py-3 text-sm md:text-lg text-gray-600 capitalize transition-colors duration-200 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
-                      Portfolio
-                  </a>
-                  
-                  <hr class="border-gray-200 dark:border-gray-700 ">
-
-                  <a href="../contact" class="block px-4 py-3 text-sm md:text-lg text-gray-600 capitalize transition-colors duration-200 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
-                      Contact
-                  </a>
-
-                  <a href="../about" class="block px-4 py-3 text-sm md:text-lg text-gray-600 capitalize transition-colors duration-200 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
-                      About
-                  </a>
-
+          <nav class="relative z-50 select-none" x-data="{ showMenu: false }">
+              <div class="flex items-center lg:h-11 lg:rounded-l-full lg:rounded-r-full lg:bg-earth">
+                  <div class="flex items-center justify-start h-full lg:px-6">
+                    <a href="" class="text-3xl lg:text-2xl font-extrabold hover:text-light_theme">
+                      PTK
+                      <span class="font-light text-sm">
+                        PRODUCT DESIGN + WEB DEV
+                      </span>
+                    </a>
+                  </div>
+                  <div class="top-0 left-0 items-start hidden w-full h-full p-4 text-sm bg-gray-900 bg-opacity-50 md:items-center md:w-3/4 md:absolute lg:text-base md:bg-transparent md:p-0 md:relative md:flex" :class="{'flex fixed': showMenu, 'hidden': !showMenu }">
+                      <div class="flex-col justify-end w-full h-auto overflow-hidden bg-white rounded-lg md:bg-transparent md:overflow-visible md:rounded-none md:relative md:flex md:flex-row">
+                          <a href="" class="inline-flex items-center block w-auto h-16 px-6 text-xl font-black leading-none text-gray-900 md:hidden">PTK</a>
+                          <div class="flex flex-col items-start justify-end w-full lg:space-x-2 md:w-2/3 md:mt-0 md:flex-row px-6 pb-4 md:pb-0">
+                              <a href="../home" class="md:px-4 hover:text-pink-500 rounded-full py-2 lg:py-1 text-base lg:text-xl text-gray-700">Home</a>
+                              <a href="../portfolio" class="md:px-4 hover:text-pink-500 rounded-full py-2 lg:py-1 text-base lg:text-xl text-gray-700">Portfolio</a>
+                              <a href="../contact" class="md:px-4 hover:text-pink-500 rounded-full py-2 lg:py-1 text-base lg:text-xl text-gray-700">Contact</a>
+                              <a href="../about" class="md:px-4 hover:text-pink-500 rounded-full py-2 lg:py-1 text-base lg:text-xl text-gray-700">About</a>
+                              <a href="../articles" class="md:px-4 hover:text-pink-500 rounded-full py-2 lg:py-1 text-base lg:text-xl text-yellow-600">Articles</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div @click="showMenu = !showMenu" class="absolute right-0 flex flex-col items-center justify-center bg-gray-300 w-10 h-10 rounded-full cursor-pointer md:hidden hover:bg-gray-100">
+                      <svg class="w-6 h-6 text-gray-700" x-show="!showMenu" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" x-cloak="">
+                          <path d="M4 6h16M4 12h16M4 18h16"></path>
+                      </svg>
+                      <svg class="w-6 h-6 text-gray-700" x-show="showMenu" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" x-cloak="">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                      </svg>
+                  </div>
               </div>
-          </div>
-        </div>
-      </nav>
-    </div>
+          </nav>
 
-<div class="w-11/12 pt-24 lg:px-4 mx-auto">
+      </div>
+</section>
+
+<section class="w-full px-6">
+<div class="max-w-7xl pt-24 lg:px-4 mx-auto">
      <p class="text-gray-700">
           <a href="/ptk" class="text-light_theme">PTK</a><img src="../public/images/navi_next.svg" class="inline-block"><a href="/ptk/articles">Articles</a><img src="../public/images/navi_next.svg" class="inline-block"><?php echo $articles['tag_name'] ?>
      </p>
@@ -106,7 +77,10 @@
      </div>
 
 </div>
-<div class="text-xl md:text-2xl w-11/12 mx-auto px-4 my-8">
+</section>
+
+<section class="w-full px-6">
+<div class="text-xl md:text-2xl max-w-7xl mx-auto px-4 my-8">
      <h2>Our Services That You Might Interest</h2>
      <hr class="ml-36 mb-1 border-b-2 border-gray-600">
      <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 my-8 text-center lg:text-left">
@@ -122,7 +96,87 @@
                <?php endwhile; ?>
      </div>
 </div>
-<?php include('components/footer.php') ?>
-<script src="../nav.js"></script>
+</section>
+
+<footer class="bg-gray-800 px-6 w-full pt-4 pb-8 xl:pt-8">
+    <div class="max-w-7xl mx-auto text-gray-100 dark:text-gray-100">
+        <ul class="text-lg font-light pb-4 md:flex flex-wrap justify-center">
+            <li class="md:w-1/3 lg:w-1/3">
+                <div>
+                    <h2 class="text-gray-300 dark:text-gray-100 text-3xl mb-1">
+                        PTK
+                    </h2>
+                    <p class="text-gray-400">
+                    product design + web dev, quality blogs, magic services and more
+                    </p>
+                </div>
+            </li>
+            <li class="mt-4 md:mt-0 md:w-1/3 lg:w-1/3">
+                <div class="md:text-center">
+                    <h2 class="text-gray-300 text-md uppercase mb-3">
+                        Site Map
+                    </h2>
+                    <ul>
+                        <li class="mb-1 dark:hover:text-white transition-colors duration-100">
+                            <a href="../home" class="hover:text-gray-500 text-gray-400">
+                                Home
+                            </a>
+                        </li>
+                        <li class="mb-1 dark:hover:text-white transition-colors duration-100">
+                            <a href="../articles" class="hover:text-gray-500 text-gray-400">
+                                Articles
+                            </a>
+                        </li>
+                        <li class="mb-1 dark:hover:text-white transition-colors duration-100">
+                            <a href="../portfolio" class="hover:text-gray-500 text-gray-400">
+                                Portfolio
+                            </a>
+                        </li>
+                        <li class="mb-1 dark:hover:text-white transition-colors duration-100">
+                            <a href="../contact" class="hover:text-gray-500 text-gray-400">
+                                Contact
+                            </a>
+                        </li>
+                        <li class="mb-1 dark:hover:text-white transition-colors duration-200">
+                            <a href="../about" class="hover:text-gray-500 text-gray-400">
+                                About
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="mt-4 md:mt-0 md:w-1/3 lg:w-1/3">
+                <div class="md:text-center">
+                    <h2 class="text-gray-300 text-md uppercase mb-4">
+                        Social Media
+                    </h2>
+                    <div class="flex flex-wrap md:max-w-xs md:mx-auto">
+                      <a href="https://t.me/ptk7858" class="md:mx-6 mr-10 mb-5">
+                        <svg class="h-7 w-7 hover:text-gray-600 text-gray-400 dark:hover:text-white transition-colors duration-200"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4" /></svg>
+                      </a>
+                      <a href="https://www.facebook.com/ptk7858" class="md:mx-6 mr-10 mb-5">
+                        <svg class="h-7 w-7 hover:text-gray-600 text-gray-400 dark:hover:text-white transition-colors duration-200"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg>
+                      </a>
+                      <a href="https://github.com/PhyoeThantKo" class="md:mx-6 mr-10 mb-5">
+                        <svg class="h-7 w-7 hover:text-gray-600 text-gray-400 dark:hover:text-white transition-colors duration-200"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" /></svg>
+                      </a>
+                      <a href="https://www.instagram.com/ptk__ig/" class="md:mx-6 mr-10 mb-5">
+                        <svg class="h-7 w-7 hover:text-gray-600 text-gray-400 dark:hover:text-white transition-colors duration-200"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg>
+                      </a>
+                      <a href="https://twitter.com/PTK7858" class="md:mx-6 mr-10 mb-5">
+                        <svg class="h-7 w-7 hover:text-gray-600 text-gray-400 dark:hover:text-white transition-colors duration-200"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" /></svg>
+                      </a>
+                  </div>
+                </div>
+            </li>
+        </ul>
+
+        <div class="text-center pt-3 border-t-2 w-full md:w-2/6 font-light text-gray-300 md:mx-auto">
+        ©2022 Designed & developed with ♥ by <a href="" class="underline underline-offset-auto hover:text-gray-500 hover:border-gray-500">PTK</a>
+        </div>
+    </div>
+</footer>
+
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </body>
 </html>

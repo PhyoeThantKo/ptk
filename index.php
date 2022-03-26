@@ -20,10 +20,10 @@
 
           <nav class="relative z-50 select-none" x-data="{ showMenu: false }">
               <div class="flex items-center lg:h-11 lg:rounded-l-full lg:rounded-r-full lg:bg-earth">
-                  <div class="flex items-center justify-start w-1/4 h-full lg:px-6">
+                  <div class="flex items-center justify-start h-full lg:px-6">
                     <a href="" class="text-3xl lg:text-2xl font-extrabold hover:text-light_theme">
                       PTK
-                      <span class="font-light text-sm hidden lg:inline-block">
+                      <span class="font-light text-sm">
                         PRODUCT DESIGN + WEB DEV
                       </span>
                     </a>
@@ -291,7 +291,7 @@
       </div>
     </div>
         
-    <div class="flex justify-end w-full lg:w-1/2">
+    <div class="flex lg:justify-end md:justify-center w-full lg:w-1/2">
       <img class=" md:max-w-md md:max-h-md" src="public/images/Email campaign-bro.svg">
     </div>
   </div>
