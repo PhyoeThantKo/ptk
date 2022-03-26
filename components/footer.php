@@ -18,27 +18,27 @@
                     </h2>
                     <ul>
                         <li class="mb-1 dark:hover:text-white transition-colors duration-100">
-                            <a href="/ptk/home" class="hover:text-gray-500 text-gray-400">
+                            <a href="home" class="hover:text-gray-500 text-gray-400">
                                 Home
                             </a>
                         </li>
                         <li class="mb-1 dark:hover:text-white transition-colors duration-100">
-                            <a href="/ptk/articles" class="hover:text-gray-500 text-gray-400">
+                            <a href="articles" class="hover:text-gray-500 text-gray-400">
                                 Articles
                             </a>
                         </li>
                         <li class="mb-1 dark:hover:text-white transition-colors duration-100">
-                            <a href="/ptk/portfolio" class="hover:text-gray-500 text-gray-400">
+                            <a href="portfolio" class="hover:text-gray-500 text-gray-400">
                                 Portfolio
                             </a>
                         </li>
                         <li class="mb-1 dark:hover:text-white transition-colors duration-100">
-                            <a href="/ptk/contact" class="hover:text-gray-500 text-gray-400">
+                            <a href="contact" class="hover:text-gray-500 text-gray-400">
                                 Contact
                             </a>
                         </li>
                         <li class="mb-1 dark:hover:text-white transition-colors duration-200">
-                            <a href="/ptk/about" class="hover:text-gray-500 text-gray-400">
+                            <a href="about" class="hover:text-gray-500 text-gray-400">
                                 About
                             </a>
                         </li>
