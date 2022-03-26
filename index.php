@@ -31,7 +31,7 @@
                   <div class="top-0 left-0 items-start hidden w-full h-full p-4 text-sm bg-gray-900 bg-opacity-50 md:items-center md:w-3/4 md:absolute lg:text-base md:bg-transparent md:p-0 md:relative md:flex" :class="{'flex fixed': showMenu, 'hidden': !showMenu }">
                       <div class="flex-col justify-end w-full h-auto overflow-hidden bg-white rounded-lg md:bg-transparent md:overflow-visible md:rounded-none md:relative md:flex md:flex-row">
                           <a href="" class="inline-flex items-center block w-auto h-16 px-6 text-xl font-black leading-none text-gray-900 md:hidden">PTK</a>
-                          <div class="flex flex-col items-start justify-end w-full lg:space-x-2 md:w-2/3 md:mt-0 md:flex-row lg:px-6 pb-4 md:pb-0">
+                          <div class="flex flex-col items-start justify-end w-full lg:space-x-2 md:w-2/3 md:mt-0 md:flex-row px-6 pb-4 md:pb-0">
                               <a href="home" class="lg:bg-pink-200 md:px-4 hover:text-pink-500 rounded-full py-2 lg:py-1 text-base lg:text-xl text-pink-600">Home</a>
                               <a href="portfolio" class="md:px-4 hover:text-pink-500 rounded-full py-2 lg:py-1 text-base lg:text-xl text-gray-700">Portfolio</a>
                               <a href="contact" class="md:px-4 hover:text-pink-500 rounded-full py-2 lg:py-1 text-base lg:text-xl text-gray-700">Contact</a>
@@ -63,7 +63,7 @@
             <div class="image image1">
 
             <div class="container max-w-7xl mx-auto h-full">
-              <div class="flex flex-col px-6 h-full justify-center">
+              <div class="flex flex-col px-10 lg:px-6 h-full justify-center">
                 <p class="text-gray-100 md:text-6xl text-3xl mb-5" style="
                 font-family: 'Manrope', sans-serif;">
                   Web Dev articles &  <span class="md:tracking-wide lg:block">consumer electronics contents</span>
@@ -82,7 +82,7 @@
             <div class="image image2">
 
             <div class="container max-w-7xl mx-auto h-full">
-              <div class="flex flex-col px-6 h-full justify-center items-center">
+              <div class="flex flex-col px-14 lg:px-6 h-full justify-center items-center">
                 <p class="text-gray-800 text-center md:text-6xl text-3xl mb-5" style="
                 font-family: 'Manrope', sans-serif;">
                   Digital Solutions for </br> <span class="tracking-wide">Business Transformations</span>
@@ -101,7 +101,7 @@
             <div class="image image3">
 
             <div class="container max-w-7xl mx-auto h-full">
-              <div class="flex flex-col px-6 h-full justify-end pb-14">
+              <div class="flex flex-col px-10 lg:px-6 h-full justify-end pb-14">
                 <p class="text-gray-100 md:text-6xl text-3xl mb-5" style="
                 font-family: 'Manrope', sans-serif;">
                   <span class="lg:block">Portfolio</span> A look at some of my projects
