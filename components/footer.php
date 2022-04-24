@@ -72,7 +72,7 @@
         </ul>
 
         <div class="text-center pt-3 border-t-2 w-full md:w-2/6 font-light text-gray-300 md:mx-auto">
-        ©2022 Designed & developed with ♥ by <a href="" class="underline underline-offset-auto hover:text-gray-500 hover:border-gray-500">PTK</a>
+        ©2022 Designed & developed with ☕ by <a href="" class="underline underline-offset-auto hover:text-gray-500 hover:border-gray-500">PTKCE</a>
         </div>
     </div>
 </footer>

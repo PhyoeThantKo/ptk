@@ -60,7 +60,7 @@
 <section class="w-full px-6">
 <div class="max-w-7xl pt-24 lg:px-4 mx-auto">
      <p class="text-gray-700">
-          <a href="/ptk" class="text-light_theme">PTK</a><img src="../public/images/navi_next.svg" class="inline-block"><a href="/ptk/articles">Articles</a><img src="../public/images/navi_next.svg" class="inline-block"><?php echo $articles['tag_name'] ?>
+          <a href="/ptk" class="text-light_theme">PTK</a><img src="../public/images/navi_next.svg" class="inline-block"><a href="../articles">Articles</a><img src="../public/images/navi_next.svg" class="inline-block"><a href="../articles.php?tag_id=<?php echo $articles['tag_id'] ?>"><?php echo $articles['tag_name'] ?></a>
      </p>
      <h1 class="text-2xl md:text-4xl lg:text-5xl text-gray-800 my-2"><?php echo $articles['header']; ?></h1>
      <p class="text-gray-700">
@@ -69,7 +69,7 @@
                $MySQLDataBaseDateTime = "$timestamp";
                echo DateTime::createFromFormat("Y-m-d H:i:s",$MySQLDataBaseDateTime)->format("d/m/Y");
           ?>
-          <span class="text-gray-500">By <a href="index.php" class="underline underline-offset-auto hover:text-gray-600 hover:border-gray-600">Phyoe Thant Ko</a></span>
+          <span class="text-gray-500">By <a href="../home" class="underline underline-offset-auto hover:text-gray-600 hover:border-gray-600">Phyoe Thant Ko</a></span>
      </p>
 
      <div class="py-8 leading-relaxed md:leading-loose text-lg md:text-2xl lg:text-lg">

@@ -17,7 +17,7 @@
 
           <nav class="relative z-50 select-none" x-data="{ showMenu: false }">
               <div class="flex items-center lg:h-11 lg:rounded-l-full lg:rounded-r-full lg:bg-earth">
-                  <div class="flex items-center md:w-1/2 justify-start h-full lg:px-6">
+                  <div class="flex items-center justify-start md:w-1/2 h-full lg:px-6">
                     <a href="" class="text-3xl lg:text-2xl font-extrabold hover:text-light_theme">
                       PTK
                       <span class="font-light text-sm">
@@ -26,14 +26,14 @@
                     </a>
                   </div>
                   <div class="top-0 left-0 items-start hidden w-full h-full p-4 text-sm bg-gray-900 bg-opacity-50 md:items-center md:w-3/4 md:absolute lg:text-base md:bg-transparent md:p-0 md:relative md:flex" :class="{'flex fixed': showMenu, 'hidden': !showMenu }">
-                      <div class="flex-col justify-end w-full h-auto overflow-hidden bg-white rounded-lg md:bg-transparent md:overflow-visible md:rounded-none md:relative md:flex md:flex-row">
+                      <div class="flex-col justify-end w-full lg:px-4 h-auto overflow-hidden bg-white rounded-lg md:bg-transparent md:overflow-visible md:rounded-none md:relative md:flex md:flex-row">
                           <a href="" class="inline-flex items-center block w-auto h-16 px-6 text-xl font-black leading-none text-gray-900 md:hidden">PTK</a>
-                          <div class="flex flex-col items-start justify-end w-full lg:space-x-2 md:w-2/3 md:mt-0 md:flex-row lg:px-4 pb-4 md:pb-0">
+                          <div class="flex flex-col items-start justify-end w-full lg:space-x-2 md:w-2/3 md:mt-0 md:flex-row px-6 md:px-0 pb-4 md:pb-0">
                               <a href="home" class="md:px-4 hover:text-pink-500 rounded-full py-2 lg:py-1 text-lg lg:text-xl text-gray-700">Home</a>
                               <a href="portfolio" class="md:px-4 hover:text-pink-500 rounded-full py-2 lg:py-1 text-lg lg:text-xl text-gray-700">Portfolio</a>
                               <a href="contact" class="md:bg-pink-200 md:px-4 hover:text-pink-500 rounded-full py-2 lg:py-1 text-lg lg:text-xl text-pink-600">Contact</a>
                               <a href="about" class="md:px-4 hover:text-pink-500 rounded-full py-2 lg:py-1 text-lg lg:text-xl text-gray-700">About</a>
-                              <a href="articles" class="md:px-4 hover:text-pink-500 rounded-full py-2 lg:py-1 text-lg lg:text-xl text-yellow-600">Articles</a>
+                              <a href="articles" class="md:px-4 hover:text-pink-500 text-yellow-600 rounded-full py-2 lg:py-1 text-lg lg:text-xl">Articles</a>
                           </div>
                       </div>
                   </div>
@@ -64,8 +64,8 @@
             <div class="container py-16 mx-auto">
                   <div class="flex flex-col items-center justify-center space-y-8 lg:-mx-4 lg:flex-row lg:items-stretch lg:space-y-0">
                       <div class=" w-full lg:space-y-4 lg:mx-4">
-                        <h2 class="text-gray-700 lg:text-3xl text-2xl">Call</h2>
-                        <p class="text-gray-600 lg:text-2xl text-lg">+959785854399</p>
+                        <h2 class="text-gray-700 lg:text-3xl text-2xl">Call or Whatsapp</h2>
+                        <p class="text-gray-600 lg:text-2xl text-lg">+959942184456</p>
                         <br><br>
                         <h2 class="text-gray-700 lg:text-3xl text-2xl">Email</h2>
                         <p class="text-gray-600 lg:text-2xl text-lg">phyoethantko7858@gmail.com</p>
@@ -103,7 +103,7 @@
     </section>
     <!--Footer-->
     <div class="text-center mt-7 mb-3 pt-3 border-t-2 lg:w-2/6 font-light text-gray-800 mx-auto">
-      ©2022 Designed & developed with ♥ by <a href="home" class="underline underline-offset-auto hover:text-gray-500 hover:border-gray-500">PTK</a>
+      ©2022 Designed & developed with ☕ by <a href="home" class="underline underline-offset-auto hover:text-gray-500 hover:border-gray-500">PTKCE</a>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.0/alpine.js"></script>

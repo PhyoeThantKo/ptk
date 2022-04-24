@@ -241,7 +241,7 @@
 <!-- contact and portfolio -->
 
 <div class="bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400 dark:bg-gray-800 mt-16 w-full">
-    <div class="md:flex md:items-center md:justify-between py-8 md:py-14 max-w-7xl px-6 lg:px-0 mx-auto z-20 text-center md:text-left">
+    <div class="md:flex md:items-center md:justify-between py-8 md:py-14 max-w-7xl px-6 mx-auto z-20 text-center md:text-left">
         <h2 class="text-2xl md:text-4xl lg:text-5xl text-gray-800 dark:text-white ">
             <span class="block lg:mb-2">
                 Got a project ?
