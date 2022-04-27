@@ -4,7 +4,7 @@
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>PTK portfolio</title>
+     <title>PTKCE portfolio</title>
      <link rel="stylesheet" href="public/style/style.css">
      <script defer src="components/navlinkactive.js"></script>
      <link rel="stylesheet" href="components/navlinkactive.css">
@@ -21,7 +21,7 @@
               <div class="flex items-center lg:h-11 lg:rounded-l-full lg:rounded-r-full lg:bg-earth">
                   <div class="flex items-center justify-start md:w-1/2 h-full lg:px-6">
                     <a href="" class="text-3xl lg:text-2xl font-extrabold hover:text-light_theme">
-                      PTK
+                      PTKCE
                       <span class="font-light text-sm">
                         PRODUCT DESIGN + WEB DEV
                       </span>
@@ -29,7 +29,7 @@
                   </div>
                   <div class="top-0 left-0 items-start hidden w-full h-full p-4 text-sm bg-gray-900 bg-opacity-50 md:items-center md:w-3/4 md:absolute lg:text-base md:bg-transparent md:p-0 md:relative md:flex" :class="{'flex fixed': showMenu, 'hidden': !showMenu }">
                       <div class="flex-col justify-end w-full lg:px-4 h-auto overflow-hidden bg-white rounded-lg md:bg-transparent md:overflow-visible md:rounded-none md:relative md:flex md:flex-row">
-                          <a href="" class="inline-flex items-center block w-auto h-16 px-6 text-xl font-black leading-none text-gray-900 md:hidden">PTK</a>
+                          <a href="" class="inline-flex items-center block w-auto h-16 px-6 text-xl font-black leading-none text-gray-900 md:hidden">PTKCE</a>
                           <div class="flex flex-col items-start justify-end w-full lg:space-x-2 md:w-2/3 md:mt-0 md:flex-row px-6 md:px-0 pb-4 md:pb-0">
                               <a href="home" class="md:px-4 hover:text-pink-500 rounded-full py-2 lg:py-1 text-lg lg:text-xl text-gray-700">Home</a>
                               <a href="portfolio" class="md:bg-pink-200 md:px-4 hover:text-pink-500 rounded-full py-2 lg:py-1 text-lg lg:text-xl text-pink-600">Portfolio</a>
@@ -60,7 +60,7 @@
         <div>Product design + web development Myanmar</div>
         <div class="text-3xl md:text-4xl lg:text-6xl my-3 text-gray-200">I help people get personal spaces on the internet with technology</div>
         <div>
-          <a href="/ptk/about" class="transform hover:translate-x-1 inline-flex hover:text-gray-500 text-gray-300">About Me <span class="mr-4 ml-2"><svg class="h-8 w-8" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <line x1="5" y1="12" x2="19" y2="12" />  <line x1="15" y1="16" x2="19" y2="12" />  <line x1="15" y1="8" x2="19" y2="12" /></svg></span>
+          <a href="./about" class="transform hover:translate-x-1 inline-flex hover:text-gray-500 text-gray-300">About Me <span class="mr-4 ml-2"><svg class="h-8 w-8" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <line x1="5" y1="12" x2="19" y2="12" />  <line x1="15" y1="16" x2="19" y2="12" />  <line x1="15" y1="8" x2="19" y2="12" /></svg></span>
           </a>
           <a href="#cases" class="transform hover:translate-x-1 inline-flex hover:text-gray-500 text-gray-300">My projects<span class="mr-4 ml-2"><svg class="h-8 w-8" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <line x1="5" y1="12" x2="19" y2="12" />  <line x1="15" y1="16" x2="19" y2="12" />  <line x1="15" y1="8" x2="19" y2="12" /></svg></span>
           </a>

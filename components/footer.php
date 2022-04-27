@@ -4,7 +4,7 @@
             <li class="md:w-1/3 lg:w-1/3">
                 <div>
                     <h2 class="text-gray-300 dark:text-gray-100 text-3xl mb-1">
-                        PTK
+                        PTKCE
                     </h2>
                     <p class="text-gray-400">
                     product design + web dev, quality blogs, magic services and more

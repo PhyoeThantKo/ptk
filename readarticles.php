@@ -25,7 +25,7 @@
               <div class="flex items-center lg:h-11 lg:rounded-l-full lg:rounded-r-full lg:bg-earth">
                   <div class="flex items-center justify-start h-full lg:px-6">
                     <a href="" class="text-3xl lg:text-2xl font-extrabold hover:text-light_theme">
-                      PTK
+                      PTKCE
                       <span class="font-light text-sm">
                         PRODUCT DESIGN + WEB DEV
                       </span>
@@ -33,7 +33,7 @@
                   </div>
                   <div class="top-0 left-0 items-start hidden w-full h-full p-4 text-sm bg-gray-900 bg-opacity-50 md:items-center md:w-3/4 md:absolute lg:text-base md:bg-transparent md:p-0 md:relative md:flex" :class="{'flex fixed': showMenu, 'hidden': !showMenu }">
                       <div class="flex-col justify-end w-full h-auto overflow-hidden bg-white rounded-lg md:bg-transparent md:overflow-visible md:rounded-none md:relative md:flex md:flex-row">
-                          <a href="" class="inline-flex items-center block w-auto h-16 px-6 text-xl font-black leading-none text-gray-900 md:hidden">PTK</a>
+                          <a href="" class="inline-flex items-center block w-auto h-16 px-6 text-xl font-black leading-none text-gray-900 md:hidden">PTKCE</a>
                           <div class="flex flex-col items-start justify-end w-full lg:space-x-2 md:w-2/3 md:mt-0 md:flex-row px-6 pb-4 md:pb-0">
                               <a href="../home" class="md:px-4 hover:text-pink-500 rounded-full py-2 lg:py-1 text-base lg:text-xl text-gray-700">Home</a>
                               <a href="../portfolio" class="md:px-4 hover:text-pink-500 rounded-full py-2 lg:py-1 text-base lg:text-xl text-gray-700">Portfolio</a>
@@ -60,7 +60,7 @@
 <section class="w-full px-6">
 <div class="max-w-7xl pt-24 lg:px-4 mx-auto">
      <p class="text-gray-700">
-          <a href="/ptk" class="text-light_theme">PTK</a><img src="../public/images/navi_next.svg" class="inline-block"><a href="../articles">Articles</a><img src="../public/images/navi_next.svg" class="inline-block"><a href="../articles.php?tag_id=<?php echo $articles['tag_id'] ?>"><?php echo $articles['tag_name'] ?></a>
+          <a href="../home" class="text-light_theme">PTKCE</a><img src="../public/images/navi_next.svg" class="inline-block"><a href="../articles">Articles</a><img src="../public/images/navi_next.svg" class="inline-block"><a href="../articles.php?tag_id=<?php echo $articles['tag_id'] ?>"><?php echo $articles['tag_name'] ?></a>
      </p>
      <h1 class="text-2xl md:text-4xl lg:text-5xl text-gray-800 my-2"><?php echo $articles['header']; ?></h1>
      <p class="text-gray-700">
@@ -72,6 +72,9 @@
           <span class="text-gray-500">By <a href="../home" class="underline underline-offset-auto hover:text-gray-600 hover:border-gray-600">Phyoe Thant Ko</a></span>
      </p>
 
+     <br><br><br>
+     <img src="../admin/covers/<?php echo $articles['cover'] ?>" class="md:max-w-lg mx-auto">
+     
      <div class="py-8 leading-relaxed md:leading-loose text-lg md:text-2xl lg:text-lg">
           <?php echo $articles['code'] ?>
      </div>
@@ -104,7 +107,7 @@
             <li class="md:w-1/3 lg:w-1/3">
                 <div>
                     <h2 class="text-gray-300 dark:text-gray-100 text-3xl mb-1">
-                        PTK
+                        PTKCE
                     </h2>
                     <p class="text-gray-400">
                     product design + web dev, quality blogs, magic services and more
@@ -172,7 +175,7 @@
         </ul>
 
         <div class="text-center pt-3 border-t-2 w-full md:w-2/6 font-light text-gray-300 md:mx-auto">
-        ©2022 Designed & developed with ♥ by <a href="" class="underline underline-offset-auto hover:text-gray-500 hover:border-gray-500">PTK</a>
+        ©2022 Designed & developed with ♥ by <a href="" class="underline underline-offset-auto hover:text-gray-500 hover:border-gray-500">PTKCE</a>
         </div>
     </div>
 </footer>

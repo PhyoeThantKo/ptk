@@ -4,7 +4,7 @@
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>PTK</title>
+     <title>PTKCE</title>
      <link rel="stylesheet" href="public/style/style.css">
      <link rel="stylesheet" href="app/carousel/style.css">
      <link rel="stylesheet" href="public/style/fonts/googlesans.css">
@@ -22,7 +22,7 @@
               <div class="flex items-center lg:h-11 lg:rounded-l-full lg:rounded-r-full lg:bg-earth">
                   <div class="flex items-center justify-start md:w-1/2 h-full lg:px-6">
                     <a href="" class="text-3xl lg:text-2xl font-extrabold hover:text-light_theme">
-                      PTK
+                      PTKCE
                       <span class="font-light text-sm">
                         PRODUCT DESIGN + WEB DEV
                       </span>
@@ -30,7 +30,7 @@
                   </div>
                   <div class="top-0 left-0 items-start hidden w-full h-full p-4 text-sm bg-gray-900 bg-opacity-50 md:items-center md:w-3/4 md:absolute lg:text-base md:bg-transparent md:p-0 md:relative md:flex" :class="{'flex fixed': showMenu, 'hidden': !showMenu }">
                       <div class="flex-col justify-end w-full lg:px-4 h-auto overflow-hidden bg-white rounded-lg md:bg-transparent md:overflow-visible md:rounded-none md:relative md:flex md:flex-row">
-                          <a href="" class="inline-flex items-center block w-auto h-16 px-6 text-xl font-black leading-none text-gray-900 md:hidden">PTK</a>
+                          <a href="" class="inline-flex items-center block w-auto h-16 px-6 text-xl font-black leading-none text-gray-900 md:hidden">PTKCE</a>
                           <div class="flex flex-col items-start justify-end w-full lg:space-x-2 md:w-2/3 md:mt-0 md:flex-row px-6 md:px-0 pb-4 md:pb-0">
                               <a href="home" class="md:bg-pink-200 md:px-4 hover:text-pink-500 rounded-full py-2 lg:py-1 text-lg lg:text-xl text-pink-600">Home</a>
                               <a href="portfolio" class="md:px-4 hover:text-pink-500 rounded-full py-2 lg:py-1 text-lg lg:text-xl text-gray-700">Portfolio</a>
@@ -152,7 +152,7 @@
       </div>
       <div class="mx-auto lg:w-1/2 lg:my-auto">
           <div class="lg:max-w-3xl lg:pl-7  text-center lg:text-left">
-              <h1 class="text-2xl text-gray-800  dark:text-white md:text-5xl lg:mb-5 ">Website Creation in New Era with PTK</h1>
+              <h1 class="text-2xl text-gray-800  dark:text-white md:text-5xl lg:mb-5 ">Website Creation in New Era with PTKCE</h1>
               <p class="mt-2 text-gray-600 dark:text-gray-400 text-lg md:text-2xl mb-3 lg:mb-6">Young creator evolving with mush interest in clean modern UI, amazin UX & consumer electronics</p>
               <a href="#services"> 
                 <button type="button" class="px-4 w-full text-lg md:text-2xl lg:w-auto bg-light_theme mx-auto hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 text-white py-2 lg:py-3 transition ease-in duration-200 text-center shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-full">

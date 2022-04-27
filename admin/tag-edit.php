@@ -5,7 +5,7 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Edit tag</title>
-     <link rel="stylesheet" href="/ptk/public/style/style.css">
+     <link rel="stylesheet" href="../public/style/style.css">
 </head>
 <body>
      <?php
@@ -53,7 +53,7 @@
                </div>
                <div class="px-4 py-6 border-t-2 border-gray-200 bg-gray-50 sm:px-10">
                     <p class="text-xs leading-5 text-gray-500">
-                        Tags can help users filter by tags for smooth experience, PTK
+                        Tags can help users filter by tags for smooth experience, PTKCE
                     </p>
                </div>
      </form>

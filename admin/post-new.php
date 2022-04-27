@@ -12,7 +12,7 @@ tinymce.init({
     toolbar: 'a11ycheck addcomment showcomments casechange checklist code export formatpainter pageembed permanentpen table undo redo | image code',
     toolbar_mode: 'floating',
     tinycomments_mode: 'embedded',
-    tinycomments_author: 'PTK',
+    tinycomments_author: 'PTKCE',
     
     // without images_upload_url set, Upload tab won't show up
     images_upload_url: 'upload.php',
