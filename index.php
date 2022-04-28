@@ -23,7 +23,7 @@
                   <div class="flex items-center justify-start md:w-1/2 h-full lg:px-6">
                     <a href="" class="text-3xl lg:text-2xl font-extrabold hover:text-light_theme">
                       PTKCE
-                      <span class="font-light text-sm">
+                      <span class="font-light text-xs">
                         PRODUCT DESIGN + WEB DEV
                       </span>
                     </a>

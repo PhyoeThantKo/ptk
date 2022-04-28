@@ -56,7 +56,7 @@
               <div class="flex md:pt-20 h-full">
                 <!--Side bar nav-->
                 <aside class="overflow-y-auto flex-shrink-0 h-full fixed top-0 md:static z-50 md:z-0 w-52 flex flex-col transition-all duration-300 bg-gray-100 md:bg-transparent" :class="{'-ml-64 md:-ml-52 ': !sidebarOpen }">
-                  <nav class="flex-1 flex flex-col fixed w-52">
+                  <nav class="flex-1 flex flex-col fixed w-52 h-screen scrollbar-thin scrollbar-thumb-custom scrollbar-track-custom-light overflow-y-scroll scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
                   <div id="logo" class="md:hidden py-2 px-5 my-1 flex">
                     <button class="p-1 " @click="sidebarOpen = !sidebarOpen">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
