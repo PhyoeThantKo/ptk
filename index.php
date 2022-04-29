@@ -279,15 +279,18 @@
 
           <p class="mt-4 text-gray-600 text-lg md:text-2xl dark:text-gray-400">be my fridend, be the first to know latest tech news, reviews and<span class="font-medium text-pink-500"> magic web services </span></p>
 
-        <div class="md:flex md:justify-center lg:justify-start items-center md:mt-8 lg:space-y-0">
-          <input id="email" type="text" class="mb-3 md:mb-0 md:px-6 text-lg md:text-2xl px-9 py-1 md:py-2 text-gray-700 bg-white border rounded-lg dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-pink-400 dark:focus:border-pink-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-pink-300" placeholder="Email Address">
-                            
-          <a href="" class="m-0">
-            <button type="button" class="bg-light_theme hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 text-white md:px-6 text-lg md:text-2xl px-9 py-1 md:py-2 ml-2 md:ml-8 transition ease-in duration-200 text-center shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-full">
-              Subscribe
-            </button>
-          </a>
-        </div>
+          <form action="addsubscriber.php" method="post">
+            <div class="md:flex md:justify-center lg:justify-start items-center md:mt-8 lg:space-y-0">
+              <input name="email" type="text" class="mb-3 md:mb-0 md:px-6 text-lg md:text-2xl px-9 py-1 md:py-2 text-gray-700 bg-white border rounded-lg dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-pink-400 dark:focus:border-pink-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-pink-300" placeholder="Email Address">
+                                
+
+              <button type="submit" class="bg-light_theme hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 text-white md:px-6 text-lg md:text-2xl px-9 py-1 md:py-2 ml-2 md:ml-8 transition ease-in duration-200 text-center shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-full">
+                Subscribe
+              </button>
+
+            </div>
+          </form>
+
       </div>
     </div>
         
