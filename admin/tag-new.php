@@ -8,6 +8,8 @@
      <link rel="stylesheet" href="../public/style/style.css">
 </head>
 <body>
+<?php include("config/auth.php") ?>
+
 
      <div class="bg-white rounded-lg shadow sm:max-w-md sm:w-full sm:mx-auto sm:overflow-hidden">
 

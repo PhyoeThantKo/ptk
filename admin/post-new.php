@@ -53,6 +53,8 @@ tinymce.init({
 </head>
 
 <body>
+<?php include("config/auth.php") ?>
+
      <form action="post-add.php" method="POST" enctype="multipart/form-data" class="m-4">
           <label for="header" class="text-gray-700 mr-3">
                Header

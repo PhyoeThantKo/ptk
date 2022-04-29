@@ -8,6 +8,8 @@
      <link rel="stylesheet" href="../public/style/style.css">
 </head>
 <body>
+<?php include("config/auth.php") ?>
+
      <?php
           include("config/config.php");
 

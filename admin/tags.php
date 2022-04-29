@@ -8,6 +8,8 @@
      <link rel="stylesheet" href="../public/style/style.css">
 </head>
 <body>
+<?php include("config/auth.php") ?>
+
 <div id="container" class="flex">
           <!--side bar-->
           <div class="flex flex-col min-h-screen w-64 px-4 py-8 border-r dark:bg-gray-800 dark:border-gray-600">
