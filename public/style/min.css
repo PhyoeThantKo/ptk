@@ -515,11 +515,6 @@ img {
   border-color: rgba(229, 231, 235, var(--tw-border-opacity));
 }
 
-*{
-  scrollbar-color: initial;
-  scrollbar-width: initial;
-}
-
 .container{
   width: 100%;
 }
@@ -706,6 +701,10 @@ img {
   margin-bottom: auto;
 }
 
+.mt-1{
+  margin-top: 0.25rem;
+}
+
 .mt-2{
   margin-top: 0.5rem;
 }
@@ -802,6 +801,10 @@ img {
   margin-bottom: 5rem;
 }
 
+.ml-1{
+  margin-left: 0.25rem;
+}
+
 .ml-2{
   margin-left: 0.5rem;
 }
@@ -848,6 +851,10 @@ img {
 
 .hidden{
   display: none;
+}
+
+.h-5{
+  height: 1.25rem;
 }
 
 .h-6{
@@ -928,6 +935,10 @@ img {
 
 .min-h-screen{
   min-height: 100vh;
+}
+
+.w-5{
+  width: 1.25rem;
 }
 
 .w-6{
@@ -1016,6 +1027,10 @@ img {
 
 .max-w-5xl{
   max-width: 64rem;
+}
+
+.max-w-6xl{
+  max-width: 72rem;
 }
 
 .max-w-7xl{
@@ -1722,6 +1737,10 @@ img {
   padding-top: 7rem;
 }
 
+.pt-32{
+  padding-top: 8rem;
+}
+
 .pr-7{
   padding-right: 1.75rem;
 }
@@ -1789,6 +1808,11 @@ img {
   line-height: 2.25rem;
 }
 
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .font-light{
   font-weight: 300;
 }
@@ -1839,6 +1863,10 @@ img {
 
 .leading-loose{
   line-height: 2;
+}
+
+.tracking-tight{
+  letter-spacing: -0.025em;
 }
 
 .tracking-wide{
@@ -2191,48 +2219,13 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
-.scrollbar-thin{
-  --scrollbar-track: initial;
-  --scrollbar-thumb: initial;
-  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
-  overflow: overlay;
+.scrollbar-hide{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-.scrollbar-thin.overflow-x-hidden{
-  overflow-x: hidden;
-}
-
-.scrollbar-thin::-webkit-scrollbar-track{
-  background-color: var(--scrollbar-track);
-}
-
-.scrollbar-thin::-webkit-scrollbar-thumb{
-  background-color: var(--scrollbar-thumb);
-}
-
-.scrollbar-thin{
-  scrollbar-width: thin;
-}
-
-.scrollbar-thin::-webkit-scrollbar{
-  width: 8px;
-  height: 8px;
-}
-
-.scrollbar-thumb-rounded-full::-webkit-scrollbar-thumb{
-  border-radius: 9999px;
-}
-
-.scrollbar-track-rounded-full::-webkit-scrollbar-track{
-  border-radius: 9999px;
-}
-
-.scrollbar-thumb-custom{
-  --scrollbar-thumb: #ffe377 !important;
-}
-
-.scrollbar-track-custom-light{
-  --scrollbar-track: #ffd6ed !important;
+.scrollbar-hide::-webkit-scrollbar{
+  display: none;
 }
 
 @media (min-width: 640px){
@@ -2305,6 +2298,16 @@ img {
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
+
+  .sm\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .sm\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
+  }
 }
 
 @media (min-width: 768px){
@@ -2369,6 +2372,10 @@ img {
 
   .md\:mt-8{
     margin-top: 2rem;
+  }
+
+  .md\:mt-20{
+    margin-top: 5rem;
   }
 
   .md\:mr-3{
@@ -2483,6 +2490,10 @@ img {
     max-width: 32rem;
   }
 
+  .md\:max-w-3xl{
+    max-width: 48rem;
+  }
+
   .md\:flex-shrink-0{
     flex-shrink: 0;
   }
@@ -2505,6 +2516,12 @@ img {
 
   .md\:justify-between{
     justify-content: space-between;
+  }
+
+  .md\:space-x-4 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1rem * var(--tw-space-x-reverse));
+    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .md\:overflow-visible{
@@ -2707,6 +2724,10 @@ img {
 
   .lg\:block{
     display: block;
+  }
+
+  .lg\:inline{
+    display: inline;
   }
 
   .lg\:flex{

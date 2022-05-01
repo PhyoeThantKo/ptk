@@ -53,10 +53,10 @@
                 </div>
               </section>
               <!--Contents-->
-              <div class="flex md:pt-20 h-full">
+              <div class="flex">
                 <!--Side bar nav-->
                 <aside class="overflow-y-auto flex-shrink-0 h-full fixed top-0 md:static z-50 md:z-0 w-52 flex flex-col transition-all duration-300 bg-gray-100 md:bg-transparent" :class="{'-ml-64 md:-ml-52 ': !sidebarOpen }">
-                  <nav class="flex-1 flex flex-col fixed w-52 h-screen scrollbar-thin scrollbar-thumb-custom scrollbar-track-custom-light overflow-y-scroll scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
+                  <nav class="flex-1 flex flex-col fixed w-52 h-full overflow-y-scroll scrollbar-hide">
                   <div id="logo" class="md:hidden py-2 px-5 my-1 flex">
                     <button class="p-1 " @click="sidebarOpen = !sidebarOpen">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
@@ -67,7 +67,7 @@
                       PTKCE
                     </a>
                   </div>
-                  <a href="home" class="py-2 px-5 my-1 text-gray-700 rounded-r-full hover:bg-gray-200 focus:bg-gray-400">
+                  <a href="home" class="py-2 md:mt-20 px-5 my-1 text-gray-700 rounded-r-full hover:bg-gray-200 focus:bg-gray-400">
                       Home
                   </a>
                   <a href="articles" class="py-2 px-5 my-1 text-gray-700 rounded-r-full bg-gray-200">
@@ -101,7 +101,7 @@
                   </nav>
                 </aside>
                 
-                <div class="md:w-10/12 mx-auto  mt-16 md:mt-0 z-0 md:static">
+                <div class="md:w-10/12 mx-auto md:pt-20 mt-16 md:mt-0 z-0 md:static">
                   <div class="max-w-7xl mx-auto px-6">
                     <div class="hidden md:block">
                       <p class="text-2xl text-gray-800">Latest Blogs on Tech</p>
@@ -142,7 +142,7 @@
                   </div>
                 </div>
 
-                <div class="w-1/12 mt-16 hidden mr-10 lg:block">
+                <div class="w-1/12  md:pt-20 mt-16 hidden mr-10 lg:block">
                     <div class="border border-gray-400 w-full p-14">
                       Ads
                     </div>

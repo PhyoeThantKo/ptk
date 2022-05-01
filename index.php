@@ -4,14 +4,40 @@
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>PTKCE</title>
+     <!-- Primary Meta Tags -->
+    <title>Website & Content Creation in Common Era with PTKCE</title>
+    <meta name="title" content="Website & Content Creation in Common Era with PTKCE">
+    <meta name="description" content="Best website development products  services in Myanmar and a media outlet covering tech contents">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ptkce.com/">
+    <meta property="og:title" content="Website & Content Creation in Common Era with PTKCE">
+    <meta property="og:description" content="Best website development products  services in Myanmar and a media outlet covering tech contents">
+    <meta property="og:image" content="public/images/ptkce.webp">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ptkce.com/">
+    <meta property="twitter:title" content="Website & Content Creation in Common Era with PTKCE">
+    <meta property="twitter:description" content="Best website development products  services in Myanmar and a media outlet covering tech contents">
+    <meta property="twitter:image" content="public/images/ptkce.webp">
      <link rel="stylesheet" href="public/style/style.css">
      <link rel="stylesheet" href="app/carousel/style.css">
      <link rel="stylesheet" href="public/style/fonts/googlesans.css">
      <style>
       @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap');
      </style>
-      <link rel="icon" type="image/x-icon" href="public/images/fav.webp">
+     <link rel="icon" type="image/x-icon" href="public/images/fav.webp">
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R5185885X9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-R5185885X9');
+    </script>
 </head>
 <body style="font-family:'Product Sans Regular'" class="w-full h-full m-0 p-0 overflow-x-hidden">
     <!-- nav bar -->

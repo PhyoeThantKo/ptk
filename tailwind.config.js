@@ -1,6 +1,6 @@
 module.exports = {
   plugins: [
-    require('tailwind-scrollbar')
+    require('tailwind-scrollbar-hide')
   ],
   variants: {
       scrollbar: ['rounded']
@@ -21,10 +21,6 @@ module.exports = {
         'earth': '#F9E8DA',
         'notsowhite': '#F4F1F2',
         'light_theme': '#DB1084',
-        custom: {
-          DEFAULT: '#ffe377',
-          light: '#ffd6ed'
-        }
       }
     },
   }
