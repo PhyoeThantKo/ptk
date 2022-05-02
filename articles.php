@@ -4,6 +4,24 @@
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Primary Meta Tags -->
+    <meta name="description" content="PTKCE covers quality articles, news and reviews of consumer electronics and everything about web dev">
+    <meta name="image" property="og:image" content="https://ptkce.com/app/carousel/images/articlemeta.webp">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ptkce.com/articles">
+    <meta property="og:title" content="PTKCE's most loved articles in Myanmar">
+    <meta property="og:image" content="https://ptkce.com/app/carousel/images/articlemeta.webp">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="https://ptkce.com/articles">
+    <meta name="twitter:creator" content="@SPTK7858">
+    <meta name="twitter:title" content="PTKCE's most loved articles in Myanmar">
+    <meta name="twitter:image" content="https://ptkce.com/app/carousel/images/articlemeta.webp">
+
      <title>Articles</title>
      <link rel="stylesheet" href="public/style/style.css">
      <script src="//unpkg.com/alpinejs" defer></script>

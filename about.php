@@ -4,6 +4,24 @@
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Primary Meta Tags -->
+    <meta name="description" content="What is PTKCE and what does it stand for?">
+    <meta name="image" property="og:image" content="https://ptkce.com/app/carousel/images/about.webp">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ptkce.com/about">
+    <meta property="og:title" content="What does PTKCE stand for?">
+    <meta property="og:image" content="https://ptkce.com/app/carousel/images/about.webp">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="https://ptkce.com/about">
+    <meta name="twitter:creator" content="@SPTK7858">
+    <meta name="twitter:title" content="What is PTKCE and what does it stand for?">
+    <meta name="twitter:image" content="https://ptkce.com/app/carousel/images/about.webp">
+
      <title>About PTKCE</title>
      <link rel="stylesheet" href="public/style/style.css">
      <link rel="stylesheet" href="public/style/fonts/googlesans.css">

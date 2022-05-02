@@ -12,6 +12,24 @@
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Primary Meta Tags -->
+    <meta name="title" content="<?php echo $articles['header']; ?>">
+    <meta name="image" property="og:image" content="<?php echo "https://ptkce.com/admin/covers/". $articles['cover'] ?>">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ptkce.com/articles/<?php echo $articles['post_id']?>">
+    <meta property="og:title" content="<?php echo $articles['header']; ?>">
+    <meta property="og:image" content="<?php echo "https://ptkce.com/admin/covers/". $articles['cover'] ?>">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="https://ptkce.com/articles/<?php echo $articles['post_id']?>">
+    <meta name="twitter:creator" content="@SPTK7858">
+    <meta name="twitter:title" content="<?php echo $articles['header']; ?>">
+    <meta name="twitter:image" content="<?php echo "https://ptkce.com/admin/covers/". $articles['cover'] ?>">
+
      <title><?php echo $articles['header']; ?></title>
      <link rel="stylesheet" href="../public/style/fonts/googlesans.css">
      <link rel="stylesheet" href="../public/style/style.css">

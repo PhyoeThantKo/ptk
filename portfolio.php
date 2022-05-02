@@ -4,6 +4,24 @@
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Primary Meta Tags -->
+    <meta name="description" content="These are some projects PTKCE has done so far..">
+    <meta name="image" property="og:image" content="https://ptkce.com/app/carousel/images/portfoliohero.webp">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ptkce.com/portfolio">
+    <meta property="og:title" content="Sample projects made by PTKCE">
+    <meta property="og:image" content="https://ptkce.com/app/carousel/images/portfoliohero.webp">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="https://ptkce.com/portfolio">
+    <meta name="twitter:creator" content="@SPTK7858">
+    <meta name="twitter:title" content="Sample projects made by PTKCE">
+    <meta name="twitter:image" content="https://ptkce.com/app/carousel/images/portfoliohero.webp">
+    
      <title>PTKCE portfolio</title>
      <link rel="stylesheet" href="public/style/style.css">
      <script defer src="components/navlinkactive.js"></script>

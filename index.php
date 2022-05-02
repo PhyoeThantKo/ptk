@@ -8,20 +8,23 @@
     <title>Website & Content Creation in Common Era with PTKCE</title>
     <meta name="title" content="Website & Content Creation in Common Era with PTKCE">
     <meta name="description" content="Best website development products  services in Myanmar and a media outlet covering tech contents">
+    <meta name="image" property="og:image" content="public/images/ptkce.webp">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ptkce.com/">
     <meta property="og:title" content="Website & Content Creation in Common Era with PTKCE">
     <meta property="og:description" content="Best website development products  services in Myanmar and a media outlet covering tech contents">
-    <meta property="og:image" content="public/images/ptkce.webp">
+    <meta property="og:image" content="https://ptkce.com/public/images/ptkce.webp">
     
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://ptkce.com/">
-    <meta property="twitter:title" content="Website & Content Creation in Common Era with PTKCE">
-    <meta property="twitter:description" content="Best website development products  services in Myanmar and a media outlet covering tech contents">
-    <meta property="twitter:image" content="public/images/ptkce.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="https://ptkce.com/">
+    <meta name="twitter:creator" content="@SPTK7858">
+    <meta name="twitter:title" content="Website & Content Creation in Common Era with PTKCE">
+        <meta name="twitter:description" content="Best website development products  services in Myanmar and a media outlet covering tech contents">
+    <meta name="twitter:image" content="https://ptkce.com/public/images/ptkce.webp">
+    
      <link rel="stylesheet" href="public/style/style.css">
      <link rel="stylesheet" href="app/carousel/style.css">
      <link rel="stylesheet" href="public/style/fonts/googlesans.css">
@@ -307,7 +310,7 @@
 
           <form action="addsubscriber.php" method="post">
             <div class="md:flex md:justify-center lg:justify-start items-center md:mt-8 lg:space-y-0">
-              <input name="email" type="text" class="mb-3 md:mb-0 md:px-6 text-lg md:text-2xl px-9 py-1 md:py-2 text-gray-700 bg-white border rounded-lg dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-pink-400 dark:focus:border-pink-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-pink-300" placeholder="Email Address">
+              <input name="email" type="text" class="mb-3 md:mb-0 md:px-6 text-lg md:text-2xl px-9 py-1 md:py-2 text-gray-700 bg-white border rounded-lg dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-pink-400 dark:focus:border-pink-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-pink-300" placeholder="Email Address" required>
                                 
 
               <button type="submit" class="bg-light_theme hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 text-white md:px-6 text-lg md:text-2xl px-9 py-1 md:py-2 ml-2 md:ml-8 transition ease-in duration-200 text-center shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-full">
