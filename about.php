@@ -23,13 +23,13 @@
     <meta name="twitter:image" content="https://ptkce.com/app/carousel/images/about.webp">
 
      <title>About PTKCE</title>
-     <link rel="stylesheet" href="public/style/style.css">
+     <link rel="stylesheet" href="public/style/min.css">
      <link rel="stylesheet" href="public/style/fonts/googlesans.css">
-     <link rel="icon" type="image/x-icon" href="public/images/fav.">
+     <link rel="icon" type="image/x-icon" href="public/images/fav.webp">
 </head>
-<body style="font-family:'Product Sans Regular'">
-     <!-- Nav Bar-->
-     <section class="fixed w-full px-6 py-2 lg:py-0 lg:mt-3 z-50 bg-notsowhite lg:bg-transparent shadow-md lg:shadow-none">
+<body style="font-family:'Product Sans Regular'" class="bg-notsowhite">
+    <!-- Nav Bar-->
+    <section class="fixed w-full px-6 py-2 lg:py-0 lg:mt-3 z-50 bg-notsowhite lg:bg-transparent shadow-md lg:shadow-none">
       <div class="mx-auto max-w-7xl">
 
           <nav class="relative z-50 select-none" x-data="{ showMenu: false }">
@@ -68,31 +68,34 @@
       </div>
     </section>
 
-     <div class="min-w-screen min-h-screen bg-pink-100 flex items-center p-5 lg:p-20 overflow-hidden relative pt-28">
-          <div class="flex-1 min-h-full min-w-full rounded-3xl bg-white shadow-xl p-10 lg:p-20 text-gray-800 relative md:flex items-center text-center md:text-left">
-               <div class="w-full md:w-1/2">
-                    <div class="mb-10 lg:mb-20">
-                         <img src="public/images/fav.webp" class="w-8 h-8">
-                    </div>
-                    <div class="mb-10 md:mb-20 text-gray-600 font-light">
-                         <h1 class="font-black uppercase text-3xl lg:text-5xl text-pink-700 mb-10">This page is<br>currently under development</h1>
-                         <p>Thank You</p>
-                         <p>for checking me out.</p>
-                    </div>
-                    <div class="mb-20 md:mb-0">
-                         <a href="home">
-                         <button class="text-lg font-light outline-none focus:outline-none transform transition-all hover:scale-110 text-pink-500 hover:text-pink-600">Retun to Homepage</button>
-                         </a>
-                    </div>
-               </div>
-               <div class="w-full md:w-1/2 text-center">
-                    <img src="public/images/underdev.webp">
-               
-               </div>
-          </div>
-          <div class="w-64 md:w-96 h-96 md:h-full bg-blue-200 bg-opacity-30 absolute -top-64 md:-top-96 right-20 md:right-32 rounded-full pointer-events-none -rotate-45 transform"></div>
-          <div class="w-96 h-full bg-indigo-200 bg-opacity-20 absolute -bottom-96 right-64 rounded-full pointer-events-none -rotate-45 transform"></div>
-     </div>
+    <!--Image-->
+    <section class="w-full bg-gray-500">
+        <div class="max-w-7xl px-6 mx-auto">
+            <img src="public/images/squa.svg" class="absolute top-0 right-0 w-52 hidden lg:block">
+            <div class="flex items-baseline justify-center w-full">
+                <div class="flex-initial w-1/2">
+                <img src="public/images/vs.svg" class="lg:w-32 w-24 -mb-6">
+                </div>
+                <div class="flex items-baseline flex-initial w-1/2">
+                <img src="public/images/be.svg" class="-mr-72">
+                <img src="public/images/tsc.png" class="min-h-full pt-12">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Info-->
+    <section class="w-full my-10">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row px-6">
+            <div class="w-1/3 py-3 lg:py-0">
+                <img src="public/images/fav.webp">
+            </div>
+            <div class="flex items-center lg:w-2/3 text-justify tracking-wide text-gray-800">Hello, that's me above, admin of PTKCE. I’m creating digital experiences for any kind of client, individual, or business and solving problems by making different websites. <br> <br> After high school, due to pandemics and military coups, I couldn’t go to the university. So I started learning how to create fully functional websites on the internet to help business transformations in Myanmar. <br> <br> At present, PTKCE is sharing useful blogs about web dev and consumer electronics on various social media and offering web development services. PTKCE have further plans and products for you in Burma.</div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <?php include('components/footer.php') ?>
 
      <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </body>

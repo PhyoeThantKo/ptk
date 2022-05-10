@@ -209,13 +209,13 @@
       <?php while ($row = mysqli_fetch_assoc($result)): ?>
 
       <div class="overflow-hidden shadow-lg bg-white rounded-xl cursor-pointer space-y-3">
-          <a href="articles/<?php echo $row['post_id']?>" class="w-full block lg:h-80">
-              <img alt="blog photo" src="admin/covers/<?php echo $row['cover'] ?>" class="max-h-40 w-full object-cover"/>
+          <a href="articles/<?php echo $row['post_id']?>" class="w-full block">
+              <img alt="blog photo" src="admin/covers/<?php echo $row['cover'] ?>" class="w-full object-cover max-h-52"/>
               <div class="dark:bg-gray-800 w-full p-4">
                   <p class="text-pink-400 text-md font-light">
                       <?php echo $row['tag_name'] ?>
                   </p>
-                  <p class="text-gray-700 dark:text-white text-lg md:text-2xl h-20 max-h-20 md:mb-2">
+                  <p class="text-gray-700 dark:text-white text-lg md:text-xl h-20 max-h-20 md:mb-2">
                       <?php echo $row['header']; ?>
                   </p>
               </div>
